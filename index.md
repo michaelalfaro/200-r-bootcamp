@@ -12,7 +12,7 @@ layout: default
 
 - Introduction to R *Lloyd-Smith*
 - Flow control in R - *Alfaro*
-- More R
+- More R *Lloyd-Smith*
 
 ### Thursday 17 September
 
