@@ -1,0 +1,338 @@
+---
+layout:     post
+title:      Introduction to R
+date:       2015-08-18
+summary:    working with R is fun
+categories: Instruction
+---
+
+##Getting started
+Welcome to the EEB Quantitative skills bootcamp. This document covers some of aspects of working with data objects that I was not able to cover in class Wednesday. 
+Use setwd() to set your directory.
+
+```{r}
+
+setwd("~/Dropbox/bootcamp_examples")
+```
+
+
+
+
+
+And use getwd() to see the working directory.
+
+```{r}
+getwd()
+```
+
+The # character is used to mark comments. R ignores everything after the # to the end of the line
+
+```{r}
+2 + 2
+#2 + 3
+
+```
+R ignores the line 2 + 3 because of the '#'
+
+R has many options for getting help. You can use the help() function on any function:
+
+```{r}
+help(lm)
+
+```
+
+You can also use "?" before a function.
+
+```{r, eval=F}
+?lm
+
+```
+Two question marks ("??") tells R to use fuzzy matching on the function name. R will search for functions with names similar to your query in all installed packages. "?" and "??" won't evaluate in this document but you should try them at your command prompt to see the help files.
+
+```{r, eval-F}
+??lm
+
+```
+
+
+The c() function combines elements into a vector and is one of the most commonly use functions in R.
+
+```{r}
+grad.school.tips <- c("avoid excel", "use a reference manager", "learn a programming language", "write lots of papers")
+```
+
+You can use cat() to print objects to a screen.
+```{r}
+cat(grad.school.tips, sep = "\n")
+```
+
+install() is used to install new packages:
+
+```{r, eval=FALSE}
+install.packages(c("geiger", "laser"), dep = T)
+```
+
+As you work in an R session, any variables that you declare will be stored in the session. If you want to see all objects that you have created in you session, use the ls() function.
+```{r}
+xx <-1000
+ls()
+
+```
+To remove a variable from the workspace, use rm(variable)
+
+```{r}
+ls()
+rm(xx)
+ls()
+
+```
+To remove EVERYTHING, use rm(list = ls()). This passes the contents of ls() to rm() so that everything in the environment is deleted. It is often useful to start your script with this command so that you can be sure that any variables you declare have not been assigned a value already.
+
+```{r}
+
+xx <- 100
+names <- c("magic", "kobe")
+numbers <- runif(100)
+
+ls()
+rm(list = ls())
+ls() #character(0) means the function has returned an empty value
+
+```
+
+You can quit R with q(). Caution, q() will quit your R session!
+
+```{r,eval=F}
+q()
+q(save = 'no')
+
+```
+
+The source() function will load functions and variables from another R script into your R session. This means that you can save and reuse functions that you develop for other projects. 
+
+```{r}
+getwd()
+source('/Users/michaelalfaro/Dropbox/teaching/EEB quantitative skills bootcamp/2014 bootcamp/source.example.R') 
+#make sure the path to the source file is specified correctly (should equal output from getwd())
+all.I.know.about.life.I.learned.in.grad.school() #a function from the source file
+
+```
+
+##Reading in files and manipulating data objects
+For this section we are going to work with two kinds of data: a phylogenetic tree, and swimming data for some of the species in this tree. One of the most common tasks you will perform in R will be reading in data and this section should help orient you to ways you can interact with your data objects in the R environment. 
+
+The first thing we will do is use read.tree() to  in a phylogenetic tree. readtree() is in the Ape library, so make sure you have that installed. The tree file is a text file that contains informaiton about the tree structure and tip labels in Newick format. Use a text editor to look at this file if you are curious.
+
+```{r}
+library(ape)
+tt <- read.tree("tree.tre")
+###see elements of an object
+attributes(tt)
+###access those elements with $
+tt$tip.label[1:10]
+head(tt$tip.label)
+
+
+```
+
+This tree is giant!  Lets prune down and plot the pruned tree.
+```{r, echo = F}
+pruned.tree <- drop.tip(tt, tt$tip.label[1:7900])
+plot(ladderize(pruned.tree), cex = 0.5, type = "radial")
+
+```
+```{r}
+
+# d contains length data, family, species, order, etc
+dd <- read.table('data.txt', header=T, sep='\t', as.is = T);
+
+###NOTE: R by default reads character columns as FACTORS. This data structure behaves very differently from a string!  Use as.is = T when reading in data to make R treat these columns as characters.
+
+###You have just read your data in as a data frame object###
+# check this with the str() function
+str(dd)
+# a data frame is a collection of columns where every object within the column vector is the same data type
+#get the dimensions of a data frame
+dim(dd)
+length.dd <- dim(dd)[1] #what does this line do?
+#dimensions are rows, columns
+attributes(dd)
+```
+
+
+
+Lets create some size data and add it to the data frame
+```{r, cache=F}
+
+#get 92 random variables
+size <- runif(length.dd)
+
+#you can add columns to an existing data frame with cbind
+head(dd) #before
+dd<- cbind(dd, size)
+head(dd) #after
+
+```
+You can use the "$" operator to acccess rows and head() and tail() check a data frame
+```{r}
+names(dd) #these are the names of the columns we could access
+#dd$species #all the species
+head(dd$species)
+tail(dd$species) # use these functions to check that data has been read into R correctly
+#you can pull out individual columns 
+swimming_mode <- dd$mode
+# access values specific values within a dataframe
+dd[1,1] # entry in row 1, column 1
+dd[1,2] # entry in row 1, column 2
+dd[1,3] # entry in row 1, column 3
+dd[1,] # row 1, all columns
+dd[,2] # all rows, column 2
+
+```
+
+
+Naming rows allows you to access a row by name (Note that rownames are a part of a data frame but not a separate cilumn of the data frame)
+```{r}
+head(rownames(dd))
+rownames(dd) <- dd$species
+head(rownames)
+str(dd)
+# if you name the columns you can access a row by name
+dd['Pomacentrus_brachialis',]
+
+```
+
+##A bit more on subsetting
+```{r}
+
+
+#a bit on subseting
+dd[5:10,] # rows 5-10, all columns
+dd[5:10,3] # rows 5-10, column 3
+
+#if you want only the MPF swimmers, you can use the which() function
+which(dd$mode == 'MPF')
+```
+if we store the results of this which() function we can subset the dataframe to include only MPF swimmwers
+
+```{r}
+mpfs <- which(dd$mode == 'MPF') #stores rows of mpf swimmers
+mpf_swimmers <- dd[mpfs,] #stored this as a seperate df
+head(mpf_swimmers)
+```
+How would you make dataframe with all of the big (size > 0.9) species only?
+
+```{r}
+head(dd)
+which(dd$size > 0.9) #shows us rosw with large fish in them
+```
+so to make a new data frame with the large species only:
+```{r}
+big.fish <- dd[which(dd$size > 0.9),] #remember the , after the which command says "select all columns"
+head(big.fish)
+
+```
+
+
+
+##Removing NAs
+Sometimes your data frame will include missing values. Often you will want to exclude these rows from the analysis. There are several ways to do this.
+
+```{r}
+
+#ways to check for NAs
+head(dd) # there are NAs in the data
+head(is.na(dd))
+which(is.na(dd$mode)) #item 2
+complete.cases(dd)
+```
+In each case notice that the record for glass_fish has an NA for swimming mode. We can remove these missing cases in a variety of way.
+
+```{r}
+#one way to get only complete cases
+
+cleaned_1 <- dd[complete.cases(dd),]
+
+#another
+
+cleaned_2 <- na.omit(dd)
+
+dd <- cleaned_1
+```
+Note that we have reassigned the cleaned data set to dd so that dd only includes the complete cases.
+ 
+##Renaming data frame entries and matching data objects
+You will often need to find common elements between two data sets before you can do an analysis of the data. In our example we have a phylogeny that is taken from one study and a data set on swimming mode that is taken from another. We ultimately would like to perform comaprative evolutionary analyses of using a pruned version of the tree that matches the swimming mode data.
+
+The tree file we have right now is huge and contains many more species than the swimming mode data, so we know that we will have to prune the tree. But how can we be sure that all of the species in the swimming data are represented in the tree? setdiff() is a useful tool for answering this. setdiff() compares two lists and returns the items in the first list that are not present in the second list.  Use the R help function to see more about how this function works and to learn about related functions like intersect(), union(), and setdiff().
+
+```{r}
+setdiff(dd$species, tt$tip.label)
+
+```
+OK, it looks like there are 18 species in the swimming data set that don't match the tree. Some of these mismatches are due to spelling errors or taxonomic inconsistnecy between the two data sets. In other instances, the tree includes a species that is closely related to an unsampled species in the data frame, so we can treat that species in the tree as representing the species in the data set. We are going to change the names of some of the species names in the swimming mode data set to take care of this to increase the number of matches between the swimming data and tips in the tree.
+
+```{r}
+dd$species[which(dd$species == 'Apogon_nigrofasciatus')] <- 'Apogon_doederleini' #same genus
+dd$species[which(dd$species == 'Chaetodon_lunulatus')]<-'Chaetodon_lunula' #taxonomic inconsistency
+dd$species[which(dd$species == 'Chaetodon_plebius')]<-'Chaetodon_plebeius' #taxonomic inconsistency
+dd$species[which(dd$species == 'Chaetodon_rainfordii')]<-'Chaetodon_rainfordi' #taxonomic inconsistency
+dd$species[which(dd$species == 'Heniochus_singularis')]<-'Heniochus_pleurotaenia' #same genus
+dd$species[which(dd$species == 'Amblygobius_decussatus')]<-'Amblygobius_nocturnus' #same genus
+dd$species[which(dd$species == 'Scolopsis_bilineatus')]<-'Scolopsis_affinis' #same genus
+dd$species[which(dd$species == 'Sufflamen_chrysopterus')] <- 'Sufflamen_chrysopterum' #taxonomic inconsistency
+dd$species[which(dd$species == 'Cheilinus_chlorurus')] <-'Cheilinus_chlorourus' #taxonomic inconsistency
+dd$species[which(dd$species == 'Cirrhilabrus_punctatus')] <-'Cirrhilabrus_lubbocki' #taxonomic inconsistency
+dd$species[which(dd$species == 'Oxycheilinus_digrammus')] <-'Oxycheilinus_digramma' #taxonomic inconsistency
+dd$species[which(dd$species == 'Pseudocheilinus_hexataenia')] <-'Pseudocheilinus_octotaenia' #same genus
+dd$species[which(dd$species == 'Thalassoma_janseni')] <-'Thalassoma_jansenii' #taxonomic inconsistency
+dd$species[which(dd$species == 'Chrysiptera_brownriggi')] <-'Chrysiptera_brownriggii' #taxonomic inconsistency
+dd$species[which(dd$species == 'Neoglyphidodon_melas?')] <-'Neoglyphidodon_melas' #taxonomic inconsistency
+
+```
+
+Let's check the match between the data objects again
+
+```{r}
+setdiff(dd$species, tt$tip.label)
+
+```
+The swimming data set still has two species in it that don't match the tree. Let's save that list of unmatched taxa and use it to remove unmatched rows from the dd dataframe.
+
+```{r}
+not.in.tt <-setdiff(dd$species, tt$tip.label)
+not.in.tt
+```
+We can use the match() to find the row numbers of the taxa that aren't in the tree and the "-"  subsetting operator to remove them from the swimming data 
+
+```{r}
+match(not.in.tt, rownames(dd)) #row numbers of dd that match not.in.tt
+dd.pruned <- dd[-match(not.in.tt, rownames(dd)),]
+###ok now lets check for overlap
+setdiff(dd.pruned$species, tt$tip.label) # this should produce "character(0)" if empty.
+```
+Now we've pruned the data set. How can figure out what tips of the tree to prune? settdiff() again, but this time swtching the order of the arguments
+
+```{r}
+not.in.dd <-setdiff(tt$tip.label, dd.pruned$species )
+length(not.in.dd) #this will be a large number because the tree has so many tips!
+head(not.in.dd)
+```
+
+Now we will use the drop.tip() function from ape to any tip that is in not.in.dd. drop.tip() needs a tree and a list of taxa to be dropped as arguments and returns a pruned tree. Use the help function to verify this.
+
+```{r}
+pruned.tree <- drop.tip(tt, not.in.dd)
+setdiff(pruned.tree$tip.label, dd.pruned$species) #should be "character 0" if these objects match
+plot(pruned.tree, cex = 0.5)
+```
+
+
+We now have a tree and matching data set. You can use setdiff() and match() as shown above to compare your own data files and prune them as needed.
+
+
+
+
+```
+
+

@@ -3,15 +3,15 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Phylogenetic Generalized Least Squares (PGLS) &#8211; Comparative methods in R - Ilhabela</title>
+    <title>Phylogenetic Generalized Least Squares (PGLS) &#8211; Introduction to R in Ecology and Evolutionary Biology</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Use PGLS to test for character correlations">
-    <meta name="author" content="Luke Harmon">
+    <meta name="author" content="Michael Alfaro">
     <meta name="keywords" content="instruction">
-    <link rel="canonical" href="http://lukejharmon.github.io/ilhabela/ilhabela/instruction/2015/07/03/PGLS/">
+    <link rel="canonical" href="http://michaelalfaro.github.io/200-r-bootcamp/200-r-bootcamp/instruction/2015/07/03/PGLS/">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/ilhabela/css/pixyll.css" type="text/css">
+    <link rel="stylesheet" href="/200-r-bootcamp/css/pixyll.css" type="text/css">
 
     <!-- Fonts -->
     <link href='//fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic' rel='stylesheet' type='text/css'>
@@ -26,9 +26,9 @@
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Phylogenetic Generalized Least Squares (PGLS)">
-    <meta property="og:description" content="Materials for R course.">
-    <meta property="og:url" content="http://lukejharmon.github.io/ilhabela/instruction/2015/07/03/PGLS/">
-    <meta property="og:site_name" content="Comparative methods in R - Ilhabela">
+    <meta property="og:description" content="Materials for R bootcamp.">
+    <meta property="og:url" content="http://michaelalfaro.github.io/200-r-bootcamp/instruction/2015/07/03/PGLS/">
+    <meta property="og:site_name" content="Introduction to R in Ecology and Evolutionary Biology">
 
     <!-- Icons -->
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
@@ -54,11 +54,11 @@
     <header class="site-header px2 px-responsive">
   <div class="mt2 wrap">
     <div class="measure">
-      <a href="http://lukejharmon.github.io/ilhabela" class="site-title">Comparative methods in R - Ilhabela</a>
+      <a href="http://michaelalfaro.github.io/200-r-bootcamp" class="site-title">Introduction to R in Ecology and Evolutionary Biology</a>
       <nav class="site-nav right">
-        <a href="/ilhabela/about/">About</a>
-<a href="/ilhabela/contact/">Contact</a>
-<a href="/ilhabela/postIndex/">Post index</a>
+        <a href="/200-r-bootcamp/about/">About</a>
+<a href="/200-r-bootcamp/contact/">Contact</a>
+<a href="/200-r-bootcamp/postIndex/">Post index</a>
 
       </nav>
       <div class="clearfix"></div>
@@ -66,16 +66,16 @@
         <div class="social-icons">
   <div class="left">
     
-      <a class="fa fa-github" href="https://github.com/lukejharmon"></a>
+      <a class="fa fa-github" href="https://github.com/michaelalfaro"></a>
     
     
-    <a class="fa fa-rss" href="/ilhabela/feed.xml"></a>
+    <a class="fa fa-rss" href="/200-r-bootcamp/feed.xml"></a>
     
-      <a class="fa fa-twitter" href="https://twitter.com/lukejharmon"></a>
+      <a class="fa fa-twitter" href="https://twitter.com/tempoandmode"></a>
     
     
     
-      <a class="fa fa-envelope" href="mailto:lukeh@uidaho.edu"></a>
+      <a class="fa fa-envelope" href="mailto:michaelalfaro@ucla.edu"></a>
     
     
     
@@ -131,7 +131,7 @@ anoleTree <span class="o">&lt;-</span> read.tree<span class="p">(</span><span cl
 <p>Let&rsquo;s see what this tree looks like.</p>
 <div class="highlight"><pre><code class="language-r" data-lang="r">plot<span class="p">(</span>anoleTree<span class="p">)</span>
 </code></pre></div>
-<p><img src="/ilhabela/images/pgls/unnamed-chunk-3.png" alt="plot of chunk unnamed-chunk-3"></p>
+<p><img src="/200-r-bootcamp/images/pgls/unnamed-chunk-3.png" alt="plot of chunk unnamed-chunk-3"></p>
 
 <p>Geiger has a function to check that the names match between the tree and the data frame.</p>
 <div class="highlight"><pre><code class="language-r" data-lang="r">name.check<span class="p">(</span>anoleTree<span class="p">,</span> anoleData<span class="p">)</span>
@@ -140,7 +140,7 @@ anoleTree <span class="o">&lt;-</span> read.tree<span class="p">(</span><span cl
 <p>Is there a correlation between awesomeness and hostility?</p>
 <div class="highlight"><pre><code class="language-r" data-lang="r">plot<span class="p">(</span>anoleData<span class="p">[,</span> <span class="kt">c</span><span class="p">(</span><span class="s">&quot;awesomeness&quot;</span><span class="p">,</span> <span class="s">&quot;hostility&quot;</span><span class="p">)])</span>
 </code></pre></div>
-<p><img src="/ilhabela/images/pgls/unnamed-chunk-5.png" alt="plot of chunk unnamed-chunk-5"></p>
+<p><img src="/200-r-bootcamp/images/pgls/unnamed-chunk-5.png" alt="plot of chunk unnamed-chunk-5"></p>
 
 <p>It certainly looks like there is. We can do this analysis easily with PICs, as you just learned:</p>
 <div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># Extract columns</span>
@@ -180,7 +180,7 @@ picModel <span class="o">&lt;-</span> lm<span class="p">(</span>hPic <span class
 plot<span class="p">(</span>hPic <span class="o">~</span> aPic<span class="p">)</span>
 abline<span class="p">(</span>a <span class="o">=</span> <span class="m">0</span><span class="p">,</span> b <span class="o">=</span> coef<span class="p">(</span>picModel<span class="p">))</span>
 </code></pre></div>
-<p><img src="/ilhabela/images/pgls/unnamed-chunk-6.png" alt="plot of chunk unnamed-chunk-6"></p>
+<p><img src="/200-r-bootcamp/images/pgls/unnamed-chunk-6.png" alt="plot of chunk unnamed-chunk-6"></p>
 
 <p>This whole procedure can be carried out more simply using PGLS.</p>
 <div class="highlight"><pre><code class="language-r" data-lang="r">pglsModel <span class="o">&lt;-</span> gls<span class="p">(</span>hostility <span class="o">~</span> awesomeness<span class="p">,</span> correlation <span class="o">=</span> corBrownian<span class="p">(</span>phy <span class="o">=</span> anoleTree<span class="p">),</span>
@@ -218,7 +218,7 @@ abline<span class="p">(</span>a <span class="o">=</span> <span class="m">0</span
 </code></pre></div><div class="highlight"><pre><code class="language-r" data-lang="r">plot<span class="p">(</span>host <span class="o">~</span> awe<span class="p">)</span>
 abline<span class="p">(</span>a <span class="o">=</span> coef<span class="p">(</span>pglsModel<span class="p">)[</span><span class="m">1</span><span class="p">],</span> b <span class="o">=</span> coef<span class="p">(</span>pglsModel<span class="p">)[</span><span class="m">2</span><span class="p">])</span>
 </code></pre></div>
-<p><img src="/ilhabela/images/pgls/unnamed-chunk-7.png" alt="plot of chunk unnamed-chunk-7"></p>
+<p><img src="/200-r-bootcamp/images/pgls/unnamed-chunk-7.png" alt="plot of chunk unnamed-chunk-7"></p>
 
 <p>But PGLS is WAY more flexible than PICs. For example, we can include a discrete predictor:</p>
 <div class="highlight"><pre><code class="language-r" data-lang="r">pglsModel2 <span class="o">&lt;-</span> gls<span class="p">(</span>hostility <span class="o">~</span> ecomorph<span class="p">,</span> correlation <span class="o">=</span> corBrownian<span class="p">(</span>phy <span class="o">=</span> anoleTree<span class="p">),</span>
@@ -324,15 +324,15 @@ pglsModelLambda <span class="o">&lt;-</span> gls<span class="p">(</span>hostilit
 
   <div class="share-links">
     
-      <a class = "fa fa-facebook" href="https://facebook.com/sharer.php?u=http://lukejharmon.github.io/ilhabela/instruction/2015/07/03/PGLS/" rel="nofollow" target="_blank" title="Share on Facebook"></a>
+      <a class = "fa fa-facebook" href="https://facebook.com/sharer.php?u=http://michaelalfaro.github.io/200-r-bootcamp/instruction/2015/07/03/PGLS/" rel="nofollow" target="_blank" title="Share on Facebook"></a>
     
 
     
-      <a class="fa fa-twitter" href="https://twitter.com/intent/tweet?text=Phylogenetic Generalized Least Squares (PGLS)&url=http://lukejharmon.github.io/ilhabela/instruction/2015/07/03/PGLS/" rel="nofollow" target="_blank" title="Share on Twitter"></a>
+      <a class="fa fa-twitter" href="https://twitter.com/intent/tweet?text=Phylogenetic Generalized Least Squares (PGLS)&url=http://michaelalfaro.github.io/200-r-bootcamp/instruction/2015/07/03/PGLS/" rel="nofollow" target="_blank" title="Share on Twitter"></a>
     
 
     
-      <a class="fa fa-google-plus" href="https://plus.google.com/share?url=http://lukejharmon.github.io/ilhabela/instruction/2015/07/03/PGLS/" rel="nofollow" target="_blank" title="Share on Google+"></a>
+      <a class="fa fa-google-plus" href="https://plus.google.com/share?url=http://michaelalfaro.github.io/200-r-bootcamp/instruction/2015/07/03/PGLS/" rel="nofollow" target="_blank" title="Share on Google+"></a>
     
 
     
@@ -355,19 +355,6 @@ pglsModelLambda <span class="o">&lt;-</span> gls<span class="p">(</span>hostilit
 
 
 
-
-  <div id="disqus_thread"></div>
-  <script type="text/javascript">
-    var disqus_shortname  = 'ilhabelamacro';
-    var disqus_identifier = '/instruction/2015/07/03/PGLS';
-
-    (function() {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-  </script>
-  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
 
 

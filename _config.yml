@@ -1,10 +1,10 @@
 # Site settings
-title:       Comparative methods in R - Ilhabela
-email:       lukeh@uidaho.edu
-author:      Luke Harmon
-description: "Materials for R course."
-baseurl:     "/ilhabela"
-url:         "http://lukejharmon.github.io/ilhabela"
+title:       Introduction to R in Ecology and Evolutionary Biology
+email:       michaelalfaro@ucla.edu
+author:      Michael Alfaro
+description: "Materials for R bootcamp."
+baseurl:     "/200-r-bootcamp"
+url:         "http://michaelalfaro.github.io/200-r-bootcamp"
 
 # Google analytics
 google_analytics:
@@ -16,13 +16,13 @@ show_post_footers:  false
 
 # Disqus post comments
 # (leave blank to disable Disqus)
-disqus_shortname: ilhabelamacro
+disqus_shortname: 
 
 # Social icons
 show_social_icons: true
-github_username: lukejharmon
+github_username: michaelalfaro
 stackoverflow_id:
-twitter_username: lukejharmon
+twitter_username: tempoandmode
 google_plus_id:
 linkedin_username:
 angellist_username:

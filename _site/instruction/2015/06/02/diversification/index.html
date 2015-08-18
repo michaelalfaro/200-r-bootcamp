@@ -3,15 +3,15 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>Diversification models &#8211; Comparative methods in R - Ilhabela</title>
+    <title>Diversification models &#8211; Introduction to R in Ecology and Evolutionary Biology</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Understand birth-death and trait-dependent bd models.">
-    <meta name="author" content="Luke Harmon">
+    <meta name="author" content="Michael Alfaro">
     <meta name="keywords" content="instruction">
-    <link rel="canonical" href="http://lukejharmon.github.io/ilhabela/ilhabela/instruction/2015/06/02/diversification/">
+    <link rel="canonical" href="http://michaelalfaro.github.io/200-r-bootcamp/200-r-bootcamp/instruction/2015/06/02/diversification/">
 
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="/ilhabela/css/pixyll.css" type="text/css">
+    <link rel="stylesheet" href="/200-r-bootcamp/css/pixyll.css" type="text/css">
 
     <!-- Fonts -->
     <link href='//fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic' rel='stylesheet' type='text/css'>
@@ -26,9 +26,9 @@
     <meta property="og:locale" content="en_US">
     <meta property="og:type" content="article">
     <meta property="og:title" content="Diversification models">
-    <meta property="og:description" content="Materials for R course.">
-    <meta property="og:url" content="http://lukejharmon.github.io/ilhabela/instruction/2015/06/02/diversification/">
-    <meta property="og:site_name" content="Comparative methods in R - Ilhabela">
+    <meta property="og:description" content="Materials for R bootcamp.">
+    <meta property="og:url" content="http://michaelalfaro.github.io/200-r-bootcamp/instruction/2015/06/02/diversification/">
+    <meta property="og:site_name" content="Introduction to R in Ecology and Evolutionary Biology">
 
     <!-- Icons -->
     <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
@@ -54,11 +54,11 @@
     <header class="site-header px2 px-responsive">
   <div class="mt2 wrap">
     <div class="measure">
-      <a href="http://lukejharmon.github.io/ilhabela" class="site-title">Comparative methods in R - Ilhabela</a>
+      <a href="http://michaelalfaro.github.io/200-r-bootcamp" class="site-title">Introduction to R in Ecology and Evolutionary Biology</a>
       <nav class="site-nav right">
-        <a href="/ilhabela/about/">About</a>
-<a href="/ilhabela/contact/">Contact</a>
-<a href="/ilhabela/postIndex/">Post index</a>
+        <a href="/200-r-bootcamp/about/">About</a>
+<a href="/200-r-bootcamp/contact/">Contact</a>
+<a href="/200-r-bootcamp/postIndex/">Post index</a>
 
       </nav>
       <div class="clearfix"></div>
@@ -66,16 +66,16 @@
         <div class="social-icons">
   <div class="left">
     
-      <a class="fa fa-github" href="https://github.com/lukejharmon"></a>
+      <a class="fa fa-github" href="https://github.com/michaelalfaro"></a>
     
     
-    <a class="fa fa-rss" href="/ilhabela/feed.xml"></a>
+    <a class="fa fa-rss" href="/200-r-bootcamp/feed.xml"></a>
     
-      <a class="fa fa-twitter" href="https://twitter.com/lukejharmon"></a>
+      <a class="fa fa-twitter" href="https://twitter.com/tempoandmode"></a>
     
     
     
-      <a class="fa fa-envelope" href="mailto:lukeh@uidaho.edu"></a>
+      <a class="fa fa-envelope" href="mailto:michaelalfaro@ucla.edu"></a>
     
     
     
@@ -125,26 +125,26 @@
 simTree1 <span class="o">&lt;-</span> sim.bd.age<span class="p">(</span>age <span class="o">=</span> <span class="m">10</span><span class="p">,</span> numbsim <span class="o">=</span> <span class="m">1</span><span class="p">,</span> lambda <span class="o">=</span> <span class="m">0.4</span><span class="p">,</span> mu <span class="o">=</span> <span class="m">0</span><span class="p">)[[</span><span class="m">1</span><span class="p">]]</span>
 plot<span class="p">(</span>simTree1<span class="p">)</span>
 </code></pre></div>
-<p><img src="/ilhabela/images/bd/unnamed-chunk-11.png" alt="plot of chunk unnamed-chunk-1"></p>
+<p><img src="/200-r-bootcamp/images/bd/unnamed-chunk-11.png" alt="plot of chunk unnamed-chunk-1"></p>
 <div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># notice that if we repeat this command we get a different tree</span>
 
 simTree2 <span class="o">&lt;-</span> sim.bd.age<span class="p">(</span>age <span class="o">=</span> <span class="m">10</span><span class="p">,</span> numbsim <span class="o">=</span> <span class="m">1</span><span class="p">,</span> lambda <span class="o">=</span> <span class="m">0.4</span><span class="p">,</span> mu <span class="o">=</span> <span class="m">0</span><span class="p">)[[</span><span class="m">1</span><span class="p">]]</span>
 plot<span class="p">(</span>simTree2<span class="p">)</span>
 </code></pre></div>
-<p><img src="/ilhabela/images/bd/unnamed-chunk-12.png" alt="plot of chunk unnamed-chunk-1"></p>
+<p><img src="/200-r-bootcamp/images/bd/unnamed-chunk-12.png" alt="plot of chunk unnamed-chunk-1"></p>
 <div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># the pattern of lineage accumulation through time for a tree can be</span>
 <span class="c1"># visualized with a Lineage-through-time plot</span>
 
 ltt.plot<span class="p">(</span>simTree1<span class="p">)</span>
 </code></pre></div>
-<p><img src="/ilhabela/images/bd/unnamed-chunk-13.png" alt="plot of chunk unnamed-chunk-1"></p>
+<p><img src="/200-r-bootcamp/images/bd/unnamed-chunk-13.png" alt="plot of chunk unnamed-chunk-1"></p>
 <div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># ok - but we should always log the y-axis for ltt plots</span>
 ltt.plot<span class="p">(</span>simTree1<span class="p">,</span> log <span class="o">=</span> <span class="s">&quot;y&quot;</span><span class="p">)</span>
 </code></pre></div>
-<p><img src="/ilhabela/images/bd/unnamed-chunk-14.png" alt="plot of chunk unnamed-chunk-1"></p>
+<p><img src="/200-r-bootcamp/images/bd/unnamed-chunk-14.png" alt="plot of chunk unnamed-chunk-1"></p>
 <div class="highlight"><pre><code class="language-r" data-lang="r">ltt.plot<span class="p">(</span>simTree2<span class="p">,</span> log <span class="o">=</span> <span class="s">&quot;y&quot;</span><span class="p">)</span>
 </code></pre></div>
-<p><img src="/ilhabela/images/bd/unnamed-chunk-15.png" alt="plot of chunk unnamed-chunk-1"></p>
+<p><img src="/200-r-bootcamp/images/bd/unnamed-chunk-15.png" alt="plot of chunk unnamed-chunk-1"></p>
 <div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># What is the distribution of tree size under a pure-birth model?</span>
 ntips <span class="o">&lt;-</span> <span class="kt">numeric</span><span class="p">(</span><span class="m">1000</span><span class="p">)</span>
 <span class="kr">for</span> <span class="p">(</span>i <span class="kr">in</span> <span class="m">1</span><span class="o">:</span><span class="m">1000</span><span class="p">)</span> <span class="p">{</span>
@@ -156,7 +156,7 @@ ntips <span class="o">&lt;-</span> <span class="kt">numeric</span><span class="p
 
 hist<span class="p">(</span>ntips<span class="p">)</span>
 </code></pre></div>
-<p><img src="/ilhabela/images/bd/unnamed-chunk-16.png" alt="plot of chunk unnamed-chunk-1"></p>
+<p><img src="/200-r-bootcamp/images/bd/unnamed-chunk-16.png" alt="plot of chunk unnamed-chunk-1"></p>
 
 <p>It is worth showing the shape of LTT plots under a pure-birth model. To simplify this, we can fix both the age of the clade and the number of taxa. To make this work with TreeSim, we should choose a value of lambda that satisfies the expected relationship under a pure-birth model, E[n(t)] = 2 exp(lambda * t). So if we choose t = 10 and lambda = 0.4, as above, then E[N(t)] = 2 exp(0.4 * 10) = about 109 tips.</p>
 <div class="highlight"><pre><code class="language-r" data-lang="r">allTheTrees <span class="o">&lt;-</span> sim.bd.taxa.age<span class="p">(</span>n <span class="o">=</span> <span class="m">109</span><span class="p">,</span> numbsim <span class="o">=</span> <span class="m">1000</span><span class="p">,</span> lambda <span class="o">=</span> <span class="m">0.4</span><span class="p">,</span> mu <span class="o">=</span> <span class="m">0</span><span class="p">,</span>
@@ -167,7 +167,7 @@ ltt.plot<span class="p">(</span>allTheTrees<span class="p">[[</span><span class=
     ltt.lines<span class="p">(</span>allTheTrees<span class="p">[[</span>i<span class="p">]])</span>
 <span class="p">}</span>
 </code></pre></div>
-<p><img src="/ilhabela/images/bd/unnamed-chunk-2.png" alt="plot of chunk unnamed-chunk-2"></p>
+<p><img src="/200-r-bootcamp/images/bd/unnamed-chunk-2.png" alt="plot of chunk unnamed-chunk-2"></p>
 
 <p>So, under a pure-birth model, we expect the lineage-through-time plot to be linear on a log scale. What if we add extinction?</p>
 <div class="highlight"><pre><code class="language-r" data-lang="r">allTheTrees2 <span class="o">&lt;-</span> sim.bd.taxa.age<span class="p">(</span>n <span class="o">=</span> <span class="m">109</span><span class="p">,</span> numbsim <span class="o">=</span> <span class="m">1000</span><span class="p">,</span> lambda <span class="o">=</span> <span class="m">2</span><span class="p">,</span> mu <span class="o">=</span> <span class="m">1.6</span><span class="p">,</span>
@@ -178,7 +178,7 @@ ltt.plot<span class="p">(</span>allTheTrees2<span class="p">[[</span><span class
     ltt.lines<span class="p">(</span>allTheTrees2<span class="p">[[</span>i<span class="p">]])</span>
 <span class="p">}</span>
 </code></pre></div>
-<p><img src="/ilhabela/images/bd/unnamed-chunk-3.png" alt="plot of chunk unnamed-chunk-3"></p>
+<p><img src="/200-r-bootcamp/images/bd/unnamed-chunk-3.png" alt="plot of chunk unnamed-chunk-3"></p>
 
 <p>Extinction leaves a signature in the shape of phylogenetic trees. We can see that in the lineage-through-time plot, which bends up towards the present day. We can also see this in the trees themselves:</p>
 <div class="highlight"><pre><code class="language-r" data-lang="r">simTree1 <span class="o">&lt;-</span> sim.bd.taxa.age<span class="p">(</span>n <span class="o">=</span> <span class="m">109</span><span class="p">,</span> age <span class="o">=</span> <span class="m">10</span><span class="p">,</span> numbsim <span class="o">=</span> <span class="m">1</span><span class="p">,</span> lambda <span class="o">=</span> <span class="m">0.4</span><span class="p">,</span> mu <span class="o">=</span> <span class="m">0</span><span class="p">)[[</span><span class="m">1</span><span class="p">]]</span>
@@ -188,7 +188,7 @@ par<span class="p">(</span>mfcol <span class="o">=</span> <span class="kt">c</sp
 plot<span class="p">(</span>simTree1<span class="p">,</span> main <span class="o">=</span> <span class="s">&quot;Pure Birth&quot;</span><span class="p">)</span>
 plot<span class="p">(</span>simTree2<span class="p">,</span> main <span class="o">=</span> <span class="s">&quot;Birth-death&quot;</span><span class="p">)</span>
 </code></pre></div>
-<p><img src="/ilhabela/images/bd/unnamed-chunk-4.png" alt="plot of chunk unnamed-chunk-4"></p>
+<p><img src="/200-r-bootcamp/images/bd/unnamed-chunk-4.png" alt="plot of chunk unnamed-chunk-4"></p>
 
 <p>One important thing to keep in mind with diversification rate analysis is that sampling can be critical. To see why, let&rsquo;s use simulations of partially sampled data:</p>
 <div class="highlight"><pre><code class="language-r" data-lang="r">simTree1 <span class="o">&lt;-</span> sim.bd.taxa.age<span class="p">(</span>n <span class="o">=</span> <span class="m">109</span><span class="p">,</span> age <span class="o">=</span> <span class="m">10</span><span class="p">,</span> numbsim <span class="o">=</span> <span class="m">1</span><span class="p">,</span> lambda <span class="o">=</span> <span class="m">0.4</span><span class="p">,</span> mu <span class="o">=</span> <span class="m">0</span><span class="p">)[[</span><span class="m">1</span><span class="p">]]</span>
@@ -199,7 +199,7 @@ par<span class="p">(</span>mfcol <span class="o">=</span> <span class="kt">c</sp
 plot<span class="p">(</span>simTree1<span class="p">,</span> main <span class="o">=</span> <span class="s">&quot;Fully sampled&quot;</span><span class="p">)</span>
 plot<span class="p">(</span>simTree2<span class="p">,</span> main <span class="o">=</span> <span class="s">&quot;Partially sampled&quot;</span><span class="p">)</span>
 </code></pre></div>
-<p><img src="/ilhabela/images/bd/unnamed-chunk-5.png" alt="plot of chunk unnamed-chunk-5"></p>
+<p><img src="/200-r-bootcamp/images/bd/unnamed-chunk-5.png" alt="plot of chunk unnamed-chunk-5"></p>
 <div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># what is the general pattern?</span>
 
 allTheTrees3 <span class="o">&lt;-</span> sim.bd.taxa.age<span class="p">(</span>n <span class="o">=</span> <span class="m">50</span><span class="p">,</span> numbsim <span class="o">=</span> <span class="m">1000</span><span class="p">,</span> lambda <span class="o">=</span> <span class="m">0.4</span><span class="p">,</span> mu <span class="o">=</span> <span class="m">0</span><span class="p">,</span>
@@ -210,7 +210,7 @@ ltt.plot<span class="p">(</span>allTheTrees3<span class="p">[[</span><span class
     ltt.lines<span class="p">(</span>allTheTrees3<span class="p">[[</span>i<span class="p">]])</span>
 <span class="p">}</span>
 </code></pre></div>
-<p><img src="/ilhabela/images/bd/unnamed-chunk-6.png" alt="plot of chunk unnamed-chunk-6"></p>
+<p><img src="/200-r-bootcamp/images/bd/unnamed-chunk-6.png" alt="plot of chunk unnamed-chunk-6"></p>
 
 <h1> Estimating speciation and extinction rates </h1>
 
@@ -248,7 +248,7 @@ anova<span class="p">(</span>bdMLFit<span class="p">,</span> pure.birth <span cl
 </code></pre></div><div class="highlight"><pre><code class="language-r" data-lang="r">postSamples <span class="o">&lt;-</span> bdSamples<span class="p">[</span><span class="kt">c</span><span class="p">(</span><span class="s">&quot;lambda&quot;</span><span class="p">,</span> <span class="s">&quot;mu&quot;</span><span class="p">)]</span>
 profiles.plot<span class="p">(</span>postSamples<span class="p">,</span> col.line <span class="o">=</span> <span class="kt">c</span><span class="p">(</span><span class="s">&quot;red&quot;</span><span class="p">,</span> <span class="s">&quot;blue&quot;</span><span class="p">),</span> las <span class="o">=</span> <span class="m">1</span><span class="p">,</span> legend <span class="o">=</span> <span class="s">&quot;topright&quot;</span><span class="p">)</span>
 </code></pre></div>
-<p><img src="/ilhabela/images/bd/unnamed-chunk-81.png" alt="plot of chunk unnamed-chunk-8"></p>
+<p><img src="/200-r-bootcamp/images/bd/unnamed-chunk-81.png" alt="plot of chunk unnamed-chunk-8"></p>
 <div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># often estimates of r (= lambda-mu) are more precise than either lambda and</span>
 <span class="c1"># mu</span>
 postSamples<span class="o">$</span>r <span class="o">&lt;-</span> <span class="kp">with</span><span class="p">(</span>bdSamples<span class="p">,</span> lambda <span class="o">-</span> mu<span class="p">)</span>
@@ -257,7 +257,7 @@ postSamples<span class="o">$</span>eps <span class="o">&lt;-</span> <span class=
 profiles.plot<span class="p">(</span>postSamples<span class="p">[,</span> <span class="kt">c</span><span class="p">(</span><span class="s">&quot;r&quot;</span><span class="p">,</span> <span class="s">&quot;eps&quot;</span><span class="p">)],</span> col.line <span class="o">=</span> <span class="kt">c</span><span class="p">(</span><span class="s">&quot;red&quot;</span><span class="p">,</span> <span class="s">&quot;blue&quot;</span><span class="p">),</span> las <span class="o">=</span> <span class="m">1</span><span class="p">,</span>
     legend <span class="o">=</span> <span class="s">&quot;topright&quot;</span><span class="p">)</span>
 </code></pre></div>
-<p><img src="/ilhabela/images/bd/unnamed-chunk-82.png" alt="plot of chunk unnamed-chunk-8"></p>
+<p><img src="/200-r-bootcamp/images/bd/unnamed-chunk-82.png" alt="plot of chunk unnamed-chunk-8"></p>
 
 <h1> Testing for slowdowns </h1>
 
@@ -299,7 +299,7 @@ simBisseData <span class="o">&lt;-</span> tree.bisse<span class="p">(</span>simP
 hist <span class="o">&lt;-</span> history.from.sim.discrete<span class="p">(</span>simBisseData<span class="p">,</span> <span class="m">0</span><span class="o">:</span><span class="m">1</span><span class="p">)</span>
 plot<span class="p">(</span>hist<span class="p">,</span> simBisseData<span class="p">)</span>
 </code></pre></div>
-<p><img src="/ilhabela/images/bd/unnamed-chunk-101.png" alt="plot of chunk unnamed-chunk-10"></p>
+<p><img src="/200-r-bootcamp/images/bd/unnamed-chunk-101.png" alt="plot of chunk unnamed-chunk-10"></p>
 <div class="highlight"><pre><code class="language-r" data-lang="r">nbModel <span class="o">&lt;-</span> make.bisse<span class="p">(</span>simBisseData<span class="p">,</span> simBisseData<span class="o">$</span>tip.state<span class="p">)</span>
 p <span class="o">&lt;-</span> starting.point.bisse<span class="p">(</span>simBisseData<span class="p">)</span>
 nbModelMLFit <span class="o">&lt;-</span> find.mle<span class="p">(</span>nbModel<span class="p">,</span> p<span class="p">)</span>
@@ -343,10 +343,10 @@ mcmcRun <span class="o">&lt;-</span> mcmc<span class="p">(</span>nbModel<span cl
 </code></pre></div><div class="highlight"><pre><code class="language-r" data-lang="r">col <span class="o">&lt;-</span> <span class="kt">c</span><span class="p">(</span><span class="s">&quot;blue&quot;</span><span class="p">,</span> <span class="s">&quot;red&quot;</span><span class="p">)</span>
 profiles.plot<span class="p">(</span>mcmcRun<span class="p">[,</span> <span class="kt">c</span><span class="p">(</span><span class="s">&quot;lambda0&quot;</span><span class="p">,</span> <span class="s">&quot;lambda1&quot;</span><span class="p">)],</span> col.line <span class="o">=</span> <span class="kp">col</span><span class="p">,</span> las <span class="o">=</span> <span class="m">1</span><span class="p">,</span> legend <span class="o">=</span> <span class="s">&quot;topright&quot;</span><span class="p">)</span>
 </code></pre></div>
-<p><img src="/ilhabela/images/bd/unnamed-chunk-102.png" alt="plot of chunk unnamed-chunk-10"></p>
+<p><img src="/200-r-bootcamp/images/bd/unnamed-chunk-102.png" alt="plot of chunk unnamed-chunk-10"></p>
 <div class="highlight"><pre><code class="language-r" data-lang="r">profiles.plot<span class="p">(</span>mcmcRun<span class="p">[,</span> <span class="kt">c</span><span class="p">(</span><span class="s">&quot;mu0&quot;</span><span class="p">,</span> <span class="s">&quot;mu1&quot;</span><span class="p">)],</span> col.line <span class="o">=</span> <span class="kp">col</span><span class="p">,</span> las <span class="o">=</span> <span class="m">1</span><span class="p">,</span> legend <span class="o">=</span> <span class="s">&quot;topright&quot;</span><span class="p">)</span>
 </code></pre></div>
-<p><img src="/ilhabela/images/bd/unnamed-chunk-103.png" alt="plot of chunk unnamed-chunk-10"></p>
+<p><img src="/200-r-bootcamp/images/bd/unnamed-chunk-103.png" alt="plot of chunk unnamed-chunk-10"></p>
 <div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># looks like speciation rate differs, but not extinction. can we confirm?</span>
 <span class="kp">sum</span><span class="p">(</span>mcmcRun<span class="o">$</span>lambda0 <span class="o">&gt;</span> mcmcRun<span class="o">$</span>lambda1<span class="p">)</span><span class="o">/</span><span class="kp">length</span><span class="p">(</span>mcmcRun<span class="o">$</span>lambda1<span class="p">)</span>
 </code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## [1] 0.875
@@ -427,15 +427,15 @@ isTG
 
   <div class="share-links">
     
-      <a class = "fa fa-facebook" href="https://facebook.com/sharer.php?u=http://lukejharmon.github.io/ilhabela/instruction/2015/06/02/diversification/" rel="nofollow" target="_blank" title="Share on Facebook"></a>
+      <a class = "fa fa-facebook" href="https://facebook.com/sharer.php?u=http://michaelalfaro.github.io/200-r-bootcamp/instruction/2015/06/02/diversification/" rel="nofollow" target="_blank" title="Share on Facebook"></a>
     
 
     
-      <a class="fa fa-twitter" href="https://twitter.com/intent/tweet?text=Diversification models&url=http://lukejharmon.github.io/ilhabela/instruction/2015/06/02/diversification/" rel="nofollow" target="_blank" title="Share on Twitter"></a>
+      <a class="fa fa-twitter" href="https://twitter.com/intent/tweet?text=Diversification models&url=http://michaelalfaro.github.io/200-r-bootcamp/instruction/2015/06/02/diversification/" rel="nofollow" target="_blank" title="Share on Twitter"></a>
     
 
     
-      <a class="fa fa-google-plus" href="https://plus.google.com/share?url=http://lukejharmon.github.io/ilhabela/instruction/2015/06/02/diversification/" rel="nofollow" target="_blank" title="Share on Google+"></a>
+      <a class="fa fa-google-plus" href="https://plus.google.com/share?url=http://michaelalfaro.github.io/200-r-bootcamp/instruction/2015/06/02/diversification/" rel="nofollow" target="_blank" title="Share on Google+"></a>
     
 
     
@@ -458,19 +458,6 @@ isTG
 
 
 
-
-  <div id="disqus_thread"></div>
-  <script type="text/javascript">
-    var disqus_shortname  = 'ilhabelamacro';
-    var disqus_identifier = '/instruction/2015/06/02/diversification';
-
-    (function() {
-      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
-      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
-    })();
-  </script>
-  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 
 
 

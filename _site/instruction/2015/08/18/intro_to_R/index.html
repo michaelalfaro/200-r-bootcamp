@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Introduction to R &#8211; Introduction to R in Ecology and Evolutionary Biology</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="working with R is fun">
+    <meta name="author" content="Michael Alfaro">
+    <meta name="keywords" content="instruction">
+    <link rel="canonical" href="http://michaelalfaro.github.io/200-r-bootcamp/200-r-bootcamp/instruction/2015/08/18/intro_to_R/">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="/200-r-bootcamp/css/pixyll.css" type="text/css">
+
+    <!-- Fonts -->
+    <link href='//fonts.googleapis.com/css?family=Merriweather:900,900italic,300,300italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Lato:900,300' rel='stylesheet' type='text/css'>
+    
+      <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    
+
+
+    <!-- Open Graph -->
+    <!-- From: https://github.com/mmistakes/hpstr-jekyll-theme/blob/master/_includes/head.html -->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Introduction to R">
+    <meta property="og:description" content="Materials for R bootcamp.">
+    <meta property="og:url" content="http://michaelalfaro.github.io/200-r-bootcamp/instruction/2015/08/18/intro_to_R/">
+    <meta property="og:site_name" content="Introduction to R in Ecology and Evolutionary Biology">
+
+    <!-- Icons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-touch-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-touch-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-touch-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-touch-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-touch-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-touch-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-touch-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon-180x180.png">
+    <link rel="icon" type="image/png" href="/favicon-192x192.png" sizes="192x192">
+    <link rel="icon" type="image/png" href="/favicon-160x160.png" sizes="160x160">
+    <link rel="icon" type="image/png" href="/favicon-96x96.png" sizes="96x96">
+    <link rel="icon" type="image/png" href="/favicon-16x16.png" sizes="16x16">
+    <link rel="icon" type="image/png" href="/favicon-32x32.png" sizes="32x32">
+        
+    
+</head>
+
+<body class="">
+  <div class="site-wrap">
+    <header class="site-header px2 px-responsive">
+  <div class="mt2 wrap">
+    <div class="measure">
+      <a href="http://michaelalfaro.github.io/200-r-bootcamp" class="site-title">Introduction to R in Ecology and Evolutionary Biology</a>
+      <nav class="site-nav right">
+        <a href="/200-r-bootcamp/about/">About</a>
+<a href="/200-r-bootcamp/contact/">Contact</a>
+<a href="/200-r-bootcamp/postIndex/">Post index</a>
+
+      </nav>
+      <div class="clearfix"></div>
+      
+        <div class="social-icons">
+  <div class="left">
+    
+      <a class="fa fa-github" href="https://github.com/michaelalfaro"></a>
+    
+    
+    <a class="fa fa-rss" href="/200-r-bootcamp/feed.xml"></a>
+    
+      <a class="fa fa-twitter" href="https://twitter.com/tempoandmode"></a>
+    
+    
+    
+      <a class="fa fa-envelope" href="mailto:michaelalfaro@ucla.edu"></a>
+    
+    
+    
+  </div>
+  <div class="right">
+    
+    
+    
+  </div>
+</div>
+<div class="clearfix"></div>
+
+      
+    </div>
+  </div>
+</header>
+
+
+    <div class="post p2 p-responsive wrap" role="main">
+      <div class="measure">
+        
+
+
+<div class="post-header mb2">
+  <h1>Introduction to R</h1>
+  <span class="post-meta">Aug 18, 2015</span><br>
+  
+</div>
+
+<article class="post-content">
+  <h2 id="getting-started">Getting started</h2>
+
+<p>Welcome to the EEB Quantitative skills bootcamp. This document covers some of aspects of working with data objects that I was not able to cover in class Wednesday. 
+Use setwd() to set your directory.</p>
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="kp">setwd</span><span class="p">(</span><span class="s">&quot;~/Dropbox/bootcamp_examples&quot;</span><span class="p">)</span>
+</code></pre></div>
+<p>And use getwd() to see the working directory.</p>
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="kp">getwd</span><span class="p">()</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## [1] &quot;/Users/michael_alfaro/git/200-r-bootcamp/_drafts&quot;
+</code></pre></div>
+<p>The # character is used to mark comments. R ignores everything after the # to the end of the line</p>
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="m">2</span> <span class="o">+</span> <span class="m">2</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## [1] 4
+</code></pre></div><div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1">#2 + 3</span>
+</code></pre></div>
+<p>R ignores the line 2 + 3 because of the &rsquo;#&rsquo;</p>
+
+<p>R has many options for getting help. You can use the help() function on any function:</p>
+<div class="highlight"><pre><code class="language-r" data-lang="r">help<span class="p">(</span>lm<span class="p">)</span>
+</code></pre></div>
+<p>You can also use &ldquo;?&rdquo; before a function.</p>
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="o">?</span>lm
+</code></pre></div>
+<p>Two question marks (&ldquo;??&rdquo;) tells R to use fuzzy matching on the function name. R will search for functions with names similar to your query in all installed packages. &ldquo;?&rdquo; and &ldquo;??&rdquo; won&rsquo;t evaluate in this document but you should try them at your command prompt to see the help files.</p>
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="o">??</span>lm
+</code></pre></div>
+<p>The c() function combines elements into a vector and is one of the most commonly use functions in R.</p>
+<div class="highlight"><pre><code class="language-r" data-lang="r">grad.school.tips <span class="o">&lt;-</span> <span class="kt">c</span><span class="p">(</span><span class="s">&quot;avoid excel&quot;</span><span class="p">,</span> <span class="s">&quot;use a reference manager&quot;</span><span class="p">,</span> <span class="s">&quot;learn a programming language&quot;</span><span class="p">,</span> <span class="s">&quot;write lots of papers&quot;</span><span class="p">)</span>
+</code></pre></div>
+<p>You can use cat() to print objects to a screen.</p>
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="kp">cat</span><span class="p">(</span>grad.school.tips<span class="p">,</span> sep <span class="o">=</span> <span class="s">&quot;\n&quot;</span><span class="p">)</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## avoid excel
+## use a reference manager
+## learn a programming language
+## write lots of papers
+</code></pre></div>
+<p>install() is used to install new packages:</p>
+<div class="highlight"><pre><code class="language-r" data-lang="r">install.packages<span class="p">(</span><span class="kt">c</span><span class="p">(</span><span class="s">&quot;geiger&quot;</span><span class="p">,</span> <span class="s">&quot;laser&quot;</span><span class="p">),</span> dep <span class="o">=</span> <span class="bp">T</span><span class="p">)</span>
+</code></pre></div>
+<p>As you work in an R session, any variables that you declare will be stored in the session. If you want to see all objects that you have created in you session, use the ls() function.</p>
+<div class="highlight"><pre><code class="language-r" data-lang="r">xx <span class="o">&lt;-</span><span class="m">1000</span>
+<span class="kp">ls</span><span class="p">()</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## [1] &quot;args&quot;             &quot;dir&quot;              &quot;filename&quot;        
+## [4] &quot;grad.school.tips&quot; &quot;output&quot;           &quot;xx&quot;
+</code></pre></div>
+<p>To remove a variable from the workspace, use rm(variable)</p>
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="kp">ls</span><span class="p">()</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## [1] &quot;args&quot;             &quot;dir&quot;              &quot;filename&quot;        
+## [4] &quot;grad.school.tips&quot; &quot;output&quot;           &quot;xx&quot;
+</code></pre></div><div class="highlight"><pre><code class="language-r" data-lang="r"><span class="kp">rm</span><span class="p">(</span>xx<span class="p">)</span>
+<span class="kp">ls</span><span class="p">()</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## [1] &quot;args&quot;             &quot;dir&quot;              &quot;filename&quot;        
+## [4] &quot;grad.school.tips&quot; &quot;output&quot;
+</code></pre></div>
+<p>To remove EVERYTHING, use rm(list = ls()). This passes the contents of ls() to rm() so that everything in the environment is deleted. It is often useful to start your script with this command so that you can be sure that any variables you declare have not been assigned a value already.</p>
+<div class="highlight"><pre><code class="language-r" data-lang="r">xx <span class="o">&lt;-</span> <span class="m">100</span>
+names <span class="o">&lt;-</span> <span class="kt">c</span><span class="p">(</span><span class="s">&quot;magic&quot;</span><span class="p">,</span> <span class="s">&quot;kobe&quot;</span><span class="p">)</span>
+numbers <span class="o">&lt;-</span> runif<span class="p">(</span><span class="m">100</span><span class="p">)</span>
+
+<span class="kp">ls</span><span class="p">()</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## [1] &quot;args&quot;             &quot;dir&quot;              &quot;filename&quot;        
+## [4] &quot;grad.school.tips&quot; &quot;names&quot;            &quot;numbers&quot;         
+## [7] &quot;output&quot;           &quot;xx&quot;
+</code></pre></div><div class="highlight"><pre><code class="language-r" data-lang="r"><span class="kp">rm</span><span class="p">(</span><span class="kt">list</span> <span class="o">=</span> <span class="kp">ls</span><span class="p">())</span>
+<span class="kp">ls</span><span class="p">()</span> <span class="c1">#character(0) means the function has returned an empty value</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## character(0)
+</code></pre></div>
+<p>You can quit R with q(). Caution, q() will quit your R session!</p>
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="kp">q</span><span class="p">()</span>
+<span class="kp">q</span><span class="p">(</span>save <span class="o">=</span> <span class="s">&#39;no&#39;</span><span class="p">)</span>
+</code></pre></div>
+<p>The source() function will load functions and variables from another R script into your R session. This means that you can save and reuse functions that you develop for other projects. </p>
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="kp">getwd</span><span class="p">()</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## [1] &quot;/Users/michael_alfaro/git/200-r-bootcamp/_drafts&quot;
+</code></pre></div><div class="highlight"><pre><code class="language-r" data-lang="r"><span class="kn">source</span><span class="p">(</span><span class="s">&#39;/Users/michaelalfaro/Dropbox/teaching/EEB quantitative skills bootcamp/2014 bootcamp/source.example.R&#39;</span><span class="p">)</span> 
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Warning in file(filename, &quot;r&quot;, encoding = encoding): cannot open file &#39;/
+## Users/michaelalfaro/Dropbox/teaching/EEB quantitative skills bootcamp/2014
+## bootcamp/source.example.R&#39;: No such file or directory
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in file(filename, &quot;r&quot;, encoding = encoding): cannot open the connection
+</code></pre></div><div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1">#make sure the path to the source file is specified correctly (should equal output from getwd())</span>
+all.I.know.about.life.I.learned.in.grad.school<span class="p">()</span> <span class="c1">#a function from the source file</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in eval(expr, envir, enclos): could not find function &quot;all.I.know.about.life.I.learned.in.grad.school&quot;
+</code></pre></div>
+<h2 id="reading-in-files-and-manipulating-data-objects">Reading in files and manipulating data objects</h2>
+
+<p>For this section we are going to work with two kinds of data: a phylogenetic tree, and swimming data for some of the species in this tree. One of the most common tasks you will perform in R will be reading in data and this section should help orient you to ways you can interact with your data objects in the R environment. </p>
+
+<p>The first thing we will do is use read.tree() to  in a phylogenetic tree. readtree() is in the Ape library, so make sure you have that installed. The tree file is a text file that contains informaiton about the tree structure and tip labels in Newick format. Use a text editor to look at this file if you are curious.</p>
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="kn">library</span><span class="p">(</span>ape<span class="p">)</span>
+tt <span class="o">&lt;-</span> read.tree<span class="p">(</span><span class="s">&quot;tree.tre&quot;</span><span class="p">)</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Warning in file(file, &quot;r&quot;): cannot open file &#39;tree.tre&#39;: No such file or
+## directory
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in file(file, &quot;r&quot;): cannot open the connection
+</code></pre></div><div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1">###see elements of an object</span>
+<span class="kp">attributes</span><span class="p">(</span>tt<span class="p">)</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in eval(expr, envir, enclos): object &#39;tt&#39; not found
+</code></pre></div><div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1">###access those elements with $</span>
+tt<span class="o">$</span>tip.label<span class="p">[</span><span class="m">1</span><span class="o">:</span><span class="m">10</span><span class="p">]</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in eval(expr, envir, enclos): object &#39;tt&#39; not found
+</code></pre></div><div class="highlight"><pre><code class="language-r" data-lang="r"><span class="kp">head</span><span class="p">(</span>tt<span class="o">$</span>tip.label<span class="p">)</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in head(tt$tip.label): object &#39;tt&#39; not found
+</code></pre></div>
+<p>This tree is giant!  Lets prune down and plot the pruned tree.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">## Error in inherits(phy, &quot;phylo&quot;): object &#39;tt&#39; not found
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in ladderize(pruned.tree): object &#39;pruned.tree&#39; not found
+</code></pre></div><div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># d contains length data, family, species, order, etc</span>
+dd <span class="o">&lt;-</span> read.table<span class="p">(</span><span class="s">&#39;data.txt&#39;</span><span class="p">,</span> header<span class="o">=</span><span class="bp">T</span><span class="p">,</span> sep<span class="o">=</span><span class="s">&#39;\t&#39;</span><span class="p">,</span> as.is <span class="o">=</span> <span class="bp">T</span><span class="p">);</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Warning in file(file, &quot;rt&quot;): cannot open file &#39;data.txt&#39;: No such file or
+## directory
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in file(file, &quot;rt&quot;): cannot open the connection
+</code></pre></div><div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1">###NOTE: R by default reads character columns as FACTORS. This data structure behaves very differently from a string!  Use as.is = T when reading in data to make R treat these columns as characters.</span>
+
+<span class="c1">###You have just read your data in as a data frame object###</span>
+<span class="c1"># check this with the str() function</span>
+str<span class="p">(</span>dd<span class="p">)</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in str(dd): object &#39;dd&#39; not found
+</code></pre></div><div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># a data frame is a collection of columns where every object within the column vector is the same data type</span>
+<span class="c1">#get the dimensions of a data frame</span>
+<span class="kp">dim</span><span class="p">(</span>dd<span class="p">)</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in eval(expr, envir, enclos): object &#39;dd&#39; not found
+</code></pre></div><div class="highlight"><pre><code class="language-r" data-lang="r">length.dd <span class="o">&lt;-</span> <span class="kp">dim</span><span class="p">(</span>dd<span class="p">)[</span><span class="m">1</span><span class="p">]</span> <span class="c1">#what does this line do?</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in eval(expr, envir, enclos): object &#39;dd&#39; not found
+</code></pre></div><div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1">#dimensions are rows, columns</span>
+<span class="kp">attributes</span><span class="p">(</span>dd<span class="p">)</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in eval(expr, envir, enclos): object &#39;dd&#39; not found
+</code></pre></div>
+<p>Lets create some size data and add it to the data frame</p>
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1">#get 92 random variables</span>
+size <span class="o">&lt;-</span> runif<span class="p">(</span>length.dd<span class="p">)</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in runif(length.dd): object &#39;length.dd&#39; not found
+</code></pre></div><div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1">#you can add columns to an existing data frame with cbind</span>
+<span class="kp">head</span><span class="p">(</span>dd<span class="p">)</span> <span class="c1">#before</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in head(dd): object &#39;dd&#39; not found
+</code></pre></div><div class="highlight"><pre><code class="language-r" data-lang="r">dd<span class="o">&lt;-</span> <span class="kp">cbind</span><span class="p">(</span>dd<span class="p">,</span> size<span class="p">)</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in cbind(dd, size): object &#39;dd&#39; not found
+</code></pre></div><div class="highlight"><pre><code class="language-r" data-lang="r"><span class="kp">head</span><span class="p">(</span>dd<span class="p">)</span> <span class="c1">#after</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in head(dd): object &#39;dd&#39; not found
+</code></pre></div>
+<p>You can use the &ldquo;$&rdquo; operator to acccess rows and head() and tail() check a data frame</p>
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="kp">names</span><span class="p">(</span>dd<span class="p">)</span> <span class="c1">#these are the names of the columns we could access</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in eval(expr, envir, enclos): object &#39;dd&#39; not found
+</code></pre></div><div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1">#dd$species #all the species</span>
+<span class="kp">head</span><span class="p">(</span>dd<span class="o">$</span>species<span class="p">)</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in head(dd$species): object &#39;dd&#39; not found
+</code></pre></div><div class="highlight"><pre><code class="language-r" data-lang="r"><span class="kp">tail</span><span class="p">(</span>dd<span class="o">$</span>species<span class="p">)</span> <span class="c1"># use these functions to check that data has been read into R correctly</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in tail(dd$species): object &#39;dd&#39; not found
+</code></pre></div><div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1">#you can pull out individual columns </span>
+swimming_mode <span class="o">&lt;-</span> dd<span class="o">$</span><span class="kp">mode</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in eval(expr, envir, enclos): object &#39;dd&#39; not found
+</code></pre></div><div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># access values specific values within a dataframe</span>
+dd<span class="p">[</span><span class="m">1</span><span class="p">,</span><span class="m">1</span><span class="p">]</span> <span class="c1"># entry in row 1, column 1</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in eval(expr, envir, enclos): object &#39;dd&#39; not found
+</code></pre></div><div class="highlight"><pre><code class="language-r" data-lang="r">dd<span class="p">[</span><span class="m">1</span><span class="p">,</span><span class="m">2</span><span class="p">]</span> <span class="c1"># entry in row 1, column 2</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in eval(expr, envir, enclos): object &#39;dd&#39; not found
+</code></pre></div><div class="highlight"><pre><code class="language-r" data-lang="r">dd<span class="p">[</span><span class="m">1</span><span class="p">,</span><span class="m">3</span><span class="p">]</span> <span class="c1"># entry in row 1, column 3</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in eval(expr, envir, enclos): object &#39;dd&#39; not found
+</code></pre></div><div class="highlight"><pre><code class="language-r" data-lang="r">dd<span class="p">[</span><span class="m">1</span><span class="p">,]</span> <span class="c1"># row 1, all columns</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in eval(expr, envir, enclos): object &#39;dd&#39; not found
+</code></pre></div><div class="highlight"><pre><code class="language-r" data-lang="r">dd<span class="p">[,</span><span class="m">2</span><span class="p">]</span> <span class="c1"># all rows, column 2</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in eval(expr, envir, enclos): object &#39;dd&#39; not found
+</code></pre></div>
+<p>Naming rows allows you to access a row by name (Note that rownames are a part of a data frame but not a separate cilumn of the data frame)</p>
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="kp">head</span><span class="p">(</span><span class="kp">rownames</span><span class="p">(</span>dd<span class="p">))</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in rownames(dd): object &#39;dd&#39; not found
+</code></pre></div><div class="highlight"><pre><code class="language-r" data-lang="r"><span class="kp">rownames</span><span class="p">(</span>dd<span class="p">)</span> <span class="o">&lt;-</span> dd<span class="o">$</span>species
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in eval(expr, envir, enclos): object &#39;dd&#39; not found
+</code></pre></div><div class="highlight"><pre><code class="language-r" data-lang="r"><span class="kp">head</span><span class="p">(</span><span class="kp">rownames</span><span class="p">)</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">##                                                
+## 1 function (x, do.NULL = TRUE, prefix = &quot;row&quot;) 
+## 2 {                                            
+## 3     dn &lt;- dimnames(x)                        
+## 4     if (!is.null(dn[[1L]]))                  
+## 5         dn[[1L]]                             
+## 6     else {
+</code></pre></div><div class="highlight"><pre><code class="language-r" data-lang="r">str<span class="p">(</span>dd<span class="p">)</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in str(dd): object &#39;dd&#39; not found
+</code></pre></div><div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1"># if you name the columns you can access a row by name</span>
+dd<span class="p">[</span><span class="s">&#39;Pomacentrus_brachialis&#39;</span><span class="p">,]</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in eval(expr, envir, enclos): object &#39;dd&#39; not found
+</code></pre></div>
+<h2 id="a-bit-more-on-subsetting">A bit more on subsetting</h2>
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1">#a bit on subseting</span>
+dd<span class="p">[</span><span class="m">5</span><span class="o">:</span><span class="m">10</span><span class="p">,]</span> <span class="c1"># rows 5-10, all columns</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in eval(expr, envir, enclos): object &#39;dd&#39; not found
+</code></pre></div><div class="highlight"><pre><code class="language-r" data-lang="r">dd<span class="p">[</span><span class="m">5</span><span class="o">:</span><span class="m">10</span><span class="p">,</span><span class="m">3</span><span class="p">]</span> <span class="c1"># rows 5-10, column 3</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in eval(expr, envir, enclos): object &#39;dd&#39; not found
+</code></pre></div><div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1">#if you want only the MPF swimmers, you can use the which() function</span>
+<span class="kp">which</span><span class="p">(</span>dd<span class="o">$</span>mode <span class="o">==</span> <span class="s">&#39;MPF&#39;</span><span class="p">)</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in which(dd$mode == &quot;MPF&quot;): object &#39;dd&#39; not found
+</code></pre></div>
+<p>if we store the results of this which() function we can subset the dataframe to include only MPF swimmwers</p>
+<div class="highlight"><pre><code class="language-r" data-lang="r">mpfs <span class="o">&lt;-</span> <span class="kp">which</span><span class="p">(</span>dd<span class="o">$</span>mode <span class="o">==</span> <span class="s">&#39;MPF&#39;</span><span class="p">)</span> <span class="c1">#stores rows of mpf swimmers</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in which(dd$mode == &quot;MPF&quot;): object &#39;dd&#39; not found
+</code></pre></div><div class="highlight"><pre><code class="language-r" data-lang="r">mpf_swimmers <span class="o">&lt;-</span> dd<span class="p">[</span>mpfs<span class="p">,]</span> <span class="c1">#stored this as a seperate df</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in eval(expr, envir, enclos): object &#39;dd&#39; not found
+</code></pre></div><div class="highlight"><pre><code class="language-r" data-lang="r"><span class="kp">head</span><span class="p">(</span>mpf_swimmers<span class="p">)</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in head(mpf_swimmers): object &#39;mpf_swimmers&#39; not found
+</code></pre></div>
+<p>How would you make dataframe with all of the big (size &gt; 0.9) species only?</p>
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="kp">head</span><span class="p">(</span>dd<span class="p">)</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in head(dd): object &#39;dd&#39; not found
+</code></pre></div><div class="highlight"><pre><code class="language-r" data-lang="r"><span class="kp">which</span><span class="p">(</span>dd<span class="o">$</span>size <span class="o">&gt;</span> <span class="m">0.9</span><span class="p">)</span> <span class="c1">#shows us rosw with large fish in them</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in which(dd$size &gt; 0.9): object &#39;dd&#39; not found
+</code></pre></div>
+<p>so to make a new data frame with the large species only:</p>
+<div class="highlight"><pre><code class="language-r" data-lang="r">big.fish <span class="o">&lt;-</span> dd<span class="p">[</span><span class="kp">which</span><span class="p">(</span>dd<span class="o">$</span>size <span class="o">&gt;</span> <span class="m">0.9</span><span class="p">),]</span> <span class="c1">#remember the , after the which command says &quot;select all columns&quot;</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in eval(expr, envir, enclos): object &#39;dd&#39; not found
+</code></pre></div><div class="highlight"><pre><code class="language-r" data-lang="r"><span class="kp">head</span><span class="p">(</span>big.fish<span class="p">)</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in head(big.fish): object &#39;big.fish&#39; not found
+</code></pre></div>
+<h2 id="removing-nas">Removing NAs</h2>
+
+<p>Sometimes your data frame will include missing values. Often you will want to exclude these rows from the analysis. There are several ways to do this.</p>
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1">#ways to check for NAs</span>
+<span class="kp">head</span><span class="p">(</span>dd<span class="p">)</span> <span class="c1"># there are NAs in the data</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in head(dd): object &#39;dd&#39; not found
+</code></pre></div><div class="highlight"><pre><code class="language-r" data-lang="r"><span class="kp">head</span><span class="p">(</span><span class="kp">is.na</span><span class="p">(</span>dd<span class="p">))</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in head(is.na(dd)): object &#39;dd&#39; not found
+</code></pre></div><div class="highlight"><pre><code class="language-r" data-lang="r"><span class="kp">which</span><span class="p">(</span><span class="kp">is.na</span><span class="p">(</span>dd<span class="o">$</span><span class="kp">mode</span><span class="p">))</span> <span class="c1">#item 2</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in which(is.na(dd$mode)): object &#39;dd&#39; not found
+</code></pre></div><div class="highlight"><pre><code class="language-r" data-lang="r">complete.cases<span class="p">(</span>dd<span class="p">)</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in complete.cases(dd): object &#39;dd&#39; not found
+</code></pre></div>
+<p>In each case notice that the record for glass_fish has an NA for swimming mode. We can remove these missing cases in a variety of way.</p>
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1">#one way to get only complete cases</span>
+
+cleaned_1 <span class="o">&lt;-</span> dd<span class="p">[</span>complete.cases<span class="p">(</span>dd<span class="p">),]</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in eval(expr, envir, enclos): object &#39;dd&#39; not found
+</code></pre></div><div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1">#another</span>
+
+cleaned_2 <span class="o">&lt;-</span> na.omit<span class="p">(</span>dd<span class="p">)</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in na.omit(dd): object &#39;dd&#39; not found
+</code></pre></div><div class="highlight"><pre><code class="language-r" data-lang="r">dd <span class="o">&lt;-</span> cleaned_1
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in eval(expr, envir, enclos): object &#39;cleaned_1&#39; not found
+</code></pre></div>
+<p>Note that we have reassigned the cleaned data set to dd so that dd only includes the complete cases.</p>
+
+<h2 id="renaming-data-frame-entries-and-matching-data-objects">Renaming data frame entries and matching data objects</h2>
+
+<p>You will often need to find common elements between two data sets before you can do an analysis of the data. In our example we have a phylogeny that is taken from one study and a data set on swimming mode that is taken from another. We ultimately would like to perform comaprative evolutionary analyses of using a pruned version of the tree that matches the swimming mode data.</p>
+
+<p>The tree file we have right now is huge and contains many more species than the swimming mode data, so we know that we will have to prune the tree. But how can we be sure that all of the species in the swimming data are represented in the tree? setdiff() is a useful tool for answering this. setdiff() compares two lists and returns the items in the first list that are not present in the second list.  Use the R help function to see more about how this function works and to learn about related functions like intersect(), union(), and setdiff().</p>
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="kp">setdiff</span><span class="p">(</span>dd<span class="o">$</span>species<span class="p">,</span> tt<span class="o">$</span>tip.label<span class="p">)</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in as.vector(x): object &#39;dd&#39; not found
+</code></pre></div>
+<p>OK, it looks like there are 18 species in the swimming data set that don&rsquo;t match the tree. Some of these mismatches are due to spelling errors or taxonomic inconsistnecy between the two data sets. In other instances, the tree includes a species that is closely related to an unsampled species in the data frame, so we can treat that species in the tree as representing the species in the data set. We are going to change the names of some of the species names in the swimming mode data set to take care of this to increase the number of matches between the swimming data and tips in the tree.</p>
+<div class="highlight"><pre><code class="language-r" data-lang="r">dd<span class="o">$</span>species<span class="p">[</span><span class="kp">which</span><span class="p">(</span>dd<span class="o">$</span>species <span class="o">==</span> <span class="s">&#39;Apogon_nigrofasciatus&#39;</span><span class="p">)]</span> <span class="o">&lt;-</span> <span class="s">&#39;Apogon_doederleini&#39;</span> <span class="c1">#same genus</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in dd$species[which(dd$species == &quot;Apogon_nigrofasciatus&quot;)] &lt;- &quot;Apogon_doederleini&quot;: object &#39;dd&#39; not found
+</code></pre></div><div class="highlight"><pre><code class="language-r" data-lang="r">dd<span class="o">$</span>species<span class="p">[</span><span class="kp">which</span><span class="p">(</span>dd<span class="o">$</span>species <span class="o">==</span> <span class="s">&#39;Chaetodon_lunulatus&#39;</span><span class="p">)]</span><span class="o">&lt;-</span><span class="s">&#39;Chaetodon_lunula&#39;</span> <span class="c1">#taxonomic inconsistency</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in dd$species[which(dd$species == &quot;Chaetodon_lunulatus&quot;)] &lt;- &quot;Chaetodon_lunula&quot;: object &#39;dd&#39; not found
+</code></pre></div><div class="highlight"><pre><code class="language-r" data-lang="r">dd<span class="o">$</span>species<span class="p">[</span><span class="kp">which</span><span class="p">(</span>dd<span class="o">$</span>species <span class="o">==</span> <span class="s">&#39;Chaetodon_plebius&#39;</span><span class="p">)]</span><span class="o">&lt;-</span><span class="s">&#39;Chaetodon_plebeius&#39;</span> <span class="c1">#taxonomic inconsistency</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in dd$species[which(dd$species == &quot;Chaetodon_plebius&quot;)] &lt;- &quot;Chaetodon_plebeius&quot;: object &#39;dd&#39; not found
+</code></pre></div><div class="highlight"><pre><code class="language-r" data-lang="r">dd<span class="o">$</span>species<span class="p">[</span><span class="kp">which</span><span class="p">(</span>dd<span class="o">$</span>species <span class="o">==</span> <span class="s">&#39;Chaetodon_rainfordii&#39;</span><span class="p">)]</span><span class="o">&lt;-</span><span class="s">&#39;Chaetodon_rainfordi&#39;</span> <span class="c1">#taxonomic inconsistency</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in dd$species[which(dd$species == &quot;Chaetodon_rainfordii&quot;)] &lt;- &quot;Chaetodon_rainfordi&quot;: object &#39;dd&#39; not found
+</code></pre></div><div class="highlight"><pre><code class="language-r" data-lang="r">dd<span class="o">$</span>species<span class="p">[</span><span class="kp">which</span><span class="p">(</span>dd<span class="o">$</span>species <span class="o">==</span> <span class="s">&#39;Heniochus_singularis&#39;</span><span class="p">)]</span><span class="o">&lt;-</span><span class="s">&#39;Heniochus_pleurotaenia&#39;</span> <span class="c1">#same genus</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in dd$species[which(dd$species == &quot;Heniochus_singularis&quot;)] &lt;- &quot;Heniochus_pleurotaenia&quot;: object &#39;dd&#39; not found
+</code></pre></div><div class="highlight"><pre><code class="language-r" data-lang="r">dd<span class="o">$</span>species<span class="p">[</span><span class="kp">which</span><span class="p">(</span>dd<span class="o">$</span>species <span class="o">==</span> <span class="s">&#39;Amblygobius_decussatus&#39;</span><span class="p">)]</span><span class="o">&lt;-</span><span class="s">&#39;Amblygobius_nocturnus&#39;</span> <span class="c1">#same genus</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in dd$species[which(dd$species == &quot;Amblygobius_decussatus&quot;)] &lt;- &quot;Amblygobius_nocturnus&quot;: object &#39;dd&#39; not found
+</code></pre></div><div class="highlight"><pre><code class="language-r" data-lang="r">dd<span class="o">$</span>species<span class="p">[</span><span class="kp">which</span><span class="p">(</span>dd<span class="o">$</span>species <span class="o">==</span> <span class="s">&#39;Scolopsis_bilineatus&#39;</span><span class="p">)]</span><span class="o">&lt;-</span><span class="s">&#39;Scolopsis_affinis&#39;</span> <span class="c1">#same genus</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in dd$species[which(dd$species == &quot;Scolopsis_bilineatus&quot;)] &lt;- &quot;Scolopsis_affinis&quot;: object &#39;dd&#39; not found
+</code></pre></div><div class="highlight"><pre><code class="language-r" data-lang="r">dd<span class="o">$</span>species<span class="p">[</span><span class="kp">which</span><span class="p">(</span>dd<span class="o">$</span>species <span class="o">==</span> <span class="s">&#39;Sufflamen_chrysopterus&#39;</span><span class="p">)]</span> <span class="o">&lt;-</span> <span class="s">&#39;Sufflamen_chrysopterum&#39;</span> <span class="c1">#taxonomic inconsistency</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in dd$species[which(dd$species == &quot;Sufflamen_chrysopterus&quot;)] &lt;- &quot;Sufflamen_chrysopterum&quot;: object &#39;dd&#39; not found
+</code></pre></div><div class="highlight"><pre><code class="language-r" data-lang="r">dd<span class="o">$</span>species<span class="p">[</span><span class="kp">which</span><span class="p">(</span>dd<span class="o">$</span>species <span class="o">==</span> <span class="s">&#39;Cheilinus_chlorurus&#39;</span><span class="p">)]</span> <span class="o">&lt;-</span><span class="s">&#39;Cheilinus_chlorourus&#39;</span> <span class="c1">#taxonomic inconsistency</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in dd$species[which(dd$species == &quot;Cheilinus_chlorurus&quot;)] &lt;- &quot;Cheilinus_chlorourus&quot;: object &#39;dd&#39; not found
+</code></pre></div><div class="highlight"><pre><code class="language-r" data-lang="r">dd<span class="o">$</span>species<span class="p">[</span><span class="kp">which</span><span class="p">(</span>dd<span class="o">$</span>species <span class="o">==</span> <span class="s">&#39;Cirrhilabrus_punctatus&#39;</span><span class="p">)]</span> <span class="o">&lt;-</span><span class="s">&#39;Cirrhilabrus_lubbocki&#39;</span> <span class="c1">#taxonomic inconsistency</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in dd$species[which(dd$species == &quot;Cirrhilabrus_punctatus&quot;)] &lt;- &quot;Cirrhilabrus_lubbocki&quot;: object &#39;dd&#39; not found
+</code></pre></div><div class="highlight"><pre><code class="language-r" data-lang="r">dd<span class="o">$</span>species<span class="p">[</span><span class="kp">which</span><span class="p">(</span>dd<span class="o">$</span>species <span class="o">==</span> <span class="s">&#39;Oxycheilinus_digrammus&#39;</span><span class="p">)]</span> <span class="o">&lt;-</span><span class="s">&#39;Oxycheilinus_digramma&#39;</span> <span class="c1">#taxonomic inconsistency</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in dd$species[which(dd$species == &quot;Oxycheilinus_digrammus&quot;)] &lt;- &quot;Oxycheilinus_digramma&quot;: object &#39;dd&#39; not found
+</code></pre></div><div class="highlight"><pre><code class="language-r" data-lang="r">dd<span class="o">$</span>species<span class="p">[</span><span class="kp">which</span><span class="p">(</span>dd<span class="o">$</span>species <span class="o">==</span> <span class="s">&#39;Pseudocheilinus_hexataenia&#39;</span><span class="p">)]</span> <span class="o">&lt;-</span><span class="s">&#39;Pseudocheilinus_octotaenia&#39;</span> <span class="c1">#same genus</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in dd$species[which(dd$species == &quot;Pseudocheilinus_hexataenia&quot;)] &lt;- &quot;Pseudocheilinus_octotaenia&quot;: object &#39;dd&#39; not found
+</code></pre></div><div class="highlight"><pre><code class="language-r" data-lang="r">dd<span class="o">$</span>species<span class="p">[</span><span class="kp">which</span><span class="p">(</span>dd<span class="o">$</span>species <span class="o">==</span> <span class="s">&#39;Thalassoma_janseni&#39;</span><span class="p">)]</span> <span class="o">&lt;-</span><span class="s">&#39;Thalassoma_jansenii&#39;</span> <span class="c1">#taxonomic inconsistency</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in dd$species[which(dd$species == &quot;Thalassoma_janseni&quot;)] &lt;- &quot;Thalassoma_jansenii&quot;: object &#39;dd&#39; not found
+</code></pre></div><div class="highlight"><pre><code class="language-r" data-lang="r">dd<span class="o">$</span>species<span class="p">[</span><span class="kp">which</span><span class="p">(</span>dd<span class="o">$</span>species <span class="o">==</span> <span class="s">&#39;Chrysiptera_brownriggi&#39;</span><span class="p">)]</span> <span class="o">&lt;-</span><span class="s">&#39;Chrysiptera_brownriggii&#39;</span> <span class="c1">#taxonomic inconsistency</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in dd$species[which(dd$species == &quot;Chrysiptera_brownriggi&quot;)] &lt;- &quot;Chrysiptera_brownriggii&quot;: object &#39;dd&#39; not found
+</code></pre></div><div class="highlight"><pre><code class="language-r" data-lang="r">dd<span class="o">$</span>species<span class="p">[</span><span class="kp">which</span><span class="p">(</span>dd<span class="o">$</span>species <span class="o">==</span> <span class="s">&#39;Neoglyphidodon_melas?&#39;</span><span class="p">)]</span> <span class="o">&lt;-</span><span class="s">&#39;Neoglyphidodon_melas&#39;</span> <span class="c1">#taxonomic inconsistency</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in dd$species[which(dd$species == &quot;Neoglyphidodon_melas?&quot;)] &lt;- &quot;Neoglyphidodon_melas&quot;: object &#39;dd&#39; not found
+</code></pre></div>
+<p>Let&rsquo;s check the match between the data objects again</p>
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="kp">setdiff</span><span class="p">(</span>dd<span class="o">$</span>species<span class="p">,</span> tt<span class="o">$</span>tip.label<span class="p">)</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in as.vector(x): object &#39;dd&#39; not found
+</code></pre></div>
+<p>The swimming data set still has two species in it that don&rsquo;t match the tree. Let&rsquo;s save that list of unmatched taxa and use it to remove unmatched rows from the dd dataframe.</p>
+<div class="highlight"><pre><code class="language-r" data-lang="r">not.in.tt <span class="o">&lt;-</span><span class="kp">setdiff</span><span class="p">(</span>dd<span class="o">$</span>species<span class="p">,</span> tt<span class="o">$</span>tip.label<span class="p">)</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in as.vector(x): object &#39;dd&#39; not found
+</code></pre></div><div class="highlight"><pre><code class="language-r" data-lang="r">not.in.tt
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in eval(expr, envir, enclos): object &#39;not.in.tt&#39; not found
+</code></pre></div>
+<p>We can use the match() to find the row numbers of the taxa that aren&rsquo;t in the tree and the &ldquo;-&rdquo;  subsetting operator to remove them from the swimming data </p>
+<div class="highlight"><pre><code class="language-r" data-lang="r"><span class="kp">match</span><span class="p">(</span>not.in.tt<span class="p">,</span> <span class="kp">rownames</span><span class="p">(</span>dd<span class="p">))</span> <span class="c1">#row numbers of dd that match not.in.tt</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in match(not.in.tt, rownames(dd)): object &#39;not.in.tt&#39; not found
+</code></pre></div><div class="highlight"><pre><code class="language-r" data-lang="r">dd.pruned <span class="o">&lt;-</span> dd<span class="p">[</span><span class="o">-</span><span class="kp">match</span><span class="p">(</span>not.in.tt<span class="p">,</span> <span class="kp">rownames</span><span class="p">(</span>dd<span class="p">)),]</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in eval(expr, envir, enclos): object &#39;dd&#39; not found
+</code></pre></div><div class="highlight"><pre><code class="language-r" data-lang="r"><span class="c1">###ok now lets check for overlap</span>
+<span class="kp">setdiff</span><span class="p">(</span>dd.pruned<span class="o">$</span>species<span class="p">,</span> tt<span class="o">$</span>tip.label<span class="p">)</span> <span class="c1"># this should produce &quot;character(0)&quot; if empty.</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in as.vector(x): object &#39;dd.pruned&#39; not found
+</code></pre></div>
+<p>Now we&rsquo;ve pruned the data set. How can figure out what tips of the tree to prune? settdiff() again, but this time swtching the order of the arguments</p>
+<div class="highlight"><pre><code class="language-r" data-lang="r">not.in.dd <span class="o">&lt;-</span><span class="kp">setdiff</span><span class="p">(</span>tt<span class="o">$</span>tip.label<span class="p">,</span> dd.pruned<span class="o">$</span>species <span class="p">)</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in as.vector(x): object &#39;tt&#39; not found
+</code></pre></div><div class="highlight"><pre><code class="language-r" data-lang="r"><span class="kp">length</span><span class="p">(</span>not.in.dd<span class="p">)</span> <span class="c1">#this will be a large number because the tree has so many tips!</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in eval(expr, envir, enclos): object &#39;not.in.dd&#39; not found
+</code></pre></div><div class="highlight"><pre><code class="language-r" data-lang="r"><span class="kp">head</span><span class="p">(</span>not.in.dd<span class="p">)</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in head(not.in.dd): object &#39;not.in.dd&#39; not found
+</code></pre></div>
+<p>Now we will use the drop.tip() function from ape to any tip that is in not.in.dd. drop.tip() needs a tree and a list of taxa to be dropped as arguments and returns a pruned tree. Use the help function to verify this.</p>
+<div class="highlight"><pre><code class="language-r" data-lang="r">pruned.tree <span class="o">&lt;-</span> drop.tip<span class="p">(</span>tt<span class="p">,</span> not.in.dd<span class="p">)</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in inherits(phy, &quot;phylo&quot;): object &#39;tt&#39; not found
+</code></pre></div><div class="highlight"><pre><code class="language-r" data-lang="r"><span class="kp">setdiff</span><span class="p">(</span>pruned.tree<span class="o">$</span>tip.label<span class="p">,</span> dd.pruned<span class="o">$</span>species<span class="p">)</span> <span class="c1">#should be &quot;character 0&quot; if these objects match</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in as.vector(x): object &#39;pruned.tree&#39; not found
+</code></pre></div><div class="highlight"><pre><code class="language-r" data-lang="r">plot<span class="p">(</span>pruned.tree<span class="p">,</span> cex <span class="o">=</span> <span class="m">0.5</span><span class="p">)</span>
+</code></pre></div><div class="highlight"><pre><code class="language-text" data-lang="text">## Error in plot(pruned.tree, cex = 0.5): object &#39;pruned.tree&#39; not found
+</code></pre></div>
+<p>We now have a tree and matching data set. You can use setdiff() and match() as shown above to compare your own data files and prune them as needed.</p>
+<div class="highlight"><pre><code class="language-text" data-lang="text">
+</code></pre></div>
+</article>
+
+
+  <div class="share-page">
+  share
+
+  <div class="share-links">
+    
+      <a class = "fa fa-facebook" href="https://facebook.com/sharer.php?u=http://michaelalfaro.github.io/200-r-bootcamp/instruction/2015/08/18/intro_to_R/" rel="nofollow" target="_blank" title="Share on Facebook"></a>
+    
+
+    
+      <a class="fa fa-twitter" href="https://twitter.com/intent/tweet?text=Introduction to R&url=http://michaelalfaro.github.io/200-r-bootcamp/instruction/2015/08/18/intro_to_R/" rel="nofollow" target="_blank" title="Share on Twitter"></a>
+    
+
+    
+      <a class="fa fa-google-plus" href="https://plus.google.com/share?url=http://michaelalfaro.github.io/200-r-bootcamp/instruction/2015/08/18/intro_to_R/" rel="nofollow" target="_blank" title="Share on Google+"></a>
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+  <div class="p2 wrap">
+    <div class="measure mt1 center">
+      <small>
+        Crafted with &lt;3 by <a href="http://johnotander.com">John Otander</a> (<a href="https://twitter.com/4lpine">@4lpine</a>).<br>
+        &lt;/&gt; available on <a href="https://github.com/johnotander/pixyll">Github</a>.
+      </small>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
