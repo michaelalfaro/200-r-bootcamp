@@ -10,7 +10,7 @@ layout: default
 
 ### Wednesday 16 September
 
-- Introduction to R *Lloyd-SMith*
+- Introduction to R *Lloyd-Smith*
 - Flow control in R - *Alfaro*
 - More R
 
