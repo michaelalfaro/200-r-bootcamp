@@ -8,11 +8,15 @@ layout: default
 
 
 
-### Wednesday 1 July
-Travel to Ilhabela.
+### Wednesday 16 September
 
-### Thursday 2 July
-- Introduction to comparative methods [lecture]({{ site.baseurl }}/assets/IntroComparativeMethods_2015_v1.pdf) - *Harmon*
+- Introduction to R *Lloyd-SMith*
+- Flow control in R - *Alfaro*
+- More R
+
+### Thursday 17 September
+
+- plotting in R [lecture]({{ site.baseurl }}/assets/IntroComparativeMethods_2015_v1.pdf) - *Lohmueller*
 - Introduction to basic R [exercise]({{ site.baseurl }}/instruction/2015/07/02/Intro_to_R/) - *Buckner*
 - Introduction to phylogenies in R [exercise]({{ site.baseurl }}/instruction/2015/07/02/introduction-phylogenies-in-R/) - *Revell*
 - Brownian motion and PICs [lecture]({{ site.baseurl }}/assets/BMIntro_2015_v1.pdf) - *Harmon*
