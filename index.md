@@ -30,13 +30,15 @@ This is an intensive, high speed roller coaster type bootcamp that includes sudd
 - R Challenges (committed to github repo by 1:00 PM)
 - Review of programming basics [TBA] *Lloyd Smith*
 - Introduction to dynamic programming [TBA] *Lloyd Smith*
-- Dynamic programming challenges **(committed to github repo by 6:00 PM)**
+- Dynamic programming challenges **(at least one commit to your github repo by 6:00 PM)**
 
 ### Thursday 17 September
 
 - Review [TBA] - *Lohmueller*
 - Plotting in R [TBA] *Lohmueller*
-- Plotting challenges **(committed to github repo by 6:00 PM)**
+- Plotting challenges **(at least one commit to your github repo by 6:00 PM)**
+
+All exercises (final commits) must submitted to your repo by **Thursday, September 24th**
 
 
 ### Datasets and Miscellany
