@@ -25,9 +25,9 @@ This is an intensive, high speed roller coaster type bootcamp that includes sudd
 ### Wednesday 16 September
 
 - Introduction to bootcamp and R [TBA] *Alfaro,  Lloyd-Smith, Lohmueller*
-- Why you love version control [TBA] *Alfaro*
+- Why you love version control [TBA] *Jonathan Chang*
 - Flow control, scripts, functions [TBA] *Alfaro*
-- R Challenges (committed to github repo by 1:00 PM)
+- R Challenges (**at least one commit to your repo by 1:00 PM**)
 - Review of programming basics [TBA] *Lloyd Smith*
 - Introduction to dynamic programming [TBA] *Lloyd Smith*
 - Dynamic programming challenges **(at least one commit to your github repo by 6:00 PM)**
