@@ -23,8 +23,7 @@ This is an intensive, high speed roller coaster type bootcamp that includes sudd
 
 
 ### Wednesday 16 September
-
-- Introduction to bootcamp and R [TBA] *Alfaro,  Lloyd-Smith, Lohmueller*
+- Introduction to bootcamp and R [slides]({{ site.baseurl }}/assets/intro.pdf) *Alfaro,  Lloyd-Smith, Lohmueller*
 - Why you love version control [TBA] *Jonathan Chang*
 - Flow control, scripts, functions [TBA] *Alfaro*
 - [Bootcamp Exercise 1]({{ site.baseurl }}/assets/bootcamp_exercises_1_control.html) (**at least one commit to your repo by 1:00 PM**)
