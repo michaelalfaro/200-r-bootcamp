@@ -27,9 +27,8 @@ This is an intensive, high speed roller coaster type bootcamp that includes sudd
 - Why you love version control [slides]({{ site.baseurl }}/assets/version_control.html) *Jonathan Chang*
 - Flow control, scripts, functions [slides]({{ site.baseurl }}/assets/flow_control_in_R.html) *Alfaro*
 - [Bootcamp Exercise 1]({{ site.baseurl }}/assets/bootcamp_exercises_1_control.html) (**at least one commit to your repo by 1:00 PM**)
-- Review of programming basics [TBA] *Lloyd Smith*
-- Introduction to dynamic programming [TBA] *Lloyd Smith*
-- Dynamic programming challenges **(at least one commit to your github repo by 6:00 PM)**
+- Review of programming basics [pdf]({{ site.baseurl }}/assets/EEB-201-JLS-R-Programming.pdf) *Lloyd Smith*
+- Introduction to dynamic models (with exercises) [handout]({{ site.baseurl }}/assets/bootcamp_intro_to_modeling_2015_HANDOUT.pdf) **(at least one commit to your github repo by 6:00 PM)** *Lloyd Smith*
 
 ### Thursday 17 September
 
