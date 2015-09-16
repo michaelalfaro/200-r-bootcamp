@@ -3,8 +3,8 @@ title:       Introduction to R in Ecology and Evolutionary Biology
 email:       michaelalfaro@ucla.edu
 author:      Michael Alfaro
 description: "Materials for R bootcamp."
-baseurl:     "/200-r-bootcamp"
-url:         "http://michaelalfaro.github.io/200-r-bootcamp"
+baseurl:     "/eeb201"
+url:         "http://michaelalfaro.github.io/eeb201"
 
 # Google analytics
 google_analytics:
