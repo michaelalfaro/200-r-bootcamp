@@ -41,6 +41,12 @@ All exercises (final commits) must submitted to your repo by **Thursday, Septemb
 
 
 ### Datasets and Miscellany
+####for Alfaro's section
+- [data.txt]({{ site.baseurl }}/assets/data.txt)
+- [tree.tre]({{ site.baseurl }}/assets/tree.tre)
+- [source.example.R]({{ site.baseurl }}/assets/source.example.R)
+
+
 
 -[r reference card]({{ site.baseurl }}/assets/refcard.pdf)
 
