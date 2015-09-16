@@ -31,8 +31,6 @@ This is an intensive, high speed roller coaster type bootcamp that includes sudd
 - Introduction to dynamic models (with exercises) [handout]({{ site.baseurl }}/assets/bootcamp_intro_to_modeling_2015_HANDOUT.pdf) **(at least one commit to your github repo by 6:00 PM)** *Lloyd Smith*
 
 ### Thursday 17 September
-
-- Review [TBA] - *Lohmueller*
 - Plotting in R [slides]({{ site.baseurl }}/assets/KEL_plot_slides.comb.2015.pdf) *Lohmueller*
 - Plotting challenges [exercise]({{ site.baseurl }}/assets/Lohmueller_R_homework_plots_gd.2015.pdf) **(at least one commit to your github repo by 6:00 PM)** *Lohmueller*
 - Plotting SNP data [exercise]({{ site.baseurl }}/assets/AnalyzeSNPdata.2015.student.R) **(at least one commit to your github repo by 6:00 PM)** *Lohmueller*
