@@ -54,8 +54,6 @@ All exercises (final commits) must submitted to your repo by **Thursday, Septemb
 ###Miscellany
 -[r reference card]({{ site.baseurl }}/assets/refcard.pdf)
 
-#-[phenotype_data.txt]({{ site.baseurl }}/assets/pheno.sim.2014.txt)
 
-#-[hapmaps.txt]({{ site.baseurl }}/assets/hapmap_CEU_r23a_chr2_ld.txt)
 
 
