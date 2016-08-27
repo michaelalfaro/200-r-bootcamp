@@ -10,7 +10,7 @@ layout: default
 ### Pre Bootcamp workout TESTING
 Welcome to EEB 201, R Bootcamp for Ecology and Evolutionary Biology. The goal of this course is to provide a foundation for skills in scientific programming in the R environment. Check out the syllabus for more details [link].
 
-This is an intensive, high speed roller coaster type bootcamp that includes sudden and dramatic acceleration, climbing, and plotting. To prepare for the course **you must complete the following assignments *before* the workshop begins on September 16th.** These pre-assignments count for 1/3rd of your grade in course.
+This is an intensive, high speed roller coaster type bootcamp that includes sudden and dramatic acceleration, climbing, and plotting. To prepare for the course **you must complete the following assignments *before* the workshop begins on September 14th.** These pre-assignments count for 1/3rd of your grade in course.
 
 - install [github desktop](https://desktop.github.com/) and work through the [getting started](https://help.github.com/desktop/guides/getting-started/) and [contributing to projects](https://help.github.com/desktop/guides/contributing/) tutorials. **Create a github repository for bootcamp assignments.** You will be posting all assignments to this repository and sharing it with the instructors for evaluation.
 - install [R](http://cran.r-project.org/) on your computer  along with the packages APE, GEIGER, and ggplot2. You may wish to install [R studio](https://www.rstudio.com/products/rstudio/download/), a slick IDE for R as well.
@@ -22,15 +22,16 @@ This is an intensive, high speed roller coaster type bootcamp that includes sudd
 
 
 
-### Wednesday 16 September
+### Wednesday 14 September
 - Introduction to bootcamp and R [slides]({{ site.baseurl }}/assets/intro.pdf) *Alfaro,  Lloyd-Smith, Lohmueller*
 - Why you love version control [slides]({{ site.baseurl }}/assets/version_control.html) *Jonathan Chang*
 - Flow control, scripts, functions [slides]({{ site.baseurl }}/assets/flow_control_in_R.html) *Alfaro*
 - [Bootcamp Exercise 1]({{ site.baseurl }}/assets/bootcamp_exercises_1_control.html) (**at least one commit to your repo by 1:00 PM**)
-- Review of programming basics [pdf]({{ site.baseurl }}/assets/EEB-201-JLS-R-Programming.pdf) *Lloyd Smith*
-- Introduction to dynamic models (with exercises) [handout]({{ site.baseurl }}/assets/bootcamp_intro_to_modeling_2015_HANDOUT.pdf) **(at least one commit to your github repo by 6:00 PM)** *Lloyd Smith*
+- Review of programming basics [pdf]({{ site.baseurl }}/assets/EEB-201-JLS-R-Programming.pdf) *TBAh*
 
-### Thursday 17 September
+
+### Thursday 15 September
+- Introduction to dynamic models (with exercises) [handout]({{ site.baseurl }}/assets/bootcamp_intro_to_modeling_2015_HANDOUT.pdf) **(at least one commit to your github repo by 6:00 PM)** *Lloyd Smith*
 - Tips for coding dynamic models [slides]({{ site.baseurl }}/assets/EEB 201-JLS-Intro-to-ODE-models_2015.pdf) *Lloyd Smith*
 - Plotting in R [slides]({{ site.baseurl }}/assets/KEL_plot_slides.comb.2015.pdf) *Lohmueller*
 - Plotting challenges [exercise]({{ site.baseurl }}/assets/Lohmueller_R_homework_plots_gd.2015.pdf) **(at least one commit to your github repo by 6:00 PM)** *Lohmueller*
