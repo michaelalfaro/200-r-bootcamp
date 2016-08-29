@@ -45,7 +45,10 @@ share_stumbleupon: false
 share_hackernews: false
 
 # Build settings
-markdown:     redcarpet
+markdown:     kramdown
+
+#changing from redcarpet to kramdown markdown....
+#https://help.github.com/articles/updating-your-markdown-processor-to-kramdown/
 redcarpet:
   extensions: ['smart', 'tables', 'with_toc_data']
 permalink:    pretty

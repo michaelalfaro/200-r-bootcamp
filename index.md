@@ -27,7 +27,7 @@ This is an intensive, high speed roller coaster type bootcamp that includes sudd
 - Why you love version control [slides]({{ site.baseurl }}/assets/version_control.html) *Jonathan Chang*
 - Flow control, scripts, functions [slides]({{ site.baseurl }}/assets/flow_control_in_R.html) *Alfaro*
 - [Bootcamp Exercise 1]({{ site.baseurl }}/assets/bootcamp_exercises_1_control.html) (**at least one commit to your repo by 1:00 PM**)
-- Review of programming basics [pdf]({{ site.baseurl }}/assets/EEB-201-JLS-R-Programming.pdf) *TBAh*
+- Review of programming basics [pdf]({{ site.baseurl }}/assets/EEB-201-JLS-R-Programming.pdf) *TBA*
 
 
 #### Thursday 15 September
