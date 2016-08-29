@@ -22,7 +22,9 @@ This is an intensive, high speed roller coaster type bootcamp that includes sudd
 
 
 ###Tentative Schedule
+
 #### Wednesday 14 September
+
 - Introduction to bootcamp and R [slides]({{ site.baseurl }}/assets/intro.pdf) *Alfaro,  Lloyd-Smith, Lohmueller*
 - Why you love version control [slides]({{ site.baseurl }}/assets/version_control.html) *Jonathan Chang*
 - Flow control, scripts, functions [slides]({{ site.baseurl }}/assets/flow_control_in_R.html) *Alfaro*
@@ -31,6 +33,7 @@ This is an intensive, high speed roller coaster type bootcamp that includes sudd
 
 
 #### Thursday 15 September
+
 - Introduction to dynamic models (with exercises) [handout]({{ site.baseurl }}/assets/bootcamp_intro_to_modeling_2015_HANDOUT.pdf) **(at least one commit to your github repo by 6:00 PM)** *Lloyd Smith*
 - Tips for coding dynamic models [slides]({{ site.baseurl }}/assets/EEB 201-JLS-Intro-to-ODE-models_2015.pdf) *Lloyd Smith*
 - Plotting in R [slides]({{ site.baseurl }}/assets/KEL_plot_slides.comb.2015.pdf) *Lohmueller*
