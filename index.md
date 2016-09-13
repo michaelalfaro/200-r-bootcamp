@@ -41,7 +41,7 @@ Wednesday, 9/14:
 - 1:30-2:30 Introduction to plotting[slides]({{ site.baseurl }}/assets/KEL_plot_slides.day1.pdf) *Lohmueller*
 - 2:30-5PM Work on assignments
 	- [Bootcamp Exercise 1]({{ site.baseurl }}/assets/bootcamp_exercises_1_control.html) 
-	- [Plotting Exercise 1]({{ site.baseurl }}/assets/bootcamp_exercises_1_control.html) 
+	- [Plotting Exercise 1]({{ site.baseurl }}/assets/Lohmueller_R_homework_exercise1.2016.pdf) 
 
 **(at least two commits to your github repo by 6:00 PM)**
 
@@ -53,7 +53,7 @@ Wednesday, 9/14:
 - 10:30-12:00 Using R for statistical analyses [slides]({{ site.baseurl }}/assets/EEB-R-bootcamp-stats-and-plotting.pdf) [R-code]({{ site.baseurl }}/assets/code-for-lesson.R) *Pinter-Wollman*
 - 12-1:00 Lunch
 - 1-5:00 Work on assignments
-	- [Assignment 2] *Lohmueller* ({{ site.baseurl }}/assets/Lohmueller_R_homework_exercise2.2016.pdf)
+	- [Assignment 2]({{ site.baseurl }}/assets/Lohmueller_R_homework_exercise2.2016.pdf) *Lohmueller*
 		- [hapmaps]({{ site.baseurl }}/assets/hapmap_CEU_r23a_chr2_ld-2.txt)
 		- [phenotypes]({{ site.baseurl }}/assets/pheno.sim.2014-2.txt)
 	- [Assignment 1]({{ site.baseurl }}/assets/exercise.pdf) *Pinter-Wollman*
