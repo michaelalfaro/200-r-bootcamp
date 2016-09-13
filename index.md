@@ -60,14 +60,13 @@ Wednesday, 9/14:
 		- [hapmaps]({{ site.baseurl }}/assets/hapmap_CEU_r23a_chr2_ld-2.txt)
 		- [phenotypes]({{ site.baseurl }}/assets/pheno.sim.2014-2.txt)
 	- [Assignment 1]({{ site.baseurl }}/assets/exercise.pdf) *Pinter-Wollman*
+- Review of programming basics [handout]({{ site.baseurl }}/assets/EEB-201-JLS-R-Programming.pdf) *TBA*
 
 
 **(at least two commits to your github repo by 6:00 PM)**
-	
-- Tips for coding dynamic models [slides]({{ site.baseurl }}/assets/EEB 201-JLS-Intro-to-ODE-models_2015.pdf) *Lloyd Smith*
 
 
-All exercises (final commits) must submitted to your repo by **Thursday, September 24th**
+All exercises (final commits) must submitted to your repo by **Thursday, September 22nd**
 
 
 ### Datasets 
