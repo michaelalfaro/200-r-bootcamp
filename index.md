@@ -21,14 +21,32 @@ This is an intensive, high speed roller coaster type bootcamp that includes sudd
 
 
 
-###Tentative Schedule
+###Less Tentative Schedule
+Wednesday, 9/14:
+9-9:45AM Introductions (of students and instructors)
+10-10:45AM Version control (Mike)
+11-12:30PM Intro to R programming (Mike)
+12:30-1:30PM Lunch
+1:30-2:30PM Basic plotting (Kirk)
+2:30-5PM Work on Assignments (Assignment from Mike; Assignment 1 from Kirk)
+
+Thursday, 9/15:
+9-10AM Analysis of data (Kirk)
+10:30-12:00PM More plotting and stats (Noa)
+12-1PM Lunch
+1-5pm Work on Assignments (Assignment 2 from Kirk; Assignment from Noa).
 
 #### Wednesday 14 September
 
-- Introduction to bootcamp and R [slides]({{ site.baseurl }}/assets/intro.pdf) *Alfaro, Lohmueller, Pinter-Wollman*
-- Why you love version control [slides]({{ site.baseurl }}/assets/version_control.html) *Alfaro*
-- Flow control, scripts, functions [slides]({{ site.baseurl }}/assets/flow_control_in_R.html) *Alfaro*
-- [Bootcamp Exercise 1]({{ site.baseurl }}/assets/bootcamp_exercises_1_control.html) (**at least one commit to your repo by 1:00 PM**)
+- 9-9:45 Introduction to bootcamp and R [slides]({{ site.baseurl }}/assets/intro.pdf) *Alfaro, Lohmueller, Pinter-Wollman*
+- 10-10:45 Why you love version control [slides]({{ site.baseurl }}/assets/version_control.html) *Alfaro*
+- 11-12:30 Flow control, scripts, functions [slides]({{ site.baseurl }}/assets/flow_control_in_R.html) *Alfaro*
+- 12:30-1:30 Lunch
+- 1:30-2:30 Introduction to plotting[slides]({{ site.baseurl }}/assets/KEL_plot_slides.day1.pdf) *Lohmueller*
+- 2:30-5PM Work on assignments
+	- [Bootcamp Exercise 1]({{ site.baseurl }}/assets/bootcamp_exercises_1_control.html) (**at least one commit to your repo by 1:00 PM**)
+	- [Plotting Exercise 1]({{ site.baseurl }}/assets/bootcamp_exercises_1_control.html) (**at least one commit to your repo by 1:00 PM**)
+
 - Review of programming basics [pdf]({{ site.baseurl }}/assets/EEB-201-JLS-R-Programming.pdf) *TBA*
 
 
