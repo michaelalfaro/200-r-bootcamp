@@ -22,19 +22,10 @@ This is an intensive, high speed roller coaster type bootcamp that includes sudd
 
 
 ###Less Tentative Schedule
-Wednesday, 9/14:
-9-9:45AM Introductions (of students and instructors)
-10-10:45AM Version control (Mike)
-11-12:30PM Intro to R programming (Mike)
-12:30-1:30PM Lunch
-1:30-2:30PM Basic plotting (Kirk)
-2:30-5PM Work on Assignments (Assignment from Mike; Assignment 1 from Kirk)
-
-
 
 #### Wednesday 14 September
 
-- 9-9:45 Introduction to bootcamp and R **need to update for 2016** [slides]({{ site.baseurl }}/assets/intro.pdf) *Alfaro, Lohmueller, Pinter-Wollman*
+- 9-9:45 Introduction to bootcamp and R [slides]({{ site.baseurl }}/assets/intro.pdf) *Alfaro, Lohmueller, Pinter-Wollman*
 - 10-10:45 Basic version control [slides]({{ site.baseurl }}/assets/git-overview.pdf) *Alfaro*
 	- [simple guide to git](http://git.huit.harvard.edu/guide/)
 	- [git cheat sheet]({{ site.baseurl }}/assets/git_cheat_sheet.pdf)
@@ -56,10 +47,10 @@ Wednesday, 9/14:
 - 10:30-12:00 Using R for statistical analyses [slides]({{ site.baseurl }}/assets/EEB-R-bootcamp-stats-and-plotting.pdf) [R-code]({{ site.baseurl }}/assets/code-for-lesson.R) *Pinter-Wollman*
 - 12-1:00 Lunch
 - 1-5:00 Work on assignments
-	- [Assignment 2]({{ site.baseurl }}/assets/Lohmueller_R_homework_exercise2.2016.pdf) *Lohmueller*
+	- [Data manipulation exercise ]({{ site.baseurl }}/assets/Lohmueller_R_homework_exercise2.2016.pdf) *Lohmueller*
 		- [hapmaps]({{ site.baseurl }}/assets/hapmap_CEU_r23a_chr2_ld-2.txt)
 		- [phenotypes]({{ site.baseurl }}/assets/pheno.sim.2014-2.txt)
-	- [Assignment 1]({{ site.baseurl }}/assets/exercise.pdf) *Pinter-Wollman*
+	- [Stats and plotting exercise ]({{ site.baseurl }}/assets/exercise.pdf) *Pinter-Wollman*
 - Review of programming basics [handout]({{ site.baseurl }}/assets/EEB-201-JLS-R-Programming.pdf) *TBA*
 
 
