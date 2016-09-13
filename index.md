@@ -34,11 +34,14 @@ Wednesday, 9/14:
 
 #### Wednesday 14 September
 
-- 9-9:45 Introduction to bootcamp and R [slides]({{ site.baseurl }}/assets/intro.pdf) *Alfaro, Lohmueller, Pinter-Wollman*
-- 10-10:45 Why you love version control [slides]({{ site.baseurl }}/assets/version_control.html) *Alfaro*
+- 9-9:45 Introduction to bootcamp and R **need to update for 2016** [slides]({{ site.baseurl }}/assets/intro.pdf) *Alfaro, Lohmueller, Pinter-Wollman*
+- 10-10:45 Basic version control [slides]({{ site.baseurl }}/assets/git-overview.pdf) *Alfaro*
+	- [simple guide to git](http://git.huit.harvard.edu/guide/)
+	- [git cheat sheet]({{ site.baseurl }}/assets/git_cheat_sheet.pdf)
+	- [Jonathan's git intro]({{ site.baseurl }}/assets/version_control.html)
 - 11-12:30 Flow control, scripts, functions [slides]({{ site.baseurl }}/assets/flow_control_in_R.html) *Alfaro*
 - 12:30-1:30 Lunch
-- 1:30-2:30 Introduction to plotting[slides]({{ site.baseurl }}/assets/KEL_plot_slides.day1.pdf) *Lohmueller*
+- 1:30-2:30 Introduction to plotting [slides]({{ site.baseurl }}/assets/KEL_plot_slides.day1.pdf) *Lohmueller*
 - 2:30-5PM Work on assignments
 	- [Bootcamp Exercise 1]({{ site.baseurl }}/assets/bootcamp_exercises_1_control.html) 
 	- [Plotting Exercise 1]({{ site.baseurl }}/assets/Lohmueller_R_homework_exercise1.2016.pdf) 
