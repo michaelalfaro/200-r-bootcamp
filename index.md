@@ -63,7 +63,7 @@ Please visit this [link](http://tinyurl.com/not-pirate-day) to paste the URL to 
 
 - **you must register your URL here if you want course credit!**
 - **(at least two commits to your github repo by 6:00 PM)**
-**(at least two commits to your github repo by 6:00 PM)**
+
 
 
 All exercises (final commits) must submitted to your repo by **Thursday, September 22nd**
