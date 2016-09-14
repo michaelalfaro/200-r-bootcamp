@@ -2,9 +2,6 @@
 layout: default
 ---
 
-<p><font size=1>
-<a href="http://bamm-project.org/_images/xIntroFig_whalerates.png"><img src="http://bamm-project.org/_images/xIntroFig_whalerates.png" alt="diversification rate of cetaceans"></a><br>"<a href="http://bamm-project.org/_images/xIntroFig_whalerates.png">Ilhabela Mar2005 001</a>".</p>
-</font>
 
 ![cichlids]({{ site.baseurl }}/assets/cichlids.jpg) 
 
