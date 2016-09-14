@@ -23,7 +23,7 @@ This is an intensive, high speed roller coaster type bootcamp that includes sudd
 
 ###Schedule
 
-![National Eat a Hoagie Day!](({{ site.baseurl }}/assets/hoagie.png)
+![National Eat a Hoagie Day!]({{ site.baseurl }}/assets/hoagie.png)
 
 ####Location: 1100 Terasaki Life Sciences Building 
 
