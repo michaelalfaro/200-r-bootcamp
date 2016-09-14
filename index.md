@@ -6,6 +6,7 @@ layout: default
 <a href="http://bamm-project.org/_images/xIntroFig_whalerates.png"><img src="http://bamm-project.org/_images/xIntroFig_whalerates.png" alt="diversification rate of cetaceans"></a><br>"<a href="http://bamm-project.org/_images/xIntroFig_whalerates.png">Ilhabela Mar2005 001</a>".</p>
 </font>
 
+![cichlids]({{ site.baseurl }}/assets/cichlids.jpg) 
 
 ### Pre Bootcamp workout
 Welcome to EEB 201, R Bootcamp for Ecology and Evolutionary Biology. The goal of this course is to provide a foundation for skills in scientific programming in the R environment. Check out the syllabus for more details [link].
