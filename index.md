@@ -57,7 +57,7 @@ This is an intensive, high speed roller coaster type bootcamp that includes sudd
 - Review of programming basics [handout]({{ site.baseurl }}/assets/EEB-201-JLS-R-Programming.pdf) *TBA*
 
 ####How to get credit for exercises
-Please visit this [link](http://tinyurl.com/not-pirate-day) to paste the URL to your github repo so we can see you progress.
+Please visit this [link](https://docs.google.com/spreadsheets/d/1IjiDnxPI4X8K6UzL9qT_nC9PNp2eVJtxigJQb7yaZZA/edit?usp=sharing) to paste the URL to your github repo so we can see you progress.
 
 - **you must register your URL here if you want course credit!**
 - **at least two commits to your github repo by 6:00 PM**
