@@ -62,7 +62,7 @@ This is an intensive, high speed roller coaster type bootcamp that includes sudd
 Please visit this [link](http://tinyurl.com/not-pirate-day) to paste the URL to your github repo so we can see you progress.
 
 - **you must register your URL here if you want course credit!**
-- **(at least two commits to your github repo by 6:00 PM)**
+- **at least two commits to your github repo by 6:00 PM**
 
 
 
