@@ -32,7 +32,10 @@ This is an intensive, high speed roller coaster type bootcamp that includes sudd
 	- [simple guide to git](http://git.huit.harvard.edu/guide/)
 	- [git cheat sheet]({{ site.baseurl }}/assets/git_cheat_sheet.pdf)
 	- [Jonathan's git intro]({{ site.baseurl }}/assets/version_control.html)
+	- make OSX remember your git [credentials](https://help.github.com/articles/caching-your-github-password-in-git/)
 - 11-12:30 Flow control, scripts, functions [slides]({{ site.baseurl }}/assets/flow_control_in_R.html) *Alfaro*
+	- pdf of [lecture]({{ site.baseurl }}/assets/flow_control_in_R.pdf)
+	- just the lecture [R code]({{ site.baseurl }}/assets/flow_control_in_R.R)
 - 12:30-1:30 Lunch
 - 1:30-2:30 Introduction to plotting [slides]({{ site.baseurl }}/assets/KEL_plot_slides.day1.pdf) *Lohmueller*
 - 2:30-5PM Work on assignments
