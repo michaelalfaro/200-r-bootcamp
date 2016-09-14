@@ -21,7 +21,9 @@ This is an intensive, high speed roller coaster type bootcamp that includes sudd
 
 
 
-###Less Tentative Schedule
+###Schedule
+
+####Location: 1100 Terasaki Life Sciences Building 
 
 #### Wednesday 14 September
 
@@ -42,7 +44,7 @@ This is an intensive, high speed roller coaster type bootcamp that includes sudd
 - Review of programming basics [pdf]({{ site.baseurl }}/assets/EEB-201-JLS-R-Programming.pdf) *TBA*
 
 
-#### Thursday 15 September
+#### Thursday 15 September 
 - 9-10:00 Working with data [slides]({{ site.baseurl }}/assets/KEL_plot_slides.day2.pdf)  *Lohmueller*
 - 10:30-12:00 Using R for statistical analyses [slides]({{ site.baseurl }}/assets/EEB-R-bootcamp-stats-and-plotting.pdf) [R-code]({{ site.baseurl }}/assets/code-for-lesson.R) *Pinter-Wollman*
 - 12-1:00 Lunch
