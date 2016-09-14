@@ -44,8 +44,6 @@ This is an intensive, high speed roller coaster type bootcamp that includes sudd
 	- [Bootcamp Exercise 1]({{ site.baseurl }}/assets/bootcamp_exercises_1_control.html) 
 	- [Plotting Exercise 1]({{ site.baseurl }}/assets/Lohmueller_R_homework_exercise1.2016.pdf) 
 
-**(at least two commits to your github repo by 6:00 PM)**
-
 - Review of programming basics [pdf]({{ site.baseurl }}/assets/EEB-201-JLS-R-Programming.pdf) *TBA*
 
 
@@ -60,7 +58,11 @@ This is an intensive, high speed roller coaster type bootcamp that includes sudd
 	- [Stats and plotting exercise ]({{ site.baseurl }}/assets/exercise.pdf) *Pinter-Wollman*
 - Review of programming basics [handout]({{ site.baseurl }}/assets/EEB-201-JLS-R-Programming.pdf) *TBA*
 
+####How to get credit for exercises
+Please visit this [link](http://tinyurl.com/not-pirate-day) to paste the URL to your github repo so we can see you progress.
 
+- **you must register your URL here if you want course credit!**
+- **(at least two commits to your github repo by 6:00 PM)**
 **(at least two commits to your github repo by 6:00 PM)**
 
 
