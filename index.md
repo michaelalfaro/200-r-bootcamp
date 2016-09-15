@@ -21,7 +21,7 @@ This is an intensive, high speed roller coaster type bootcamp that includes sudd
 
 ###Schedule
 
-![National Eat a Hoagie Day!]({{ site.baseurl }}/assets/hoagie.png)
+![National Cheese Toast Day!]({{ site.baseurl }}/assets/cheese.png)
 
 ####Location: 1100 Terasaki Life Sciences Building 
 
@@ -46,7 +46,7 @@ This is an intensive, high speed roller coaster type bootcamp that includes sudd
 
 
 #### Thursday 15 September 
-- 9-10:00 Working with data [slides]({{ site.baseurl }}/assets/KEL_plot_slides.day2.pdf)  *Lohmueller*
+- 9-10:00 Working with data [slides]({{ site.baseurl }}/assets/KEL_plot_slides.day2.pdf) [Analyze SNPs R code]({{ site.baseurl }}/assets/AnalyzeSNPdata.2016.student.R) *Lohmueller*
 - 10:30-12:00 Using R for statistical analyses [slides]({{ site.baseurl }}/assets/EEB-R-bootcamp-stats-and-plotting.pdf) [R-code]({{ site.baseurl }}/assets/code-for-lesson.R) *Pinter-Wollman*
 - 12-1:00 Lunch
 - 1-5:00 Work on assignments
