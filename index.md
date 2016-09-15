@@ -47,7 +47,12 @@ This is an intensive, high speed roller coaster type bootcamp that includes sudd
 
 #### Thursday 15 September 
 - 9-10:00 Working with data [slides]({{ site.baseurl }}/assets/KEL_plot_slides.day2.pdf) [Analyze SNPs R code]({{ site.baseurl }}/assets/AnalyzeSNPdata.2016.student.R) *Lohmueller*
-- 10:30-12:00 Using R for statistical analyses [slides]({{ site.baseurl }}/assets/EEB-R-bootcamp-stats-and-plotting.pdf) [R-code]({{ site.baseurl }}/assets/code-for-lesson.R) *Pinter-Wollman*
+- 10:30-12:00 Using R for statistical analyses *Pinter-Wollman*
+
+	- [slides]({{ site.baseurl }}/assets/EEB-R-bootcamp-stats-and-plotting.pdf) 
+	- [R-code]({{ site.baseurl }}/assets/code-for-lesson.R)
+	- [solutions to in class exercises]({{ site.baseurl }}/assets/solutions-pinter.R)
+
 - 12-1:00 Lunch
 - 1-5:00 Work on assignments
 	- [Data manipulation exercise ]({{ site.baseurl }}/assets/Lohmueller_R_homework_exercise2.2016.pdf) *Lohmueller*
@@ -79,7 +84,11 @@ All exercises (final commits) must submitted to your repo by **Thursday, Septemb
 - [plot-examples-source]({{ site.baseurl }}/assets/R_plot_slides.R)
 
 ###Miscellany
--[r reference card]({{ site.baseurl }}/assets/refcard.pdf)
+- [r reference card]({{ site.baseurl }}/assets/refcard.pdf)
+- [r markdown cheat sheet](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf)
+- [dplyr and tidyr reference card](https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf)
+- 
+
 
 
 
