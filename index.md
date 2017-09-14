@@ -8,7 +8,7 @@ layout: default
 ### Pre Bootcamp workout
 Welcome to EEB 201, R Bootcamp for Ecology and Evolutionary Biology. The goal of this course is to provide a foundation for skills in scientific programming in the R environment. Check out the syllabus for more details [link].
 
-This is an intensive, high speed roller coaster type bootcamp that includes sudden and dramatic acceleration, climbing, and plotting. To prepare for the course **you must complete the following assignments *before* the workshop begins on September 14th.** These pre-assignments count for 1/3rd of your grade in course.
+This is an intensive, high speed roller coaster type bootcamp that includes sudden and dramatic acceleration, climbing, and plotting. To prepare for the course **you must complete the following assignments *before* the workshop begins on September 22nd.** These pre-assignments count for 1/3rd of your grade in course.
 
 - install [github desktop](https://desktop.github.com/) and work this tutorial on [version control](http://product.hubspot.com/blog/git-and-github-tutorial-for-beginners). Also have a look at [this intro to git](https://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1/). **Create a github repository for bootcamp assignments.** You will be posting all assignments to this repository and sharing it with the instructors for evaluation.
 - install [R](http://cran.r-project.org/) on your computer  along with the packages APE, GEIGER, and ggplot2. You may wish to install [R studio](https://www.rstudio.com/products/rstudio/download/), a slick IDE for R as well.
