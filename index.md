@@ -13,7 +13,7 @@ This is an intensive, high speed roller coaster type bootcamp that includes sudd
 - install [github desktop](https://desktop.github.com/) and work this tutorial on [version control](http://product.hubspot.com/blog/git-and-github-tutorial-for-beginners). Also have a look at [this intro to git](https://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1/). **Create a github repository for bootcamp assignments.** You will be posting all assignments to this repository and sharing it with the instructors for evaluation.
 - install [R](http://cran.r-project.org/) on your computer  along with the packages APE, GEIGER, and ggplot2. You may wish to install [R studio](https://www.rstudio.com/products/rstudio/download/), a slick IDE for R as well.
 - work through **sections 1-4 and 6** on the [Try R code schools web page](http://tryr.codeschool.com/). This page awards "badges" as you complete sections. Please **use githib to commit screenshots of your badges as you complete your work**. This will give you practice using the git version control workflow and allow us to see you progress through the exercises.
-- Once you have finished the code school exercises,  review sections **1-8** of [this tutorial](https://kingaa.github.io/R_Tutorial/) and work through the exercises in sections **9.1-9.3, 9.6, 11, and 12**. Do this work on a separate day to reinforce your developing programming skills.  **Use your github repo to commit your work.** There should be at least two commits for each group of exercises. 
+- Once you have finished the code school exercises,  review sections **1-8** of [this tutorial](https://kingaa.github.io/R_Tutorial/) and work through as much as possible of the exercises in sections **9.1-9.3, 9.6, 11, and 12**. Do this work on a separate day to reinforce your developing programming skills.  **Use your github repo to commit your work.** There should be at least two commits for each group of exercises. 
 - If you are new to R and/or programming, have a look at [A Beginner's Guide to R](http://link.springer.com/book/10.1007/978-0-387-93837-0), Ch 1,2,3,5,6. **. This book is focused on the R environment and not on statistics and can be a handy reference when you find yourself cursing at R's idiosyncrasies.... 
 
 
@@ -31,11 +31,11 @@ This is an intensive, high speed roller coaster type bootcamp that includes sudd
 
 #### Friday 22nd September
 
-- 9:00AM - 5:00PM QBC Day 1 (LaKretz Garden Pavilion, LGKP)
+- 9:00AM - 5:00PM QBC Day 1 (LaKretz Garden Pavilion, LKGP)
 
 #### Wednesday 27th September
 
-- 9:00AM - 12:00PM QBC Day 2 (LGKP)
+- 9:00AM - 12:00PM QBC Day 2 (LKGP)
 - 1:00PM - 5:00PM QBC Day 2 (TBA)
 
 <!-- - 9-9:45 Introduction to bootcamp and R [slides]({{ site.baseurl }}/assets/intro.pdf) *Alfaro, Lohmueller, Pinter-Wollman*
