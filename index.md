@@ -27,7 +27,7 @@ This is an intensive, high speed roller coaster type bootcamp that includes sudd
 
 #### Thursday 21st September
 
-- 1:00PM - 2:00PM Pre-Bootcamp Pizza Party (Terasaki 1100)
+- 12:00PM - 1:00PM Pre-Bootcamp Pizza Party (Terasaki 1100)
 
 #### Friday 22nd September
 
