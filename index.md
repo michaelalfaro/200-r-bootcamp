@@ -30,26 +30,23 @@ This is an intensive, high speed roller coaster type bootcamp that includes sudd
 - 12:00PM - 1:00PM Pre-Bootcamp Pizza Party (Terasaki 1100)
 
 #### Friday 22nd September
-
-- 9:00AM - 5:00PM QBC Day 1 (LaKretz Garden Pavilion, LKGP)
+- 9-9:45 Introduction to bootcamp and R [slides]({{ site.baseurl }}/assets/intro.pdf) *Alfaro, Lohmueller, Lloyd-Smith*
+- 10-10:45 Flow control, scripts, functions [slides]({{ site.baseurl }}/assets/flow_control_in_R.html) *Alfaro*
+	- pdf of [lecture]({{ site.baseurl }}/assets/flow_control_in_R.pdf)
+	- just the lecture [R code]({{ site.baseurl }}/assets/flow_control_in_R.R)
+- 11:00: 12:00 Introduction to plotting [slides]({{ site.baseurl }}/assets/KEL_plot_slides.day1.2017.pdf) *Lohmueller*
+- 12:30-1:30 Lunch
+- 1:30-5PM Work on assignments
+	- [Bootcamp Exercise 1]({{ site.baseurl }}/assets/bootcamp_exercises_1_control.html) 
+	- [Plotting Exercise 1]({{ site.baseurl }}/assets/Lohmueller_R_homework_exercise1.2017.pdf) 
+- Review of programming basics [pdf]({{ site.baseurl }}/assets/EEB-201-JLS-R-Programming.pdf) *TBA*
 
 #### Wednesday 27th September
 
 - 9:00AM - 12:00PM QBC Day 2 (LKGP)
 - 1:00PM - 5:00PM QBC Day 2 (TBA)
 
-- 9-9:45 Introduction to bootcamp and R [slides]({{ site.baseurl }}/assets/intro.pdf) *Alfaro, Lohmueller, Lloyd-Smith*
-- 10-10:45 Flow control, scripts, functions [slides]({{ site.baseurl }}/assets/flow_control_in_R.html) *Alfaro*
-	- pdf of [lecture]({{ site.baseurl }}/assets/flow_control_in_R.pdf)
-	- just the lecture [R code]({{ site.baseurl }}/assets/flow_control_in_R.R)
 
-- 11:00: 12:00 Introduction to plotting [slides]({{ site.baseurl }}/assets/KEL_plot_slides.day1.2017.pdf) *Lohmueller*
-- 12:30-1:30 Lunch
-- 1:30-5PM Work on assignments
-	- [Bootcamp Exercise 1]({{ site.baseurl }}/assets/bootcamp_exercises_1_control.html) 
-	- [Plotting Exercise 1]({{ site.baseurl }}/assets/Lohmueller_R_homework_exercise1.2017.pdf) 
-
-- Review of programming basics [pdf]({{ site.baseurl }}/assets/EEB-201-JLS-R-Programming.pdf) *TBA*
 
 
 <!-- #### Thursday 15 September 
