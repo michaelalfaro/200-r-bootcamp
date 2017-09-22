@@ -26,7 +26,6 @@ This is an intensive, high speed roller coaster type bootcamp that includes sudd
 ####Location: 1100 Terasaki Life Sciences Building  -->
 
 #### Thursday 21st September
-
 - 12:00PM - 1:00PM Pre-Bootcamp Pizza Party (Terasaki 1100)
 
 #### Friday 22nd September
@@ -39,7 +38,7 @@ This is an intensive, high speed roller coaster type bootcamp that includes sudd
 - 1:30-5PM Work on assignments
 	- [Bootcamp Exercise 1]({{ site.baseurl }}/assets/bootcamp_exercises_1_control.html) 
 	- [Plotting Exercise 1]({{ site.baseurl }}/assets/Lohmueller_R_homework_exercise1.2017.pdf) 
-- Review of programming basics [pdf]({{ site.baseurl }}/assets/EEB-201-JLS-R-Programming.pdf) *TBA*
+<!-- - Review of programming basics [pdf]({{ site.baseurl }}/assets/EEB-201-JLS-R-Programming.pdf) *TBA* -->
 
 #### Wednesday 27th September
 
