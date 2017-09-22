@@ -25,7 +25,7 @@ Two ways!
 Paste the address to your github repository [here](http://tinyurl.com/bootcamp-repos). 
   
 **Version control make Hulk mad!!!**
-Paste and email associated with your Dropbox account [here](https://tinyurl.com/bootcamp-db-emails). Then, once I invite you to the folder, create a subfolder with your assignments.
+Paste an email associated with your Dropbox account [here](https://tinyurl.com/bootcamp-db-emails). Then, once I invite you to the folder, create a subfolder with your assignments.
 
 ### Schedule
 
@@ -84,17 +84,17 @@ All exercises (final commits) must submitted to your repo by **Thursday, Septemb
 
 
 ### Datasets 
-####for Alfaro's section
+#### for Alfaro's section
 - [data.txt]({{ site.baseurl }}/assets/data.txt)
 - [tree.tre]({{ site.baseurl }}/assets/tree.tre)
 - [source.example.R]({{ site.baseurl }}/assets/source.example.R)
 
-####for Lohmueller's sections
+#### for Lohmueller's sections
 - [hapmap-data]({{ site.baseurl }}/assets/hapmap_CEU_r23a_chr2_ld-1.txt)
 - [phenotypic-sim-data]({{ site.baseurl }}/assets/pheno.sim.2014-1.txt)
 - [plot-examples-source]({{ site.baseurl }}/assets/R_plot_slides.R)
 
-###Miscellany
+### Miscellany
 - [r reference card]({{ site.baseurl }}/assets/refcard.pdf)
 - [r markdown cheat sheet](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf)
 - [dplyr and tidyr reference card](https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf)
