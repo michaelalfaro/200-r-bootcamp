@@ -98,7 +98,6 @@ All exercises (final commits) must submitted to your repo by **Thursday, Septemb
 - [r reference card]({{ site.baseurl }}/assets/refcard.pdf)
 - [r markdown cheat sheet](https://www.rstudio.com/wp-content/uploads/2015/02/rmarkdown-cheatsheet.pdf)
 - [dplyr and tidyr reference card](https://www.rstudio.com/wp-content/uploads/2015/02/data-wrangling-cheatsheet.pdf)
-- 
 
 
 
