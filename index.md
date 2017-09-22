@@ -19,10 +19,11 @@ This is an intensive, high speed roller coaster type bootcamp that includes sudd
 
 ### How do I turn my stuff in?
 
-Two ways! 
+Two ways!  
+
 **I have version control working**
 Paste the address to your github repository [here](http://tinyurl.com/bootcamp-repos). 
-
+  
 **Version control make Hulk mad!!!**
 Paste and email associated with your Dropbox account [here](https://tinyurl.com/bootcamp-db-emails). Then, once I invite you to the folder, create a subfolder with your assignments.
 
