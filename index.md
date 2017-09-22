@@ -38,13 +38,8 @@ This is an intensive, high speed roller coaster type bootcamp that includes sudd
 - 9:00AM - 12:00PM QBC Day 2 (LKGP)
 - 1:00PM - 5:00PM QBC Day 2 (TBA)
 
-<!-- - 9-9:45 Introduction to bootcamp and R [slides]({{ site.baseurl }}/assets/intro.pdf) *Alfaro, Lohmueller, Pinter-Wollman*
-- 10-10:45 Basic version control [slides]({{ site.baseurl }}/assets/git-overview.pdf) *Alfaro*
-	- [simple guide to git](http://git.huit.harvard.edu/guide/)
-	- [git cheat sheet]({{ site.baseurl }}/assets/git_cheat_sheet.pdf)
-	- [Jonathan's git intro]({{ site.baseurl }}/assets/version_control.html)
-	- make OSX remember your git [credentials](https://help.github.com/articles/caching-your-github-password-in-git/)
-- 11-12:30 Flow control, scripts, functions [slides]({{ site.baseurl }}/assets/flow_control_in_R.html) *Alfaro*
+- 9-9:45 Introduction to bootcamp and R [slides]({{ site.baseurl }}/assets/intro.pdf) *Alfaro, Lohmueller, Lloyd-Smith*
+- 10-10:45 Flow control, scripts, functions [slides]({{ site.baseurl }}/assets/flow_control_in_R.html) *Alfaro*
 	- pdf of [lecture]({{ site.baseurl }}/assets/flow_control_in_R.pdf)
 	- just the lecture [R code]({{ site.baseurl }}/assets/flow_control_in_R.R)
 - 12:30-1:30 Lunch
@@ -53,7 +48,7 @@ This is an intensive, high speed roller coaster type bootcamp that includes sudd
 	- [Bootcamp Exercise 1]({{ site.baseurl }}/assets/bootcamp_exercises_1_control.html) 
 	- [Plotting Exercise 1]({{ site.baseurl }}/assets/Lohmueller_R_homework_exercise1.2016.pdf) 
 
-- Review of programming basics [pdf]({{ site.baseurl }}/assets/EEB-201-JLS-R-Programming.pdf) *TBA* -->
+- Review of programming basics [pdf]({{ site.baseurl }}/assets/EEB-201-JLS-R-Programming.pdf) *TBA*
 
 
 <!-- #### Thursday 15 September 
