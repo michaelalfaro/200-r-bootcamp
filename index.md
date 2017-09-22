@@ -6,7 +6,7 @@ layout: default
 ![cichlids]({{ site.baseurl }}/assets/cichlids.jpg) 
 
 ### Pre Bootcamp workout
-Welcome to EEB 201, R Bootcamp for Ecology and Evolutionary Biology. The goal of this course is to provide a foundation for skills in scientific programming in the R environment. Check out the syllabus for more details [link].
+Welcome to EEB 201, R Bootcamp for Ecology and Evolutionary Biology. The goal of this course is to provide a foundation for skills in scientific programming in the R environment. Check out the [syllabus]({{ site.baseurl }}EEB_201_Intro_to_R_for_EEB_syllabus.pdf) for more details.
 
 This is an intensive, high speed roller coaster type bootcamp that includes sudden and dramatic acceleration, climbing, and plotting. To prepare for the course **you must complete the following assignments *before* the workshop begins on September 22nd.** These pre-assignments count for 1/3rd of your grade in course.
 
@@ -26,7 +26,7 @@ Paste the address to your github repository [here](http://tinyurl.com/bootcamp-r
 **Version control make Hulk mad!!!**
 Paste and email associated with your Dropbox account [here](https://tinyurl.com/bootcamp-db-emails). Then, once I invite you to the folder, create a subfolder with your assignments.
 
-###Schedule
+### Schedule
 
 <!-- ![National Cheese Toast Day!]({{ site.baseurl }}/assets/cheese.png)
 
