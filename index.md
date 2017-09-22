@@ -17,7 +17,14 @@ This is an intensive, high speed roller coaster type bootcamp that includes sudd
 - If you are new to R and/or programming, have a look at [A Beginner's Guide to R](http://link.springer.com/book/10.1007/978-0-387-93837-0), Ch 1,2,3,5,6. **. This book is focused on the R environment and not on statistics and can be a handy reference when you find yourself cursing at R's idiosyncrasies.... 
 
 
+### How do I turn my stuff in?
 
+Two ways! 
+**I have version control working**
+Paste the address to your github repository [here](http://tinyurl.com/bootcamp-repos). 
+
+**Version control make Hulk mad!!!**
+Paste and email associated with your Dropbox account [here](https://tinyurl.com/bootcamp-db-emails). Then, once I invite you to the folder, create a subfolder with your assignments.
 
 ###Schedule
 
@@ -75,7 +82,7 @@ Please visit this [link](https://docs.google.com/spreadsheets/d/1IjiDnxPI4X8K6Uz
 All exercises (final commits) must submitted to your repo by **Thursday, September 22nd** -->
 
 
-<!-- ### Datasets 
+### Datasets 
 ####for Alfaro's section
 - [data.txt]({{ site.baseurl }}/assets/data.txt)
 - [tree.tre]({{ site.baseurl }}/assets/tree.tre)
@@ -84,7 +91,7 @@ All exercises (final commits) must submitted to your repo by **Thursday, Septemb
 ####for Lohmueller's sections
 - [hapmap-data]({{ site.baseurl }}/assets/hapmap_CEU_r23a_chr2_ld-1.txt)
 - [phenotypic-sim-data]({{ site.baseurl }}/assets/pheno.sim.2014-1.txt)
-- [plot-examples-source]({{ site.baseurl }}/assets/R_plot_slides.R) -->
+- [plot-examples-source]({{ site.baseurl }}/assets/R_plot_slides.R)
 
 ###Miscellany
 - [r reference card]({{ site.baseurl }}/assets/refcard.pdf)
