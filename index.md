@@ -42,11 +42,12 @@ This is an intensive, high speed roller coaster type bootcamp that includes sudd
 - 10-10:45 Flow control, scripts, functions [slides]({{ site.baseurl }}/assets/flow_control_in_R.html) *Alfaro*
 	- pdf of [lecture]({{ site.baseurl }}/assets/flow_control_in_R.pdf)
 	- just the lecture [R code]({{ site.baseurl }}/assets/flow_control_in_R.R)
+
+- 11:00: 12:00 Introduction to plotting [slides]({{ site.baseurl }}/assets/KEL_plot_slides.day1.2017.pdf) *Lohmueller*
 - 12:30-1:30 Lunch
-- 1:30-2:30 Introduction to plotting [slides]({{ site.baseurl }}/assets/KEL_plot_slides.day1.pdf) *Lohmueller*
-- 2:30-5PM Work on assignments
+- 1:30-5PM Work on assignments
 	- [Bootcamp Exercise 1]({{ site.baseurl }}/assets/bootcamp_exercises_1_control.html) 
-	- [Plotting Exercise 1]({{ site.baseurl }}/assets/Lohmueller_R_homework_exercise1.2016.pdf) 
+	- [Plotting Exercise 1]({{ site.baseurl }}/assets/Lohmueller_R_homework_exercise1.2017.pdf) 
 
 - Review of programming basics [pdf]({{ site.baseurl }}/assets/EEB-201-JLS-R-Programming.pdf) *TBA*
 
