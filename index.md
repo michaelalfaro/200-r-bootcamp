@@ -52,8 +52,8 @@ Paste an email associated with your Dropbox account [here](https://tinyurl.com/b
 
 ##### Note room change--both sessions will be in LaKretz 120
 
-- 9:00AM 10:00AM Introduction to modeling [handout]({{ site.baseurl }}/assets/EEB 201-Lloyd-Smith-Introduction-to-modeling-in-R_slides_2017_no_answers.pdf) *Lloyd-Smith*
-- 10:00AM - 11:00AM Working with data [slides]({{ site.baseurl }}/assets/KEL_plot_slides.day2.pdf) [Analyze SNPs R code]({{ site.baseurl }}/assets/AnalyzeSNPdata.2016.student.R) *Lohmueller*
+- 9:00AM 11:00AM Introduction to modeling [handout]({{ site.baseurl }}/assets/EEB 201-Lloyd-Smith-Introduction-to-modeling-in-R_slides_2017_no_answers.pdf) *Lloyd-Smith*
+- 11:00AM - 12:00AM Working with data [slides]({{ site.baseurl }}/assets/KEL_plot_slides.day2.pdf) <!-- [Analyze SNPs R code]({{ site.baseurl }}/assets/AnalyzeSNPdata.2016.student.R) --> *Lohmueller*
 - 12:00PM - 1:00PM Lunch 1100 TLSB
 - 1:00PM - 5:00PM Work on assignments
 	- [Data manipulation exercise ]({{ site.baseurl }}/assets/Lohmueller_R_homework_exercise2.2017.pdf) *Lohmueller*
