@@ -50,8 +50,10 @@ Paste an email associated with your Dropbox account [here](https://tinyurl.com/b
 
 #### Wednesday 27th September
 
-- 9:00AM - 12:00PM QBC Day 2 (LKGP)
-- 1:00PM - 5:00PM QBC Day 2 (TBA)
+##### Note room change--both sessions will be in LaKretz 120
+
+- 9:00AM - 12:00PM QBC Day 2 (LaKretz 120)
+- 1:00PM - 5:00PM QBC Day 2 (LaKretz 120)
 
 
 
@@ -89,10 +91,10 @@ All exercises (final commits) must submitted to your repo by **Thursday, Septemb
 - [tree.tre]({{ site.baseurl }}/assets/tree.tre)
 - [source.example.R]({{ site.baseurl }}/assets/source.example.R)
 
-#### for Lohmueller's sections
+<!-- #### for Lohmueller's sections
 - [hapmap-data]({{ site.baseurl }}/assets/hapmap_CEU_r23a_chr2_ld-1.txt)
 - [phenotypic-sim-data]({{ site.baseurl }}/assets/pheno.sim.2014-1.txt)
-- [plot-examples-source]({{ site.baseurl }}/assets/R_plot_slides.R)
+- [plot-examples-source]({{ site.baseurl }}/assets/R_plot_slides.R) -->
 
 ### Miscellany
 - [r reference card]({{ site.baseurl }}/assets/refcard.pdf)
