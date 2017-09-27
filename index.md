@@ -59,6 +59,7 @@ Paste an email associated with your Dropbox account [here](https://tinyurl.com/b
 	- [Data manipulation exercise ]({{ site.baseurl }}/assets/Lohmueller_R_homework_exercise2.2017.pdf) *Lohmueller*
 		- [hapmaps]({{ site.baseurl }}/assets/hapmap_CEU_r23a_chr2_ld-2.txt)
 		- [phenotypes]({{ site.baseurl }}/assets/pheno.sim.2014-2.txt)
+		- [code examples]({{site.baseurl}}/assets/AnalyzeSNPdata.2017.student.R)
 <!-- - Review of programming basics [handout]({{ site.baseurl }}/assets/EEB-201-JLS-R-Programming.pdf) -->
 
 
