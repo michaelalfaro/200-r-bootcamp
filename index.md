@@ -8,7 +8,7 @@ layout: default
 ### Pre Bootcamp workout
 Welcome to EEB 201, R Bootcamp for Ecology and Evolutionary Biology, 2019 edition. The goal of this course is to provide a foundation for skills in scientific programming in the R environment. Check out the [syllabus]({{ site.baseurl }}/assets/EEB_201_Intro_to_R_for_EEB_syllabus.pdf) for more details.
 
-This is an intensive, high speed roller coaster type bootcamp that includes sudden and dramatic acceleration, climbing, and plotting. To prepare for the course **you must complete the following assignments *before* the workshop begins on September 22nd.** These pre-assignments count for 1/3rd of your grade in course.
+<!-- This is an intensive, high speed roller coaster type bootcamp that includes sudden and dramatic acceleration, climbing, and plotting. To prepare for the course **you must complete the following assignments *before* the workshop begins on September 22nd.** These pre-assignments count for 1/3rd of your grade in course.
 
 - install [github desktop](https://desktop.github.com/) and work this tutorial on [version control](http://product.hubspot.com/blog/git-and-github-tutorial-for-beginners). Also have a look at [this intro to git](https://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1/). **Create a github repository for bootcamp assignments.** You will be posting all assignments to this repository and sharing it with the instructors for evaluation.
 - install [R](http://cran.r-project.org/) on your computer  along with the packages APE, GEIGER, and ggplot2. You may wish to install [R studio](https://www.rstudio.com/products/rstudio/download/), a slick IDE for R as well.
@@ -25,7 +25,7 @@ Two ways!
 Paste the address to your github repository [here](http://tinyurl.com/bootcamp-repos). 
   
 **Version control make Hulk mad!!!**
-Paste an email associated with your Dropbox account [here](https://tinyurl.com/bootcamp-db-emails). Then, once I invite you to the folder, create a subfolder with your assignments.
+Paste an email associated with your Dropbox account [here](https://tinyurl.com/bootcamp-db-emails). Then, once I invite you to the folder, create a subfolder with your assignments. -->
 
 ### Schedule
 
@@ -33,14 +33,19 @@ Paste an email associated with your Dropbox account [here](https://tinyurl.com/b
 
 ####Location: 1100 Terasaki Life Sciences Building  -->
 
-#### Thursday 21st September
+#### Tuesday 17th September
 - 12:00PM - 1:00PM Pre-Bootcamp Pizza Party (Terasaki 1100)
 
-#### Friday 22nd September
-- 9-9:45 Introduction to bootcamp and R [slides]({{ site.baseurl }}/assets/intro.pdf) *Alfaro, Lohmueller, Lloyd-Smith*
-- 10-10:45 Flow control, scripts, functions [slides]({{ site.baseurl }}/assets/flow_control_in_R.html) *Alfaro*
-	- pdf of [lecture]({{ site.baseurl }}/assets/flow_control_in_R.pdf)
-	- just the lecture [R code]({{ site.baseurl }}/assets/flow_control_in_R.R)
+#### Wednesday 18th September
+- 9-10:30 Introduction to bootcamp and R [slides]({{ site.baseurl }}/assets/intro.pdf) *Pinter*
+- 10:30AM - 12:00AM Plotting and working with data [slides]({{ site.baseurl }}/assets/KEL_plot_slides.day2.pdf) [plotting slides]({{ site.baseurl }}/assets/KEL_plot_slides.day1.2017.pdf)<!-- [Analyze SNPs R code]({{ site.baseurl }}/assets/AnalyzeSNPdata.2016.student.R) --> *Lohmueller*
+- 12:00PM - 1:00PM Lunch 1100 TLSB
+- 1:00PM - 5:00PM Work on assignments
+	- [Data manipulation exercise ]({{ site.baseurl }}/assets/Lohmueller_R_homework_exercise2.2017.pdf) *Lohmueller*
+		- [hapmaps]({{ site.baseurl }}/assets/hapmap_CEU_r23a_chr2_ld-2.txt)
+		- [phenotypes]({{ site.baseurl }}/assets/pheno.sim.2014-2.txt)
+		- [code examples]({{site.baseurl}}/assets/AnalyzeSNPdata.2017.student.R)
+
 - 11:00: 12:00 Introduction to plotting [slides]({{ site.baseurl }}/assets/KEL_plot_slides.day1.2017.pdf) *Lohmueller*
 - 12:30-1:30 Lunch
 - 1:30-5PM Work on assignments
@@ -52,14 +57,10 @@ Paste an email associated with your Dropbox account [here](https://tinyurl.com/b
 
 ##### Note room change--both sessions will be in LaKretz 120
 
-- 9:00AM 11:00AM Introduction to modeling [handout]({{ site.baseurl }}/assets/EEB 201-Lloyd-Smith-Introduction-to-modeling-in-R_slides_2017_no_answers.pdf) *Lloyd-Smith*
-- 11:00AM - 12:00AM Working with data [slides]({{ site.baseurl }}/assets/KEL_plot_slides.day2.pdf) <!-- [Analyze SNPs R code]({{ site.baseurl }}/assets/AnalyzeSNPdata.2016.student.R) --> *Lohmueller*
-- 12:00PM - 1:00PM Lunch 1100 TLSB
-- 1:00PM - 5:00PM Work on assignments
-	- [Data manipulation exercise ]({{ site.baseurl }}/assets/Lohmueller_R_homework_exercise2.2017.pdf) *Lohmueller*
-		- [hapmaps]({{ site.baseurl }}/assets/hapmap_CEU_r23a_chr2_ld-2.txt)
-		- [phenotypes]({{ site.baseurl }}/assets/pheno.sim.2014-2.txt)
-		- [code examples]({{site.baseurl}}/assets/AnalyzeSNPdata.2017.student.R)
+- 9:00AM 10:30AM Flow control, scripts, functions [slides]({{ site.baseurl }}/assets/flow_control_in_R.html) *Alfaro*
+	- pdf of [lecture]({{ site.baseurl }}/assets/flow_control_in_R.pdf)
+	- just the lecture [R code]({{ site.baseurl }}/assets/flow_control_in_R.R)
+- 10:30-12:00 Introduction to modeling [handout]({{ site.baseurl }}/assets/EEB 201-Lloyd-Smith-Introduction-to-modeling-in-R_slides_2017_no_answers.pdf) *Lloyd-Smith*
 	- [Modeling exercise]({{site.baseurl}}/assets/EEB 201_Lloyd-Smith_exercises.pdf)
 <!-- - Review of programming basics [handout]({{ site.baseurl }}/assets/EEB-201-JLS-R-Programming.pdf) -->
 
