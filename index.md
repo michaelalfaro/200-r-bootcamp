@@ -6,7 +6,7 @@ layout: default
 ![cichlids]({{ site.baseurl }}/assets/cichlids.jpg) 
 
 ### Pre Bootcamp workout
-Welcome to EEB 201, R Bootcamp for Ecology and Evolutionary Biology, 2019 edition. The goal of this course is to provide a foundation for skills in scientific programming in the R environment. Check out the [syllabus]({{ site.baseurl }}/assets/EEB_201_Intro_to_R_for_EEB_syllabus.pdf) for more details.
+Welcome to EEB 201, R Bootcamp for Ecology and Evolutionary Biology, 2019 edition. The goal of this course is to provide a broad introduction to scientific programming in the R environment. Ideally the skills you begin to develop in this course will be refined over your first year as you take classes in the core series and begin your own research.  Check out the [syllabus]({{ site.baseurl }}/assets/EEB_201_Intro_to_R_for_EEB_syllabus.pdf) for more details.
 
 <!-- This is an intensive, high speed roller coaster type bootcamp that includes sudden and dramatic acceleration, climbing, and plotting. To prepare for the course **you must complete the following assignments *before* the workshop begins on September 22nd.** These pre-assignments count for 1/3rd of your grade in course.
 
@@ -37,25 +37,26 @@ Paste an email associated with your Dropbox account [here](https://tinyurl.com/b
 - 12:00PM - 1:00PM Pre-Bootcamp Pizza Party (Terasaki 1100)
 
 #### Wednesday 18th September
-- 9-10:30 Introduction to bootcamp and R [slides]({{ site.baseurl }}/assets/intro.pdf) *Pinter*
-- 10:30AM - 12:00AM Plotting and working with data [slides]({{ site.baseurl }}/assets/KEL_plot_slides.day2.pdf) [plotting slides]({{ site.baseurl }}/assets/KEL_plot_slides.day1.2017.pdf)<!-- [Analyze SNPs R code]({{ site.baseurl }}/assets/AnalyzeSNPdata.2016.student.R) --> *Lohmueller*
+- 9-10:30 Introduction to bootcamp and R [slides]({{ site.baseurl }}/assets/pinter_intro_slides_2019.pdf) *Pinter*
+	- in class [worksheet]({{ site.baseurl }}/assets/pinter_In_class_worksheet_2019.pdf)
+- 10:30AM - 12:00AM Plotting and working with data [slides]({{ site.baseurl }}/assets/Kirk_bootcamp.2019.combined.pdf) *Lohmueller*
+
 - 12:00PM - 1:00PM Lunch 1100 TLSB
 - 1:00PM - 5:00PM Work on assignments
-	- [Data manipulation exercise ]({{ site.baseurl }}/assets/Lohmueller_R_homework_exercise2.2017.pdf) *Lohmueller*
-		- [hapmaps]({{ site.baseurl }}/assets/hapmap_CEU_r23a_chr2_ld-2.txt)
-		- [phenotypes]({{ site.baseurl }}/assets/pheno.sim.2014-2.txt)
-		- [code examples]({{site.baseurl}}/assets/AnalyzeSNPdata.2017.student.R)
+	- [Plotting and statistics exercise]({{ site.baseurl }}/assets/pinter_after_class_exercise_2019.pdf)
+	- [Data manipulation exercise ]({{ site.baseurl }}/assets/Lohmueller_R_homework_exercise1.2019.pdf) 
+		- [hapmaps]({ site.baseurl }}/assets/hapmap_CEU_r23a_chr2_ld-3.txt)
+		- [phenotypes]({ site.baseurl }}/assets/pheno.sim.2014-3.txt)
+		- [code examples]({{ site.baseurl }}/assets/AnalyzeSNPdata.2019.student.R)
 
-- 11:00: 12:00 Introduction to plotting [slides]({{ site.baseurl }}/assets/KEL_plot_slides.day1.2017.pdf) *Lohmueller*
+<!-- - 11:00: 12:00 Introduction to plotting [slides]({{ site.baseurl }}/assets/KEL_plot_slides.day1.2017.pdf) *Lohmueller*
 - 12:30-1:30 Lunch
 - 1:30-5PM Work on assignments
 	- [Bootcamp Exercise 1]({{ site.baseurl }}/assets/bootcamp_exercises_1_control.html) 
-	- [Plotting Exercise 1]({{ site.baseurl }}/assets/Lohmueller_R_homework_exercise1.2017.pdf) 
+	- [Plotting Exercise 1]({{ site.baseurl }}/assets/Lohmueller_R_homework_exercise1.2017.pdf)  -->
 <!-- - Review of programming basics [pdf]({{ site.baseurl }}/assets/EEB-201-JLS-R-Programming.pdf) *TBA* -->
 
-#### Wednesday 27th September
-
-##### Note room change--both sessions will be in LaKretz 120
+#### Thursday 19th September
 
 - 9:00AM 10:30AM Flow control, scripts, functions [slides]({{ site.baseurl }}/assets/flow_control_in_R.html) *Alfaro*
 	- pdf of [lecture]({{ site.baseurl }}/assets/flow_control_in_R.pdf)
