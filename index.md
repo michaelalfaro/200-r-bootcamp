@@ -46,8 +46,8 @@ Paste an email associated with your Dropbox account [here](https://tinyurl.com/b
 - 1:00PM - 5:00PM Work on assignments
 	- [Plotting and statistics exercise]({{ site.baseurl }}/assets/pinter_after_class_exercise_2019.pdf)
 	- [Data manipulation exercise ]({{ site.baseurl }}/assets/Lohmueller_R_homework_exercise1.2019.pdf) 
-		- [hapmaps]({{ site.baseurl }}/assets/hapmaps.txt)
-		- [phenotypes]({{ site.baseurl }}/assets/pheno.txt)
+<!-- 		- [hapmaps]({{ site.baseurl }}/assets/hapmaps.txt)
+		- [phenotypes]({{ site.baseurl }}/assets/pheno.txt) -->
 		- [code examples]({{ site.baseurl }}/assets/AnalyzeSNPdata.2019.student.R)
 
 <!-- - 11:00: 12:00 Introduction to plotting [slides]({{ site.baseurl }}/assets/KEL_plot_slides.day1.2017.pdf) *Lohmueller*
