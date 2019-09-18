@@ -39,6 +39,7 @@ Paste an email associated with your Dropbox account [here](https://tinyurl.com/b
 #### Wednesday 18th September
 - 9-10:30 Introduction to bootcamp and R [slides]({{ site.baseurl }}/assets/pinter_intro_slides_2019.pdf) *Pinter*
 	- in class [worksheet]({{ site.baseurl }}/assets/pinter_in_class_worksheet_2019.pdf)
+	- [solutions]({{ site.baseurl }}/assets/pinter_in_class_worksheet_solutions.r) to in class work
 - 10:30AM - 12:00AM Plotting and working with data [slides]({{ site.baseurl }}/assets/Kirk_bootcamp.2019.combined.pdf) *Lohmueller*
 
 - 12:00PM - 1:00PM Lunch 1100 TLSB
