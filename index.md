@@ -53,7 +53,7 @@ Paste an email associated with your Dropbox account [here](https://tinyurl.com/b
 <!-- - 11:00: 12:00 Introduction to plotting [slides]({{ site.baseurl }}/assets/KEL_plot_slides.day1.2017.pdf) *Lohmueller*
 - 12:30-1:30 Lunch
 - 1:30-5PM Work on assignments
-	- [Bootcamp Exercise 1]({{ site.baseurl }}/assets/bootcamp_exercises_1_control.html) 
+	- [Bootcamp Exercise 1]({{ site.baseurl }}/assets/bootcamp_exercises_1_control.pdf) 
 	- [Plotting Exercise 1]({{ site.baseurl }}/assets/Lohmueller_R_homework_exercise1.2017.pdf)  -->
 <!-- - Review of programming basics [pdf]({{ site.baseurl }}/assets/EEB-201-JLS-R-Programming.pdf) *TBA* -->
 
@@ -66,8 +66,10 @@ Paste an email associated with your Dropbox account [here](https://tinyurl.com/b
 	- [Modeling exercise]({{site.baseurl}}/assets/EEB 201_Lloyd-Smith_exercises.pdf)
 <!-- - Review of programming basics [handout]({{ site.baseurl }}/assets/EEB-201-JLS-R-Programming.pdf) -->
 
-
-
+- 1:30-5PM Work on assignments
+	- [Flow and control exercises]({{ site.baseurl }}/assets/bootcamp_exercises_1_control.pdf) 
+<!-- 	- [Plotting Exercise 1]({{ site.baseurl }}/assets/Lohmueller_R_homework_exercise1.2017.pdf)  
+ -->
 
 <!-- #### Thursday 15 September 
 - 9-10:00 Working with data [slides]({{ site.baseurl }}/assets/KEL_plot_slides.day2.pdf) [Analyze SNPs R code]({{ site.baseurl }}/assets/AnalyzeSNPdata.2016.student.R) *Lohmueller*
