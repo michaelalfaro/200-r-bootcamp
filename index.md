@@ -62,8 +62,8 @@ Paste an email associated with your Dropbox account [here](https://tinyurl.com/b
 - 9:00AM 10:30AM Flow control, scripts, functions [slides]({{ site.baseurl }}/assets/flow_control_in_R.html) *Alfaro*
 	- pdf of [lecture]({{ site.baseurl }}/assets/flow_control_in_R.pdf)
 	- just the lecture [R code]({{ site.baseurl }}/assets/flow_control_in_R.R)
-- 10:30-12:00 Introduction to modeling [handout]({{ site.baseurl }}/assets/EEB 201-Lloyd-Smith-Introduction-to-modeling-in-R_slides_2017_no_answers.pdf) *Lloyd-Smith*
-	- [Modeling exercise]({{site.baseurl}}/assets/EEB 201_Lloyd-Smith_exercises.pdf)
+- 10:30-12:00 Introduction to modeling [handout]({{ site.baseurl }}/assets/EEB_201_Lloyd_Smith_introduction_to_modeling_in_R_slides.pdf) *Lloyd-Smith*
+	- [Modeling exercise]({{site.baseurl}}/assets/EEB 201_Lloyd-Smith_exercises-1.pdf)
 <!-- - Review of programming basics [handout]({{ site.baseurl }}/assets/EEB-201-JLS-R-Programming.pdf) -->
 
 - 1:30-5PM Work on assignments
