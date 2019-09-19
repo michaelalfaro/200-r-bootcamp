@@ -71,11 +71,7 @@ Paste an email associated with your Dropbox account [here](https://tinyurl.com/b
 	- [Modeling exercise]({{site.baseurl}}/assets/EEB_201_Lloyd-Smith_exercises-1.pdf)
 <!-- 	- [Plotting Exercise 1]({{ site.baseurl }}/assets/Lohmueller_R_homework_exercise1.2017.pdf)  
  -->
- #### How do I turn in my homework?
 
-Please create a **single pdf document** that includes your work for all of the in class and after class exercises. Name the file as "lastname_firstname.pdf". Upload the file to [http://bit.ly/eeb201HW](http://bit.ly/eeb201HW). 
-
-All assignments are due **Friday September 27th by 5:00 PM**.
 <!-- #### Thursday 15 September 
 - 9-10:00 Working with data [slides]({{ site.baseurl }}/assets/KEL_plot_slides.day2.pdf) [Analyze SNPs R code]({{ site.baseurl }}/assets/AnalyzeSNPdata.2016.student.R) *Lohmueller*
 - 10:30-12:00 Using R for statistical analyses *Pinter-Wollman*
@@ -101,7 +97,11 @@ Please visit this [link](https://docs.google.com/spreadsheets/d/1IjiDnxPI4X8K6Uz
 
 
 All exercises (final commits) must submitted to your repo by **Thursday, September 22nd** -->
+#### How do I turn in my homework?
 
+Please create a **single pdf document** that includes your work for all of the in class and after class exercises. Name the file as "lastname_firstname.pdf". Upload the file to [http://bit.ly/eeb201HW](http://bit.ly/eeb201HW). 
+
+All assignments are due **Friday September 27th by 5:00 PM**.
 
 ### Datasets 
 #### for Alfaro's section
