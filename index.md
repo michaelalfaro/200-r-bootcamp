@@ -63,14 +63,19 @@ Paste an email associated with your Dropbox account [here](https://tinyurl.com/b
 	- pdf of [lecture]({{ site.baseurl }}/assets/flow_control_in_R.pdf)
 	- just the lecture [R code]({{ site.baseurl }}/assets/flow_control_in_R.R)
 - 10:30-12:00 Introduction to modeling [handout]({{ site.baseurl }}/assets/EEB_201_Lloyd_Smith_introduction_to_modeling_in_R_slides.pdf) *Lloyd-Smith*
-	- [Modeling exercise]({{site.baseurl}}/assets/EEB 201_Lloyd-Smith_exercises-1.pdf)
+	
 <!-- - Review of programming basics [handout]({{ site.baseurl }}/assets/EEB-201-JLS-R-Programming.pdf) -->
 
 - 1:30-5PM Work on assignments
 	- [Flow and control exercises]({{ site.baseurl }}/assets/bootcamp_exercises_1_control.pdf) 
+	- [Modeling exercise]({{site.baseurl}}/assets/EEB_201_Lloyd-Smith_exercises-1.pdf)
 <!-- 	- [Plotting Exercise 1]({{ site.baseurl }}/assets/Lohmueller_R_homework_exercise1.2017.pdf)  
  -->
+ #### How do I turn in my homework?
 
+Please create a **single pdf document** that includes your work for all of the in class and after class exercises. Name the file as "lastname_firstname.pdf". Upload the file to [http://bit.ly/eeb201HW](http://bit.ly/eeb201HW). 
+
+All assignments are due **Friday September 27th by 5:00 PM**.
 <!-- #### Thursday 15 September 
 - 9-10:00 Working with data [slides]({{ site.baseurl }}/assets/KEL_plot_slides.day2.pdf) [Analyze SNPs R code]({{ site.baseurl }}/assets/AnalyzeSNPdata.2016.student.R) *Lohmueller*
 - 10:30-12:00 Using R for statistical analyses *Pinter-Wollman*
