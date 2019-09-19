@@ -64,39 +64,10 @@ Paste an email associated with your Dropbox account [here](https://tinyurl.com/b
 	- just the lecture [R code]({{ site.baseurl }}/assets/flow_control_in_R.R)
 - 10:30-12:00 Introduction to modeling [handout]({{ site.baseurl }}/assets/EEB_201_Lloyd_Smith_introduction_to_modeling_in_R_slides.pdf) *Lloyd-Smith*
 	
-<!-- - Review of programming basics [handout]({{ site.baseurl }}/assets/EEB-201-JLS-R-Programming.pdf) -->
-
 - 1:30-5PM Work on assignments
 	- [Flow and control exercises]({{ site.baseurl }}/assets/bootcamp_exercises_1_control.pdf) 
 	- [Modeling exercise]({{site.baseurl}}/assets/EEB_201_Lloyd-Smith_exercises-1.pdf)
-<!-- 	- [Plotting Exercise 1]({{ site.baseurl }}/assets/Lohmueller_R_homework_exercise1.2017.pdf)  
- -->
 
-<!-- #### Thursday 15 September 
-- 9-10:00 Working with data [slides]({{ site.baseurl }}/assets/KEL_plot_slides.day2.pdf) [Analyze SNPs R code]({{ site.baseurl }}/assets/AnalyzeSNPdata.2016.student.R) *Lohmueller*
-- 10:30-12:00 Using R for statistical analyses *Pinter-Wollman*
-
-	- [slides]({{ site.baseurl }}/assets/EEB-R-bootcamp-stats-and-plotting.pdf) 
-	- [R-code]({{ site.baseurl }}/assets/code-for-lesson.R)
-	- [solutions to in class exercises]({{ site.baseurl }}/assets/solutions-pinter.R)
-
-- 12-1:00 Lunch
-- 1-5:00 Work on assignments
-	- [Data manipulation exercise ]({{ site.baseurl }}/assets/Lohmueller_R_homework_exercise2.2017.pdf) *Lohmueller*
-		- [hapmaps]({{ site.baseurl }}/assets/hapmap_CEU_r23a_chr2_ld-2.txt)
-		- [phenotypes]({{ site.baseurl }}/assets/pheno.sim.2014-2.txt)
-	- [Stats and plotting exercise ]({{ site.baseurl }}/assets/exercise.pdf) *Pinter-Wollman*
-- Review of programming basics [handout]({{ site.baseurl }}/assets/EEB-201-JLS-R-Programming.pdf) *TBA*
-
-####How to get credit for exercises
-Please visit this [link](https://docs.google.com/spreadsheets/d/1IjiDnxPI4X8K6UzL9qT_nC9PNp2eVJtxigJQb7yaZZA/edit?usp=sharing) to paste the URL to your github repo so we can see you progress.
-
-- **you must register your URL here if you want course credit!**
-- **at least two commits to your github repo by 6:00 PM**
-
-
-
-All exercises (final commits) must submitted to your repo by **Thursday, September 22nd** -->
 #### How do I turn in my homework?
 
 Please create a **single pdf document** that includes your work for all of the in class and after class exercises. Name the file as "lastname_firstname.pdf". Upload the file to [http://bit.ly/eeb201HW](http://bit.ly/eeb201HW). 
