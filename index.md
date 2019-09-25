@@ -34,7 +34,7 @@ Paste an email associated with your Dropbox account [here](https://tinyurl.com/b
 ####Location: 1100 Terasaki Life Sciences Building  -->
 
 #### Tuesday 17th September
-- 12:00PM - 1:00PM Pre-Bootcamp Pizza Party (Terasaki 1100)
+- 12:00PM - 1:00PM Pre-Bootcamp Panera Party (Terasaki 1100)
 
 #### Wednesday 18th September
 - 9-10:30 Introduction to bootcamp and R [slides]({{ site.baseurl }}/assets/pinter_intro_slides_2019.pdf) *Pinter*
@@ -71,6 +71,8 @@ Paste an email associated with your Dropbox account [here](https://tinyurl.com/b
 #### How do I turn in my homework?
 
 Please create a **single pdf document** that includes your work for all of the in class and after class exercises. Name the file as "lastname_firstname.pdf". Upload the file to [http://bit.ly/eeb201HW](http://bit.ly/eeb201HW). 
+
+**You may need to use this email link to upload your assignments" [EEB201_.oobmqv9jdy4ism0y@u.box.com](EEB201_.oobmqv9jdy4ism0y@u.box.com)**
 
 All assignments are due **Friday September 27th by 5:00 PM**.
 
