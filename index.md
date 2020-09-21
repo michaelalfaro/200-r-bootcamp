@@ -8,6 +8,11 @@ layout: default
 ### Pre Bootcamp workout
 Welcome to EEB 201, R Bootcamp for Ecology and Evolutionary Biology, 2020 Zoom edition. The goal of this course is to provide a broad introduction to scientific programming in the R environment. Ideally the skills you begin to develop in this course will be refined over your first year as you take classes in the core series and begin your own research.  Check out the [syllabus]({{ site.baseurl }}/assets/EEB_201_syllabus_2020.pdf) for more details.
 
+#### Preparation
+To get things started, we would like you to get R installed and complete some of an interactive R course. We will use a great learning system called Swirl (http://swirlstats.com/).  Mysteriously, that website has been down for the past few days... if it remains down, then you can access the content via the swirl github repository or via an internet archive such as the Wayback machine.  If you are new to R, then the archived version of the full site might be a bit friendlier since it gives instructions on installing R and RStudio to get started (via the Learn tab). 
+ 
+Once you have R and RStudio installed, please install Swirl, start it, and follow the instructions to install the 'R programming E' course.   We would like you to complete Lessons 1-9 and 15 in this online course, before Sept 22 when our course begins.  Please take and save screen shots at the end of each lesson to document that you have completed the exercises.  Feel free to explore further, with this course or any of the huge variety of other courses offered within Swirl.  Please let us know if you have any difficulties with the install.
+
 <!-- This is an intensive, high speed roller coaster type bootcamp that includes sudden and dramatic acceleration, climbing, and plotting. To prepare for the course **you must complete the following assignments *before* the workshop begins on September 22nd.** These pre-assignments count for 1/3rd of your grade in course.
 
 - install [github desktop](https://desktop.github.com/) and work this tutorial on [version control](http://product.hubspot.com/blog/git-and-github-tutorial-for-beginners). Also have a look at [this intro to git](https://readwrite.com/2013/09/30/understanding-github-a-journey-for-beginners-part-1/). **Create a github repository for bootcamp assignments.** You will be posting all assignments to this repository and sharing it with the instructors for evaluation.
@@ -29,18 +34,25 @@ Paste an email associated with your Dropbox account [here](https://tinyurl.com/b
 
 ### Schedule
 
+The course sessions will be held across four days, Sept 22, 23, 29, and 30.  Each day, there will be a Zoom instruction session in the morning from 9:30 until roughly 11:30, and there will be an online support/co-working session in the afternoon to work on the assigned exercises with your peers.  These sessions will be supported by current EEB grad students and postdocs, and they are intended to be a supportive and friendly way to get your questions answered.  Timing on the afternoon sessions is TBD, but they are informal and you can step out for a while if you need to, so feel free to schedule committee meetings on these afternoons. 
+ 
+The purpose of the bootcamp is to get you up and running with R, and to teach you some basic programming.  We don't expect any background knowledge (beyond what you learn from the assigned prep work), and we are not evaluating or judging you.  It will be a supportive and inclusive environment, with the sole purpose of giving you a boost in your graduate work.  We will ask you to complete and submit some exercises, since this is very much a 'learn by doing' topic, but we are not assigning letter grades.  
+
 <!-- ![National Cheese Toast Day!]({{ site.baseurl }}/assets/cheese.png)
 
 ####Location: 1100 Terasaki Life Sciences Building  -->
 
-#### Tuesday 17th September
-- 12:00PM - 1:00PM Pre-Bootcamp Panera Party (Terasaki 1100)
+#### Tuesday 22th September
+- 9:30AM - 10:00AM Introduction to R and Overview of Course
+- 10:00AM - 11:30AM Flow control, scripts, functions [slides]({{ site.baseurl }}/assets/flow_control_in_R.html) *Alfaro*
+	- pdf of [lecture]({{ site.baseurl }}/assets/flow_control_in_R.pdf)
+	- just the lecture [R code]({{ site.baseurl }}/assets/flow_control_in_R.R)
 
-#### Wednesday 18th September
-- 9-10:30 Introduction to bootcamp and R [slides]({{ site.baseurl }}/assets/pinter_intro_slides_2019.pdf) *Pinter*
-	- in class [worksheet]({{ site.baseurl }}/assets/pinter_in_class_worksheet_2019.pdf)
-	- [solutions]({{ site.baseurl }}/assets/pinter_in_class_worksheet_solutions.r) to in class work
-- 10:30AM - 12:00AM Plotting and working with data [slides]({{ site.baseurl }}/assets/Kirk_bootcamp.2019.combined.pdf) *Lohmueller*
+#### Wednesday 23rd September
+- 9-10:30 Introduction Basic Statistics and Plotting in R [slides]({{ site.baseurl }}/assets/Noa_slides_2020.pdf) *Pinter*
+	- in class [worksheet]({{ site.baseurl }}/assets/pinter_worksheet_2020.pdf)
+	- [exercise]({{ site.baseurl }}/assets/pinter_exercise.pdf) for in class work
+<!-- - 10:30AM - 12:00AM Plotting and working with data [slides]({{ site.baseurl }}/assets/Kirk_bootcamp.2019.combined.pdf) *Lohmueller*
 
 - 12:00PM - 1:00PM Lunch 1100 TLSB
 - 1:00PM - 5:00PM Work on assignments
@@ -48,7 +60,7 @@ Paste an email associated with your Dropbox account [here](https://tinyurl.com/b
 	- [Data manipulation exercise ]({{ site.baseurl }}/assets/Lohmueller_R_homework_exercise1.2019.pdf) 
 		- [hapmaps]({{ site.baseurl }}/assets/hapmaps.txt)
 		- [phenotypes]({{ site.baseurl }}/assets/pheno.txt)
-		- [code examples]({{ site.baseurl }}/assets/AnalyzeSNPdata.2019.student.R)
+		- [code examples]({{ site.baseurl }}/assets/AnalyzeSNPdata.2019.student.R) -->
 
 <!-- - 11:00: 12:00 Introduction to plotting [slides]({{ site.baseurl }}/assets/KEL_plot_slides.day1.2017.pdf) *Lohmueller*
 - 12:30-1:30 Lunch
@@ -57,16 +69,20 @@ Paste an email associated with your Dropbox account [here](https://tinyurl.com/b
 	- [Plotting Exercise 1]({{ site.baseurl }}/assets/Lohmueller_R_homework_exercise1.2017.pdf)  -->
 <!-- - Review of programming basics [pdf]({{ site.baseurl }}/assets/EEB-201-JLS-R-Programming.pdf) *TBA* -->
 
-#### Thursday 19th September
+#### Tuesday 29th September
 
-- 9:00AM 10:30AM Flow control, scripts, functions [slides]({{ site.baseurl }}/assets/flow_control_in_R.html) *Alfaro*
-	- pdf of [lecture]({{ site.baseurl }}/assets/flow_control_in_R.pdf)
-	- just the lecture [R code]({{ site.baseurl }}/assets/flow_control_in_R.R)
-- 10:30-12:00 Introduction to modeling [handout]({{ site.baseurl }}/assets/EEB_201_Lloyd_Smith_introduction_to_modeling_in_R_slides.pdf) *Lloyd-Smith*
+TBA
+
+#### Thursday 30th September
+
+TBA
+
+
+<!-- - 10:30-12:00 Introduction to modeling [handout]({{ site.baseurl }}/assets/EEB_201_Lloyd_Smith_introduction_to_modeling_in_R_slides.pdf) *Lloyd-Smith*
 	
 - 1:30-5PM Work on assignments
 	- [Flow and control exercises]({{ site.baseurl }}/assets/bootcamp_exercises_1_control.pdf) 
-	- [Modeling exercise]({{site.baseurl}}/assets/EEB_201_Lloyd-Smith_exercises-1.pdf)
+	- [Modeling exercise]({{site.baseurl}}/assets/EEB_201_Lloyd-Smith_exercises-1.pdf) -->
 
 #### How do I turn in my homework?
 
