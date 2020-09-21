@@ -52,22 +52,14 @@ The purpose of the bootcamp is to get you up and running with R, and to teach yo
 - 9-10:30 Introduction Basic Statistics and Plotting in R [slides]({{ site.baseurl }}/assets/Noa_slides_2020.pdf) *Pinter*
 	- in class [worksheet]({{ site.baseurl }}/assets/pinter_worksheet_2020.pdf)
 	- [exercise]({{ site.baseurl }}/assets/pinter_exercise.pdf) for in class work
-<!-- - 10:30AM - 12:00AM Plotting and working with data [slides]({{ site.baseurl }}/assets/Kirk_bootcamp.2019.combined.pdf) *Lohmueller*
 
-- 12:00PM - 1:00PM Lunch 1100 TLSB
-- 1:00PM - 5:00PM Work on assignments
-	- [Plotting and statistics exercise]({{ site.baseurl }}/assets/pinter_after_class_exercise_2019.pdf)
-	- [Data manipulation exercise ]({{ site.baseurl }}/assets/Lohmueller_R_homework_exercise1.2019.pdf) 
-		- [hapmaps]({{ site.baseurl }}/assets/hapmaps.txt)
-		- [phenotypes]({{ site.baseurl }}/assets/pheno.txt)
-		- [code examples]({{ site.baseurl }}/assets/AnalyzeSNPdata.2019.student.R) -->
 
-<!-- - 11:00: 12:00 Introduction to plotting [slides]({{ site.baseurl }}/assets/KEL_plot_slides.day1.2017.pdf) *Lohmueller*
-- 12:30-1:30 Lunch
-- 1:30-5PM Work on assignments
-	- [Bootcamp Exercise 1]({{ site.baseurl }}/assets/bootcamp_exercises_1_control.pdf) 
-	- [Plotting Exercise 1]({{ site.baseurl }}/assets/Lohmueller_R_homework_exercise1.2017.pdf)  -->
-<!-- - Review of programming basics [pdf]({{ site.baseurl }}/assets/EEB-201-JLS-R-Programming.pdf) *TBA* -->
+
+
+
+
+
+
 
 #### Tuesday 29th September
 
@@ -90,7 +82,7 @@ Please create a **single pdf document** that includes your work for all of the i
 
 **You may need to use this email link to upload your assignments" [EEB201_.oobmqv9jdy4ism0y@u.box.com](EEB201_.oobmqv9jdy4ism0y@u.box.com)**
 
-All assignments are due **Friday September 27th by 5:00 PM**.
+All assignments are due **Friday October 9th by 5:00 PM**.
 
 ### Datasets 
 #### for Alfaro's section
