@@ -3,7 +3,14 @@ layout: default
 ---
 
 
+
 ![cichlids]({{ site.baseurl }}/assets/butterfly.png) 
+
+## IMPORTANT LINKS
+
+[zoom link](https://ucla.zoom.us/j/99308854625?pwd=TWRVaTNRMFhHcXpKOFk3MURWR3pwQT09) for **morning lecture**.
+
+[zoom link](https://ucla.zoom.us/j/99468859973?pwd=VVJXYi9sRTNBSnplc0xEakJGMkhBQT09) for **afternoon problem set session**.
 
 ### Pre Bootcamp workout
 Welcome to EEB 201, R Bootcamp for Ecology and Evolutionary Biology, 2020 Zoom edition. The goal of this course is to provide a broad introduction to scientific programming in the R environment. Ideally the skills you begin to develop in this course will be refined over your first year as you take classes in the core series and begin your own research.  Check out the [syllabus]({{ site.baseurl }}/assets/EEB_201_syllabus_2020.pdf) for more details.
