@@ -8,7 +8,7 @@ layout: default
 
 ## IMPORTANT LINKS
 
-[zoom link](https://ucla.zoom.us/j/99308854625?pwd=TWRVaTNRMFhHcXpKOFk3MURWR3pwQT09) for **morning lecture**.
+[zoom link](https://ucla.zoom.us/j/96523371265) for **Noa's morning lecture**.
 
 [zoom link](https://ucla.zoom.us/j/99468859973?pwd=VVJXYi9sRTNBSnplc0xEakJGMkhBQT09) for **afternoon problem set session**.
 
@@ -57,7 +57,7 @@ The purpose of the bootcamp is to get you up and running with R, and to teach yo
 	- [exercise]({{site.baseurl}}/assets/bootcamp_exercises_1_control.pdf)
 
 #### Wednesday 23rd September
-- 9-10:30 Introduction Basic Statistics and Plotting in R [slides]({{ site.baseurl }}/assets/Noa_slides_2020.pdf) *Pinter*
+- 9:30-11:00 Introduction Basic Statistics and Plotting in R [slides]({{ site.baseurl }}/assets/Noa_slides_2020.pdf) *Pinter*
 	- in class [worksheet]({{ site.baseurl }}/assets/pinter_worksheet_2020.pdf)
 	- [exercise]({{ site.baseurl }}/assets/pinter_exercise.pdf) for in class work
 
