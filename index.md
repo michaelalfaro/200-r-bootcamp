@@ -16,7 +16,7 @@ layout: default
 Welcome to EEB 201, R Bootcamp for Ecology and Evolutionary Biology, 2020 Zoom edition. The goal of this course is to provide a broad introduction to scientific programming in the R environment. Ideally the skills you begin to develop in this course will be refined over your first year as you take classes in the core series and begin your own research.  Check out the [syllabus]({{ site.baseurl }}/assets/EEB_201_syllabus_2020.pdf) for more details.
 
 #### Preparation
-To get things started, we would like you to get R installed and complete some of an interactive R course. We will use a great learning system called Swirl (http://swirlstats.com/).  Mysteriously, that website has been down for the past few days... if it remains down, then you can access the content via the swirl github repository or via an internet archive such as the Wayback machine.  If you are new to R, then the archived version of the full site might be a bit friendlier since it gives instructions on installing R and RStudio to get started (via the Learn tab). 
+To get things started, we would like you to get R installed and complete some of an interactive R course. We will use a great learning system called Swirl (http://swirlstats.com/)[http://swirlstats.com/].  Mysteriously, that website has been down for the past few days... if it remains down, then you can access the content via the swirl github repository or via an internet archive such as the Wayback machine.  If you are new to R, then the archived version of the full site might be a bit friendlier since it gives instructions on installing R and RStudio to get started (via the Learn tab). 
  
 Once you have R and RStudio installed, please install Swirl, start it, and follow the instructions to install the 'R programming E' course.   We would like you to complete Lessons 1-9 and 15 in this online course, before Sept 22 when our course begins.  Please take and save screen shots at the end of each lesson to document that you have completed the exercises.  Feel free to explore further, with this course or any of the huge variety of other courses offered within Swirl.  Please let us know if you have any difficulties with the install.
 
@@ -73,7 +73,7 @@ The purpose of the bootcamp is to get you up and running with R, and to teach yo
 
 TBA
 
-#### Thursday 30th September
+#### Wednesday 30th September
 
 TBA
 
