@@ -54,7 +54,7 @@ The purpose of the bootcamp is to get you up and running with R, and to teach yo
 - 10:00AM - 11:30AM Flow control, scripts, functions [slides]({{ site.baseurl }}/assets/flow_control_in_R.html) *Alfaro*
 	- pdf of [lecture]({{ site.baseurl }}/assets/alfaro_lecture_slides_2020.pdf)
 	- just the lecture [R code]({{ site.baseurl }}/assets/flow_control_in_R.R)
-	- [exercise]({{site.baseurl}}/assets/alfaro_flow_assignment.pdf)
+	- [exercise]({{site.baseurl}}/assets/bootcamp_exercises_1_control.pdf)
 
 #### Wednesday 23rd September
 - 9-10:30 Introduction Basic Statistics and Plotting in R [slides]({{ site.baseurl }}/assets/Noa_slides_2020.pdf) *Pinter*
