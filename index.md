@@ -10,7 +10,7 @@ layout: default
 
 [zoom link](https://ucla.zoom.us/j/96523371265) for **Noa's morning lecture Wednesday September 23rd**.
 
-[zoom link](https://ucla.zoom.us/j/99468859973?pwd=VVJXYi9sRTNBSnplc0xEakJGMkhBQT09) for **Tuesday September 22nd afternoon problem set session with Mark Juhn**.
+[gathertown link](https://gather.town/app/VFTKJLUvOT9zM3rF/Rbootcamp) for **Wednesday September 23rd afternoon problem set session in gathertown**.
 
 ### Pre Bootcamp workout
 Welcome to EEB 201, R Bootcamp for Ecology and Evolutionary Biology, 2020 Zoom edition. The goal of this course is to provide a broad introduction to scientific programming in the R environment. Ideally the skills you begin to develop in this course will be refined over your first year as you take classes in the core series and begin your own research.  Check out the [syllabus]({{ site.baseurl }}/assets/EEB_201_syllabus_2020.pdf) for more details.
@@ -55,11 +55,14 @@ The purpose of the bootcamp is to get you up and running with R, and to teach yo
 	- pdf of [lecture]({{ site.baseurl }}/assets/alfaro_lecture_slides_2020.pdf)
 	- just the lecture [R code]({{ site.baseurl }}/assets/flow_control_in_R.R)
 	- Alfaro's [exercise]({{site.baseurl}}/assets/bootcamp_exercises_1_control.pdf)
+- 1:00 - 3:00:00PM Problem set session
 
 #### Wednesday 23rd September
 - 9:30-11:00 Introduction Basic Statistics and Plotting in R [slides]({{ site.baseurl }}/assets/Noa_slides_2020.pdf) *Pinter*
 	- in class [worksheet]({{ site.baseurl }}/assets/pinter_worksheet_2020.pdf)
 	- [exercise]({{ site.baseurl }}/assets/pinter_exercise.pdf) for in class work
+
+- 1:00 - 3:00:00PM Problem set session [here](https://gather.town/app/VFTKJLUvOT9zM3rF/Rbootcamp)
 
 
 
