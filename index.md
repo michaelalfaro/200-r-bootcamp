@@ -91,7 +91,7 @@ TBA
 
 Please create a **single pdf document** that includes your work for all of the in class and after class exercises. Name the file as "lastname_firstname.pdf". Upload the file to [http://bit.ly/eeb201HW](http://bit.ly/eeb201HW). 
 
-**You may need to use this [email link](EEB201_.oobmqv9jdy4ism0y@u.box.com) to upload your assignments"**
+**You may need to use this [email link](EEB201_.oobmqv9jdy4ism0y@u.box.com) to upload your assignments**
 
 All assignments are due **Friday October 9th by 5:00 PM**.
 
