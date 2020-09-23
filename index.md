@@ -60,7 +60,7 @@ The purpose of the bootcamp is to get you up and running with R, and to teach yo
 #### Wednesday 23rd September
 - 9:30-11:00 Introduction Basic Statistics and Plotting in R [slides]({{ site.baseurl }}/assets/Noa_slides_2020.pdf) *Pinter*
 	- in class [worksheet]({{ site.baseurl }}/assets/pinter_worksheet_2020.pdf)
-	- [exercise]({{ site.baseurl }}/assets/pinter_exercise_2020.pdf) for in class work
+	- [homework]({{ site.baseurl }}/assets/pinter_exercise_2020.pdf) 
 
 - 1:00 - 3:00:00PM Problem set session [here](https://gather.town/app/VFTKJLUvOT9zM3rF/Rbootcamp)
 
