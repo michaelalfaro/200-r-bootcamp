@@ -8,7 +8,8 @@ layout: default
 
 ## IMPORTANT LINKS
 
-[zoom link](https://ucla.zoom.us/j/96523371265) for **Jamie's morning lecture Tuesday September 29th**.
+[zoom link](https://ucla.zoom.us/j/95508666911?pwd=WmNubjFINlFXTVdxWDdMTk9VQ3pJQT09) for **Jamie's morning lecture Tuesday September 29th**. Meeting ID: 955 0866 6911
+Passcode: 205966
 
 [gathertown link](https://gather.town/app/VFTKJLUvOT9zM3rF/Rbootcamp) for **Tuesday September 29th afternoon problem set session in gathertown**.
 
