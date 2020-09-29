@@ -8,9 +8,9 @@ layout: default
 
 ## IMPORTANT LINKS
 
-[zoom link](https://ucla.zoom.us/j/96523371265) for **Noa's morning lecture Wednesday September 23rd**.
+[zoom link](https://ucla.zoom.us/j/96523371265) for **Jamie's morning lecture Tuesday September 29th**.
 
-[gathertown link](https://gather.town/app/VFTKJLUvOT9zM3rF/Rbootcamp) for **Wednesday September 23rd afternoon problem set session in gathertown**.
+[gathertown link](https://gather.town/app/VFTKJLUvOT9zM3rF/Rbootcamp) for **Tuesday September 29th afternoon problem set session in gathertown**.
 
 ### Pre Bootcamp workout
 Welcome to EEB 201, R Bootcamp for Ecology and Evolutionary Biology, 2020 Zoom edition. The goal of this course is to provide a broad introduction to scientific programming in the R environment. Ideally the skills you begin to develop in this course will be refined over your first year as you take classes in the core series and begin your own research.  Check out the [syllabus]({{ site.baseurl }}/assets/EEB_201_syllabus_2020.pdf) for more details.
@@ -74,18 +74,22 @@ The purpose of the bootcamp is to get you up and running with R, and to teach yo
 
 #### Tuesday 29th September
 
-TBA
+- 9:30-11:00AM Introduction to modeling *Lloyd-Smith*
+    - [handout]({{ site.baseurl }}/assets/2020_EEB_201_Lloyd-Smith_Introduction_to_modeling_In_R_slides.pdf) 
+    - [homework]({{ site.baseurl }}/assets/2020_EEB_201_Lloyd-Smith_HWexercises.pdf)
+- 1:00-3:00PM Problem set session
 
-#### Wednesday 30th September
 
-TBA
+<!-- #### Wednesday 30th September
+
+TBA -->
 
 
 <!-- - 10:30-12:00 Introduction to modeling [handout]({{ site.baseurl }}/assets/EEB_201_Lloyd_Smith_introduction_to_modeling_in_R_slides.pdf) *Lloyd-Smith*
 	
 - 1:30-5PM Work on assignments
 	- [Flow and control exercises]({{ site.baseurl }}/assets/bootcamp_exercises_1_control.pdf) 
-	- [Modeling exercise]({{site.baseurl}}/assets/EEB_201_Lloyd-Smith_exercises-1.pdf) -->
+	- [Modeling exercise]({{site.baseurl}}/assets/EEB_201_Lloyd-Smith_exercises-1.pdf)
 
 #### How do I turn in my homework?
 
