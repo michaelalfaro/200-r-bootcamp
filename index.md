@@ -84,10 +84,10 @@ The purpose of the bootcamp is to get you up and running with R, and to teach yo
 
 - 9:30-11:00 AM Advanced plotting *Lohmueller*
 
-    - [slides]({{ site.baseurl }}/Lohmueller_plotting.Sept30.2020.pdf)
-    - [r code]({{ site.baseurl }}/AnalyzeSNPdata.2020.student.R)
-    - [homework]({{ site.baseurl }}/Lohmueller_R_homework_exercise.2020.pdf)
-    - [data]({{ site.baseurl }}/hapmap_CEU_r23a_chr2_ld-3.txt)
+    - [slides]({{ site.baseurl }}/assets/Lohmueller_plotting.Sept30.2020.pdf)
+    - [r code]({{ site.baseurl }}/assets/AnalyzeSNPdata.2020.student.R)
+    - [homework]({{ site.baseurl }}/assets/Lohmueller_R_homework_exercise.2020.pdf)
+    - [data]({{ site.baseurl }}/assets/hapmap_CEU_r23a_chr2_ld-3.txt)
 
 - 1:00-3:00PM Problem set session
 <!-- #### Wednesday 30th September
