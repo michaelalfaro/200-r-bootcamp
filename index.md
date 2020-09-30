@@ -8,10 +8,10 @@ layout: default
 
 ## IMPORTANT LINKS
 
-[zoom link](https://ucla.zoom.us/j/95508666911?pwd=WmNubjFINlFXTVdxWDdMTk9VQ3pJQT09) for **Jamie's morning lecture Tuesday September 29th**. Meeting ID: 955 0866 6911
-Passcode: 205966
+[zoom link](https://ucla.zoom.us/j/93458770702?pwd=UXAyejBHZUxRVm9kS1lmVVlEZDJPdz09) for **Kirk's morning lecture Wednesday September 30th**. Meeting ID: 934 5877 0702
+Passcode: 607797
 
-[gathertown link](https://gather.town/app/VFTKJLUvOT9zM3rF/Rbootcamp) for **Tuesday September 29th afternoon problem set session in gathertown**.
+[gathertown link](https://gather.town/app/VFTKJLUvOT9zM3rF/Rbootcamp) for **Wednesday September 30th afternoon problem set session in gathertown**.
 
 ### Pre Bootcamp workout
 Welcome to EEB 201, R Bootcamp for Ecology and Evolutionary Biology, 2020 Zoom edition. The goal of this course is to provide a broad introduction to scientific programming in the R environment. Ideally the skills you begin to develop in this course will be refined over your first year as you take classes in the core series and begin your own research.  Check out the [syllabus]({{ site.baseurl }}/assets/EEB_201_syllabus_2020.pdf) for more details.
@@ -80,7 +80,16 @@ The purpose of the bootcamp is to get you up and running with R, and to teach yo
     - [homework]({{ site.baseurl }}/assets/2020_EEB_201_Lloyd-Smith_HWexercises.pdf)
 - 1:00-3:00PM Problem set session
 
+#### Wednesday 30th September
 
+- 9:30-11:00 AM Advanced plotting *Lohmueller*
+
+    - [slides](Lohmueller_plotting.Sept30.2020.pdf)
+    - [r code](AnalyzeSNPdata.2020.student.R)
+    - [homework](Lohmueller_R_homework_exercise.2020.pdf)
+    - [data](hapmap_CEU_r23a_chr2_ld-3.txt)
+
+- 1:00-3:00PM Problem set session
 <!-- #### Wednesday 30th September
 
 TBA -->
