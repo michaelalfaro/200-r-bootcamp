@@ -8,6 +8,14 @@ layout: default
 
 ## IMPORTANT LINKS
 
+#### How do I turn in my homework?
+
+Please create a **single pdf document** that includes your work for all of the in class and after class exercises. Name the file as "lastname_firstname.pdf". Upload the file using [this link](EEB_201.6l31fy21qfhgsw3g@u.box.com).
+
+All assignments are due **Friday October 9th by 5:00 PM**.
+
+
+
 [zoom link](https://ucla.zoom.us/j/93458770702?pwd=UXAyejBHZUxRVm9kS1lmVVlEZDJPdz09) for **Kirk's morning lecture Wednesday September 30th**. Meeting ID: 934 5877 0702
 Passcode: 607797
 
@@ -95,19 +103,13 @@ The purpose of the bootcamp is to get you up and running with R, and to teach yo
 TBA -->
 
 
-<!-- - 10:30-12:00 Introduction to modeling [handout]({{ site.baseurl }}/assets/EEB_201_Lloyd_Smith_introduction_to_modeling_in_R_slides.pdf) *Lloyd-Smith*
+- 10:30-12:00 Introduction to modeling [handout]({{ site.baseurl }}/assets/EEB_201_Lloyd_Smith_introduction_to_modeling_in_R_slides.pdf) *Lloyd-Smith*
 	
 - 1:30-5PM Work on assignments
 	- [Flow and control exercises]({{ site.baseurl }}/assets/bootcamp_exercises_1_control.pdf) 
 	- [Modeling exercise]({{site.baseurl}}/assets/EEB_201_Lloyd-Smith_exercises-1.pdf)
 
-#### How do I turn in my homework?
 
-Please create a **single pdf document** that includes your work for all of the in class and after class exercises. Name the file as "lastname_firstname.pdf". Upload the file to [http://bit.ly/eeb201HW](http://bit.ly/eeb201HW). 
-
-**You may need to use this [email link](EEB201_.oobmqv9jdy4ism0y@u.box.com) to upload your assignments**
-
-All assignments are due **Friday October 9th by 5:00 PM**.
 
 ### Datasets 
 #### for Alfaro's section
@@ -115,10 +117,6 @@ All assignments are due **Friday October 9th by 5:00 PM**.
 - [tree.tre]({{ site.baseurl }}/assets/tree.tre)
 - [source.example.R]({{ site.baseurl }}/assets/source.example.R)
 
-<!-- #### for Lohmueller's sections
-- [hapmap-data]({{ site.baseurl }}/assets/hapmap_CEU_r23a_chr2_ld-1.txt)
-- [phenotypic-sim-data]({{ site.baseurl }}/assets/pheno.sim.2014-1.txt)
-- [plot-examples-source]({{ site.baseurl }}/assets/R_plot_slides.R) -->
 
 ### Miscellany
 - [base r cheat sheet]({{ site.baseurl }}/assets/r-cheat-sheet-3.pdf)
