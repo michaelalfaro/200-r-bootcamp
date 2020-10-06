@@ -10,7 +10,7 @@ layout: default
 
 #### How do I turn in my homework?
 
-Please create a **single pdf document** that includes your work for all of the in class and after class exercises. Name the file as "lastname_firstname.pdf". Upload the file using [this link](EEB_201.6l31fy21qfhgsw3g@u.box.com).
+Please create a **single pdf document** that includes your work for all of the in class and after class exercises. Name the file as "lastname_firstname.pdf". Email the file using [this link](mailto:EEB_201.6l31fy21qfhgsw3g@u.box.com).
 
 All assignments are due **Friday October 9th by 5:00 PM**.
 
