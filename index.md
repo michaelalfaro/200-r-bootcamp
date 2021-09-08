@@ -12,14 +12,14 @@ layout: default
 
 Please create a **single pdf document** that includes your work for all of the in class and after class exercises. Name the file as "lastname_firstname.pdf". Email the file using [this link](mailto:EEB_201.6l31fy21qfhgsw3g@u.box.com).
 
-All assignments are due **Friday October 9th by 5:00 PM**.
+All assignments are due **Friday October 1st by 5:00 PM**.
 
 
-
+<!-- 
 [zoom link](https://ucla.zoom.us/j/93458770702?pwd=UXAyejBHZUxRVm9kS1lmVVlEZDJPdz09) for **Kirk's morning lecture Wednesday September 30th**. Meeting ID: 934 5877 0702
 Passcode: 607797
 
-[gathertown link](https://gather.town/app/VFTKJLUvOT9zM3rF/Rbootcamp) for **Wednesday September 30th afternoon problem set session in gathertown**.
+[gathertown link](https://gather.town/app/VFTKJLUvOT9zM3rF/Rbootcamp) for **Wednesday September 30th afternoon problem set session in gathertown**. -->
 
 ### Pre Bootcamp workout
 Welcome to EEB 201, R Bootcamp for Ecology and Evolutionary Biology, 2020 Zoom edition. The goal of this course is to provide a broad introduction to scientific programming in the R environment. Ideally the skills you begin to develop in this course will be refined over your first year as you take classes in the core series and begin your own research.  Check out the [syllabus]({{ site.baseurl }}/assets/EEB_201_syllabus_2020.pdf) for more details.
@@ -50,7 +50,7 @@ Paste an email associated with your Dropbox account [here](https://tinyurl.com/b
 
 ### Schedule
 
-The course sessions will be held across four days, Sept 22, 23, 29, and 30.  Each day, there will be a Zoom instruction session in the morning from 9:30 until roughly 11:30, and there will be an online support/co-working session in the afternoon to work on the assigned exercises with your peers.  These sessions will be supported by current EEB grad students and postdocs, and they are intended to be a supportive and friendly way to get your questions answered.  Timing on the afternoon sessions is TBD, but they are informal and you can step out for a while if you need to, so feel free to schedule committee meetings on these afternoons. 
+The course sessions will be held Sept 14th and 17th in the LaKretz Garden Pavilion 101 from 9:00 AM to 4:00 PM. The days will be divided into lectures in the morning and lab sessions in the afternoon. The afternoon sessions will be supported by current EEB grad students and postdocs, and they are intended to be a supportive and friendly way to get your questions answered.  
  
 The purpose of the bootcamp is to get you up and running with R, and to teach you some basic programming.  We don't expect any background knowledge (beyond what you learn from the assigned prep work), and we are not evaluating or judging you.  It will be a supportive and inclusive environment, with the sole purpose of giving you a boost in your graduate work.  We will ask you to complete and submit some exercises, since this is very much a 'learn by doing' topic, but we are not assigning letter grades.  
 
@@ -58,20 +58,24 @@ The purpose of the bootcamp is to get you up and running with R, and to teach yo
 
 ####Location: 1100 Terasaki Life Sciences Building  -->
 
-#### Tuesday 22th September
-- 9:30AM - 10:00AM Introduction to R and Overview of Course
-- 10:00AM - 11:30AM Flow control, scripts, functions [slides]({{ site.baseurl }}/assets/flow_control_in_R.html) *Alfaro*
-	- pdf of [lecture]({{ site.baseurl }}/assets/alfaro_lecture_slides_2020.pdf)
-	- just the lecture [R code]({{ site.baseurl }}/assets/flow_control_in_R.R)
-	- Alfaro's [exercise]({{site.baseurl}}/assets/bootcamp_exercises_1_control.pdf)
-- 1:00 - 3:00:00PM Problem set session
+#### Tuesday 17th September
+- 9:00AM - 9:15AM Introduction to R and Overview of Course
+- 9:15-10:30 Introduction Basic Statistics and Plotting in R [slides]({{ site.baseurl }}/assets/Noa_slides_2020.pdf) *Pinter*
+	<!-- - in class [worksheet]({{ site.baseurl }}/assets/pinter_worksheet_2020.pdf)
+	- [homework]({{ site.baseurl }}/assets/pinter_exercise_2020.pdf)  -->
 
-#### Wednesday 23rd September
+- 10:30AM - 12:00AM Flow control, scripts, functions [slides]({{ site.baseurl }}/assets/flow_control_in_R.html) *Alfaro*
+	<!-- - pdf of [lecture]({{ site.baseurl }}/assets/alfaro_lecture_slides_2020.pdf)
+	- just the lecture [R code]({{ site.baseurl }}/assets/flow_control_in_R.R)
+	- Alfaro's [exercise]({{site.baseurl}}/assets/bootcamp_exercises_1_control.pdf) -->
+- 1:00 - 4:00:PM Problem set session
+
+<!-- #### Wednesday 23rd September
 - 9:30-11:00 Introduction Basic Statistics and Plotting in R [slides]({{ site.baseurl }}/assets/Noa_slides_2020.pdf) *Pinter*
 	- in class [worksheet]({{ site.baseurl }}/assets/pinter_worksheet_2020.pdf)
 	- [homework]({{ site.baseurl }}/assets/pinter_exercise_2020.pdf) 
 
-- 1:00 - 3:00:00PM Problem set session [here](https://gather.town/app/VFTKJLUvOT9zM3rF/Rbootcamp)
+- 1:00 - 3:00:00PM Problem set session [here](https://gather.town/app/VFTKJLUvOT9zM3rF/Rbootcamp) -->
 
 
 
@@ -81,35 +85,30 @@ The purpose of the bootcamp is to get you up and running with R, and to teach yo
 
 
 
-#### Tuesday 29th September
+#### Friday 17th September
 
-- 9:30-11:00AM Introduction to modeling *Lloyd-Smith*
-    - [handout]({{ site.baseurl }}/assets/2020_EEB_201_Lloyd-Smith_Introduction_to_modeling_In_R_slides.pdf) 
-    - [homework]({{ site.baseurl }}/assets/2020_EEB_201_Lloyd-Smith_HWexercises.pdf)
-- 1:00-3:00PM Problem set session
+- 9:00-10:30AM Introduction to modeling *Lloyd-Smith*
+    <!-- - [handout]({{ site.baseurl }}/assets/2020_EEB_201_Lloyd-Smith_Introduction_to_modeling_In_R_slides.pdf) 
+    - [homework]({{ site.baseurl }}/assets/2020_EEB_201_Lloyd-Smith_HWexercises.pdf) -->
 
-#### Wednesday 30th September
 
-- 9:30-11:00 AM Advanced plotting *Lohmueller*
+- 10:30-12:00 Advanced plotting *Lohmueller*
 
-    - [slides]({{ site.baseurl }}/assets/Lohmueller_plotting.Sept30.2020.pdf)
+ <!--    - [slides]({{ site.baseurl }}/assets/Lohmueller_plotting.Sept30.2020.pdf)
     - [r code]({{ site.baseurl }}/assets/AnalyzeSNPdata.2020.student.R)
     - [homework]({{ site.baseurl }}/assets/Lohmueller_R_homework_exercise.2020.pdf)
-    - [data]({{ site.baseurl }}/assets/hapmap_CEU_r23a_chr2_ld-3.txt)
+    - [data]({{ site.baseurl }}/assets/hapmap_CEU_r23a_chr2_ld-3.txt) -->
 
-- 1:00-3:00PM Problem set session
-<!-- #### Wednesday 30th September
-
-TBA -->
-
+- 1:00-4:00PM Problem set session
+<!-- 
 
 - 10:30-12:00 Introduction to modeling [handout]({{ site.baseurl }}/assets/EEB_201_Lloyd_Smith_introduction_to_modeling_in_R_slides.pdf) *Lloyd-Smith*
 	
 - 1:30-5PM Work on assignments
 	- [Flow and control exercises]({{ site.baseurl }}/assets/bootcamp_exercises_1_control.pdf) 
 	- [Modeling exercise]({{site.baseurl}}/assets/EEB_201_Lloyd-Smith_exercises-1.pdf)
-
-
+ --> -->
+ -->
 
 ### Datasets 
 #### for Alfaro's section
