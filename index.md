@@ -22,7 +22,7 @@ Passcode: 607797
 [gathertown link](https://gather.town/app/VFTKJLUvOT9zM3rF/Rbootcamp) for **Wednesday September 30th afternoon problem set session in gathertown**. -->
 
 ### Pre Bootcamp workout
-Welcome to EEB 201, R Bootcamp for Ecology and Evolutionary Biology, 2020 Zoom edition. The goal of this course is to provide a broad introduction to scientific programming in the R environment. Ideally the skills you begin to develop in this course will be refined over your first year as you take classes in the core series and begin your own research.  Check out the [syllabus]({{ site.baseurl }}/assets/EEB_201_syllabus_2020.pdf) for more details.
+Welcome to EEB 201, R Bootcamp for Ecology and Evolutionary Biology, 2021 Back In Person Edition. The goal of this course is to provide a broad introduction to scientific programming in the R environment. Ideally the skills you begin to develop in this course will be refined over your first year as you take classes in the core series and begin your own research.  Check out the [syllabus]({{ site.baseurl }}/assets/EEB_201_syllabus_2020.pdf) for more details.
 
 #### Preparation
 To get things started, we would like you to get R installed and complete some of an interactive R course. We will use a great learning system called Swirl (http://swirlstats.com/)[http://swirlstats.com/].  Mysteriously, that website has been down for the past few days... if it remains down, then you can access the content via the swirl github repository or via an internet archive such as the Wayback machine.  If you are new to R, then the archived version of the full site might be a bit friendlier since it gives instructions on installing R and RStudio to get started (via the Learn tab). 
