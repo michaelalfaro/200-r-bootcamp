@@ -6,13 +6,13 @@ layout: default
 
 ![cichlids]({{ site.baseurl }}/assets/butterfly.png) 
 
-## IMPORTANT LINKS
+<!-- ## IMPORTANT LINKS
 
 #### How do I turn in my homework?
 
 Please create a **single pdf document** that includes your work for all of the in class and after class exercises. Name the file as "lastname_firstname.pdf". Email the file using [this link](mailto:EEB_201.6l31fy21qfhgsw3g@u.box.com).
 
-All assignments are due **Friday October 1st by 5:00 PM**.
+All assignments are due **Friday October 1st by 5:00 PM**. -->
 
 
 <!-- 
@@ -59,12 +59,12 @@ The purpose of the bootcamp is to get you up and running with R, and to teach yo
 ####Location: 1100 Terasaki Life Sciences Building  -->
 
 #### Tuesday 17th September
-- 9:00AM - 9:15AM Introduction to R and Overview of Course
-- 9:15-10:30 Introduction Basic Statistics and Plotting in R [slides]({{ site.baseurl }}/assets/Noa_slides_2020.pdf) *Pinter*
+- 9:00AM - 9:15AM Introduction to R and Overview of Course  *Pinter*
+- 9:15-10:30 Introduction Basic Statistics and Plotting in R <!-- [slides]({{ site.baseurl }}/assets/Noa_slides_2020.pdf) *Pinter* -->
 	<!-- - in class [worksheet]({{ site.baseurl }}/assets/pinter_worksheet_2020.pdf)
 	- [homework]({{ site.baseurl }}/assets/pinter_exercise_2020.pdf)  -->
 
-- 10:30AM - 12:00AM Flow control, scripts, functions [slides]({{ site.baseurl }}/assets/flow_control_in_R.html) *Alfaro*
+- 10:30AM - 12:00AM Flow control, scripts, functions *Alfaro* <!-- [slides]({{ site.baseurl }}/assets/flow_control_in_R.html) *Alfaro* -->
 	<!-- - pdf of [lecture]({{ site.baseurl }}/assets/alfaro_lecture_slides_2020.pdf)
 	- just the lecture [R code]({{ site.baseurl }}/assets/flow_control_in_R.R)
 	- Alfaro's [exercise]({{site.baseurl}}/assets/bootcamp_exercises_1_control.pdf) -->
