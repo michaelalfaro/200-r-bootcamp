@@ -100,15 +100,15 @@ The purpose of the bootcamp is to get you up and running with R, and to teach yo
     - [data]({{ site.baseurl }}/assets/hapmap_CEU_r23a_chr2_ld-3.txt) -->
 
 - 1:00-4:00PM Problem set session
-<!-- 
 
-- 10:30-12:00 Introduction to modeling [handout]({{ site.baseurl }}/assets/EEB_201_Lloyd_Smith_introduction_to_modeling_in_R_slides.pdf) *Lloyd-Smith*
+<!-- 
+- 10:30-12:00 Introduction to modeling [handout]({{ site.baseurl }}/assets/EEB_201_Lloyd_Smith_introduction_to_modeling_in_R_slides.pdf) *Lloyd-Smith* -->
 	
-- 1:30-5PM Work on assignments
+<!-- - 1:30-5PM Work on assignments
 	- [Flow and control exercises]({{ site.baseurl }}/assets/bootcamp_exercises_1_control.pdf) 
 	- [Modeling exercise]({{site.baseurl}}/assets/EEB_201_Lloyd-Smith_exercises-1.pdf)
- --> -->
- -->
+  -->
+
 
 ### Datasets 
 #### for Alfaro's section
