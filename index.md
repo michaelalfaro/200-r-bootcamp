@@ -59,10 +59,10 @@ The purpose of the bootcamp is to get you up and running with R, and to teach yo
 ####Location: 1100 Terasaki Life Sciences Building  -->
 
 #### Tuesday 17th September
-- 9:00AM - 9:15AM Introduction to R and Overview of Course  *Pinter*
-- 9:15-10:30 Introduction Basic Statistics and Plotting in R <!-- [slides]({{ site.baseurl }}/assets/Noa_slides_2020.pdf) *Pinter* -->
-	<!-- - in class [worksheet]({{ site.baseurl }}/assets/pinter_worksheet_2020.pdf)
-	- [homework]({{ site.baseurl }}/assets/pinter_exercise_2020.pdf)  -->
+- 9:00AM - 9:15AM Introduction to R and Overview of Course  *Pinter-Wollman*
+- 9:15-10:30 Introduction Basic Statistics and Plotting in R [slides]({{ site.baseurl }}/assets/Pinter_Wollman_2021.pdf) *Pinter-Wollman*
+	- in class [worksheet]({{ site.baseurl }}/assets/pw_worksheet_2021.pdf)
+<!-- 	- [homework]({{ site.baseurl }}/assets/pinter_exercise_2020.pdf)  -->
 
 - 10:30AM - 12:00AM Flow control, scripts, functions *Alfaro* <!-- [slides]({{ site.baseurl }}/assets/flow_control_in_R.html) *Alfaro* -->
 	<!-- - pdf of [lecture]({{ site.baseurl }}/assets/alfaro_lecture_slides_2020.pdf)
