@@ -58,7 +58,7 @@ The purpose of the bootcamp is to get you up and running with R, and to teach yo
 
 ####Location: 1100 Terasaki Life Sciences Building  -->
 
-#### Tuesday 17th September
+#### Tuesday 14th September
 - 9:00AM - 9:15AM Introduction to R and Overview of Course  *Pinter-Wollman*
 - 9:15-10:30 Introduction Basic Statistics and Plotting in R [slides]({{ site.baseurl }}/assets/Pinter_Wollman_2021.pdf) *Pinter-Wollman*
 	- in class [worksheet]({{ site.baseurl }}/assets/pw_worksheet_2021.pdf)
