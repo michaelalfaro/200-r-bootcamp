@@ -64,8 +64,8 @@ The purpose of the bootcamp is to get you up and running with R, and to teach yo
 	- in class [worksheet]({{ site.baseurl }}/assets/pw_worksheet_2021.pdf)
 <!-- 	- [homework]({{ site.baseurl }}/assets/pinter_exercise_2020.pdf)  -->
 
-- 10:30AM - 12:00AM Flow control, scripts, functions *Alfaro* <!-- [slides]({{ site.baseurl }}/assets/flow_control_in_R.html) *Alfaro* -->
-	- pdf of [lecture]({{ site.baseurl }}/assets/alfaro_lecture_slides_2020.pdf)
+- 10:30AM - 12:00PM Flow control, scripts, functions *Alfaro* [slides]({{ site.baseurl }}/assets/flow_control_in_R.html)
+	- pdf of [lecture]({{ site.baseurl }}/assets/alfaro_lecture_slides_2021.pdf)
 	- just the lecture [R code]({{ site.baseurl }}/assets/flow_control_in_R.R)
 	- Alfaro's [exercise]({{site.baseurl}}/assets/bootcamp_exercises_1_control.pdf)
 - 1:00 - 4:00:PM Problem set session
