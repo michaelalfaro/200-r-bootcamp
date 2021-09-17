@@ -1,43 +1,51 @@
 ---
 title: "R basics and flow control"
 author: "Michael Alfaro"
-date: "9/22/2017"
+date: "9/14/2021"
 output:
-  ioslides_presentation:
-    transition: faster
-    widescreen: yes
-  beamer_presentation: default
   slidy_presentation: default
+  beamer_presentation: default
+  ioslides_presentation: null
+  reveal_presentation: default
+  revealjs::revealjs_presentation:
+    transition: fade
 ---
 
 
-##Getting started
+## Getting started
 Welcome to the EEB Quantitative skills bootcamp. 
 
-##Git repo
-create a new document in your bootcamp repo to track your inclass work. Commit to this as desired during the lectures
+---
 
-##R basics
+## R basics
 Use setwd() to set your directory.
 
 ```{r, eval=F}
 setwd("~/Dropbox/bootcamp_examples")
 ```
+---
 
 And use getwd() to see the working directory.
 
 ```{r}
+setwd("~/Dropbox/bootcamp_examples")
 getwd()
 ```
-##comments
+---
+
+## comments
+
 The # character is used to mark comments. R ignores everything after the # to the end of the line
+
 ```{r}
 2 + 2
 #2 + 3
 ```
 R ignores the line 2 + 3 because of the '#'
 
-##getting help
+---
+
+## getting help
 R has many options for getting help. You can use the help() function on any function:
 
 ```{r}
@@ -47,33 +55,63 @@ You can also use "?" before a function.
 ```{r, eval=F}
 ?lm
 ```
+---
+
 Two question marks ("??") tells R to use fuzzy matching on the function name. R will search for functions with names similar to your query in all installed packages. "?" and "??" won't evaluate in this document but you should try them at your command prompt to see the help files.
 
-```{r, eval-F}
+```{r, eval=F}
 ??lm
+
+---
+  
 ```
 ## the **c() function**
 The c() function combines elements into a vector and is one of the most commonly use functions in R.
 ```{r}
 grad.school.tips <- c( "use a reference manager", "learn a programming language", "write lots of papers")
 ```
+---
 
 You can use cat() to print objects to a screen.
 ```{r}
 cat(grad.school.tips, sep = "\n")
 ```
-##install
+
+---
+
+## install
 install() is used to install new packages:
 ```{r, eval=FALSE}
-install.packages(c("geiger", "laser"), dep = T)
+install.packages(c("geiger", "picante"), dep = T)
 ```
-##variables
-As you work in an R session, any variables that you declare will be stored in the session. If you want to see all objects that you have created in you session, use the ls() function.
+---
+
+## variables
+As you work in an R session, any variables that you declare will be stored in the session. If you want to see all objects that you have created in you session, use the ls() function. In R the assignment operator is `<-` as in
 ```{r}
 xx <-1000
 ls()
 ```
-##removing variables
+We can investigate variable types with `class`:
+```{r}
+class(xx)
+```
+
+---
+
+##  Basic Data Types
+
+* character (strings)
+* numeric (real numbers)
+* integer (integer numbers)
+* complex (complex numbers)
+* logical (TRUE, FALSE)
+* factor (categorical values)
+
+---
+
+## removing variables
+
 To remove a variable from the workspace, use rm(variable)
 ```{r}
 ls()
@@ -81,7 +119,11 @@ rm(xx)
 ls()
 
 ```
-##the nuclear option
+
+
+
+---
+## the nuclear option
 To remove EVERYTHING, use rm(list = ls()). This passes the contents of ls() to rm() so that everything in the environment is deleted. It is often useful to start your script with this command so that you can be sure that any variables you declare have not been assigned a value already.
 
 ```{r}
@@ -93,7 +135,8 @@ rm(list = ls())
 ls() #character(0) means the function has returned an empty value
 
 ```
-##quitting R
+---
+## quitting R
 You can quit R with q(). Caution, q() will quit your R session!
 
 ```{r,eval=F}
@@ -101,52 +144,146 @@ q()
 q(save = 'no')
 
 ```
+---
 ## **source()**
 The source() function will load functions and variables from another R script into your R session. This means that you can save and reuse functions that you develop for other projects. 
 
 ```{r}
 getwd()
-source("/Users/michael_alfaro/Dropbox/bootcamp_examples/source.example.R") 
+source("~/Dropbox/bootcamp_examples/source.example.R") 
 #make sure the path to the source file is specified correctly (should equal output from getwd())
 all.I.know.about.life.I.learned.in.grad.school() #a function from the source file
 
 ```
 
-##Reading in files and manipulating data objects
+
+## Data Structures
+
+* vectors
+* matrices and arrays
+* lists
+* **data frames**
+
+
+---
+
+# vectors
+
+Vectors are one dimensional and contain values of the same type
+
+```{r}
+evens <- c(2,4,6,8)
+fifths <- c("C", "G", "D", "A", "E")
+class(evens)
+class(fifths)
+
+```
+
+
+## you can perform operations on the entire vector....
+
+```{r}
+mean(evens)
+sum(evens)
+length(fifths)
+```
+
+---
+
+## matrices and arrays
+
+Matrices are two dimensional versions of vectors. They contain data of the same type and can allow for matrix operations.
+
+```{r}
+mm <- matrix(data = 1:9, nrow = 3, ncol = 3, byrow = TRUE)
+mm[1,] # first row
+mm[,1] # first col
+```
+arrays have more than two dimensions
+
+```{r}
+aa <- array(data = 1:27, dim = c(3,3,3))
+aa
+```
+
+
+---
+
+## lists
+
+lists are collections of any kind of R object (vectors, matrices, data frames). You access list elements by `[]` or by the name of the list element.
+```{r}
+ll <- list(vec = aa, mat = mm, char = fifths, num = evens)
+ll[[1]]
+ll$char
+
+```
+
+---
+
+## data  frames
+These are the most common data structure you will interact with in R. Think of them like excel spreadsheets.   We 
+
+```{r}
+L3 <- LETTERS[1:3]
+fac <- sample(L3, 10, replace = TRUE)
+dd <- data.frame(x = 1, y = 1:10, fac = fac)
+head(dd,3)
+str(dd)
+## The "same" with automatic column names:
+```
+We will work with data frames in the next example.
+
+---
+
+
+## Reading in files and manipulating data objects
 For this section we are going to work with two kinds of data: a phylogenetic tree, and swimming data for some of the species in this tree. One of the most common tasks you will perform in R will be reading in data and this section should help orient you to ways you can interact with your data objects in the R environment. 
 
-##Read in the tree
+---
+
+## Read in the tree
 The first thing we will do is use read.tree() to  in a phylogenetic tree. readtree() is in the Ape library, so make sure you have that installed. The tree file is a text file that contains informaiton about the tree structure and tip labels in Newick format. Use a text editor to look at this file if you are curious.
+
 
 ```{r}
 library(ape)
-tt <- read.tree("/Users/michael_alfaro/Dropbox/bootcamp_examples/tree.tre")
+tt <- read.tree("~/Dropbox/bootcamp_examples/tree.tre")
 ###see elements of an object
 attributes(tt)
 ###access those elements with $
 tt$tip.label[1:10]
 head(tt$tip.label)
 
-```
-##pruning the tree
-This tree is giant!  Lets prune down and plot the pruned tree.
-```{r, echo = F}
-pruned.tree <- drop.tip(tt, tt$tip.label[1:7900])
-plot(ladderize(pruned.tree), cex = 0.5, type = "radial")
+
 ```
 
-##reading in data
+---
+
+## pruning the tree
+
+This tree is giant!  Lets prune down and plot the pruned tree.
+```{r, echo = T}
+pruned.tree <- drop.tip(tt, tt$tip.label[1:7900])
+plot(ladderize(pruned.tree), cex = 0.4, type = "radial")
+```
+
+---
+
+## reading in data
 
 ```{r}
 
 # d contains length data, family, species, order, etc
-inpath = "/Users/michael_alfaro/Dropbox/bootcamp_examples/data.txt"
+inpath = "~/Dropbox/bootcamp_examples/data.txt"
 dd <- read.table(inpath, header=T, sep='\t', as.is = T);
 
 ###NOTE: R by default reads character columns as FACTORS. This data structure behaves very differently from a string!  Use as.is = T when reading in data to make R treat these columns as characters.
 ```
 
-##a quick note about data frames
+---
+
+## a quick note about data frames
 
 You have just read your data in as a data frame object. check this with the str() function
 
@@ -160,7 +297,9 @@ length.dd <- dim(dd)[1] #what does this line do?
 attributes(dd)
 ```
 
-##adding data to a data frame
+---
+
+## adding data to a data frame
 Lets create some size data and add it to the data frame
 ```{r, cache=F}
 #get 92 random variables
@@ -171,7 +310,9 @@ head(dd) #before
 dd<- cbind(dd, size)
 head(dd) #after
 ```
-##accessing data frame elements
+---
+
+## accessing data frame elements
 You can use the "$" operator to access rows and head() and tail() check a data frame
 ```{r}
 names(dd) #these are the names of the columns we could access
@@ -182,7 +323,9 @@ tail(dd$species) # use these functions to check that data has been read into R c
 swimming_mode <- dd$mode
 ```
 
-##subsetting
+---
+
+## subsetting
 use the **[]** after a data frame to access specific cells, rows, and columns
 ```{r}
 dd[1,1] # entry in row 1, column 1
@@ -192,7 +335,9 @@ dd[1,] # row 1, all columns
 dd[,2] # all rows, column 2
 ```
 
-##accessing by row name
+---
+
+## accessing by row name
 Naming rows allows you to access a row by name (Note that rownames are a part of a data frame but not a separate column of the data frame)
 ```{r}
 head(rownames(dd))
@@ -204,7 +349,9 @@ dd['Pomacentrus_brachialis',]
 
 ```
 
-##A bit more on subsetting
+---
+
+## A bit more on subsetting
 ```{r}
 #a bit on subseting
 dd[5:10,] # rows 5-10, all columns
@@ -212,7 +359,9 @@ dd[5:10,3] # rows 5-10, column 3
 
 
 ```
-##**which()**
+---
+
+## **which()**
 if we store the results of this which() function we can subset the dataframe to include only MPF swimmwers
 
 ```{r}
@@ -222,13 +371,31 @@ mpfs <- which(dd$mode == 'MPF') #stores rows of mpf swimmers
 mpf_swimmers <- dd[mpfs,] #stored this as a seperate df
 head(mpf_swimmers)
 ```
+
+## Writing data
+
+recall that we used `read.table` to read in the original data  file. R offer a number of different read commands depending on the format needed including `read.table` (space or tab separated data), `read.csv` (comma separated) and `read.csv2` (semi-colon separated). For writing data there are `writetable`, `write.csv` and `write.csv2` functions. R by default will attach quotes around variable names and will also write out the row names/numbers. If you do not want your file to look like that you can change the write arguments.
+
+```{r}
+write.table(mpf_swimmers, "mpfs_r_default.csv") # space separator, quotes, row names
+write.csv(mpf_swimmers, "mpfs_r_better_format.csv", quote = F, row.names = F) # comma separated, no quotes, no row names
+
+```
+
+---
+
+## R Challenge
+
 How would you make dataframe with all of the big (size > 0.9) species only?
+---
 
 ```{r}
 head(dd)
-which(dd$size > 0.9) #shows us rosw with large fish in them
+which(dd$size > 0.9) #shows us rows with large fish in them
 ```
-##R challenge##
+---
+
+## R challenge##
 make a new data frame with large species only
 
 **hints**
@@ -237,16 +404,20 @@ make a new data frame with large species only
 - the **$** operator lets you specify columns from a data frame
 - you can subset a data frame by specifying a list of row names within the square backets **[]**
 
-Once you have it (or have something) try committing it to your github repository
 
-##one solution##
+
+---
+
+## one solution 
 
 ```{r}
 big.fish <- dd[which(dd$size > 0.9),] #remember the , after the which command says "select all columns"
 head(big.fish)
 ```
 
-##checking for NAs
+---
+
+## checking for NAs
 Sometimes your data frame will include missing values. Often you will want to exclude these rows from the analysis. There are several ways to do this.
 
 ```{r}
@@ -258,7 +429,9 @@ complete.cases(dd)
 ```
 In each case notice that the record for glass_fish has an NA for swimming mode. 
 
-##removing NAs
+---
+
+## removing NAs
 We can remove these missing cases in a variety of ways.
 
 ```{r}
@@ -271,13 +444,20 @@ dd <- cleaned_1
 ```
 Note that we have reassigned the cleaned data set to dd so that **dd** only includes the complete cases.
  
-##Renaming data frame entries and matching data objects
+---
+
+## Renaming data frame entries and matching data objects
+
+**The following example demonstrates how to manipulate data frames from different sources to find elements in common. We will not go through this example in class this year due to constraints on time. However I am including it as a optional exercise to work through for those of you who might find it useful.**
+
 You will often need to find common elements between two data sets before you can do an analysis of the data. In our example we have a phylogeny that is taken from one study and a data set on swimming mode that is taken from another. Problems:
 
 - tree huge
 - data may not match species in tree
 
-##**setdiff()**
+---
+
+## **setdiff()**
 setdiff() is a useful tool. setdiff() compares two lists and returns the items in the first list that are not present in the second list.  Also see intersect(), union(), and setdiff().
 
 ```{r}
@@ -285,13 +465,18 @@ setdiff(dd$species, tt$tip.label)
 
 ```
 
+---
+
 ## Changing one field in a record
 OK, it looks like there are 18 species in the swimming data set that don't match the tree. Some of these mismatches are due to spelling errors or taxonomic inconsistency between the two data sets. Here is one way we could correct a name.
 
 ```{r}
 dd$species[which(dd$species == 'Chaetodon_plebius')]<-'Chaetodon_plebeius' #taxonomic inconsistency
 ```
-##matching rest of data to tree
+---
+
+## matching rest of data to tree
+
 ```{r}
 del_from_data <- setdiff(dd$species, tt$tip.label)
 # tips with data not in tree
@@ -304,7 +489,9 @@ setdiff(pruned_data$species, tt$tip.label) # this should produce "character(0)" 
 
 
 ```
-##matching tree to data
+---
+
+## matching tree to data
 Now we've pruned the data set. How can figure out what tips of the tree to prune? settdiff() again, but this time swtching the order of the arguments
 
 ```{r}
@@ -313,6 +500,9 @@ length(not.in.dd) #this will be a large number because the tree has so many tips
 head(not.in.dd)
 ```
 
+---
+
+
 Now we will use the drop.tip() function from ape to any tip that is in not.in.dd. drop.tip() needs a tree and a list of taxa to be dropped as arguments and returns a pruned tree. Use the help function to verify this.
 
 ```{r}
@@ -320,23 +510,30 @@ pruned.tree <- drop.tip(tt, not.in.dd)
 setdiff(pruned.tree$tip.label, pruned_data$species) #should be "character 0" if these objects match
 plot(pruned.tree, type = "radial",cex = 0.5)
 ```
+---
 We now have a tree and matching data set. You can use setdiff() and match() as shown above to compare your own data files and prune them as needed.
 
-```
+---
 
-##Introduction to control statements
+## Introduction to control statements
 Control statements order operations
 
 - **for** each line in a text file
   - capitalize the first word
-- ** while** the number of simulations is less than 100:
+- **while** the number of simulations is less than 100:
   - perform new simulation
 - **if** the sample is from Cuba, Hispaniola, or Jamaica:
   - assign sample to “island”
-- **else**
-  - code sample as mainland
+- **else**  
+  - assign sample as mainland
+---
 
-##Common control statements
+## More help with data manipulation in R
+
+We have only scratched the surface in exploring the power of R to wrangle data. For more practice and guided tutorials on R data fundamentals check out the Software Carpentry site [here](http://swcarpentry.github.io/r-novice-inflammation/01-starting-with-data/index.html). In addition there is a popular and powerful set of tools for working with data wrapped up in a set of packages called the tidyverse. This is my preferred way for working with data now. If you want to learn the tidyverse tools you can start at [this](https://ucla-data-archive.github.io/intro-r-tidyv/) UCLA tidyverse course site and [here](https://www.datacamp.com/community/tutorials/tidyverse-tutorial-r) and [here](https://www.analyticsvidhya.com/blog/2019/05/beginner-guide-tidyverse-most-powerful-collection-r-packages-data-science/). Please also let me know if you find sites that are especailly helpful and I will share them with the class.
+
+
+## Common control statements
 **for** statements perform an action over a range
 **for (some range) {do something}
 
@@ -345,6 +542,7 @@ for (ii in 1:5){
   cat("\nthe number is ", ii)
 }
 ```
+---
 
 ## more about **for**
 You can also loop over all items in a vector
@@ -354,20 +552,27 @@ notfish <- c("bat", "dolphin", "toad", "soldier")
 for(animal in notfish){
   cat(animal, "fish\n", sep="")
 }
-```{r, eval==F}
+```
 
+---
 ## **while**
+
+perform an action as long as a specified condition is true.
+```{r eval=FALSE}
+
+
 # 
 # while (SOME CONDITION is TRUE){
 #     do something
 # }
 
 xx <- 10
-while (xx < 100){
-    xx <- xx + 10
+while (xx < 10){
+    xx <- xx + 1
     cat(xx, "\n")
 }
 ```
+---
 
 **while** loops keeps running until the conditional part of the expression fails. At this point, the loop is terminated.
 
@@ -381,22 +586,26 @@ while(thesis_idea_sucks){
     
 }
 ```
+
 When a good idea is returned, the program breaks out of the loop.
 
+---
 ## **while** continued
 You can use the break statement to set conditions for breaking out of the while loop too
 ```{r}
 xx <- 1
-xx <- 1
+xx <- 4
 
 
 while(xx < 5) {
   xx <- xx+1; 
-  if (xx == 3) {
+  if (xx == 100) {
     break; }
   }
 print(xx)
 ```
+
+---
 
 ## **if**
 **if** statements allow your code to diverge depending on conditions
@@ -408,7 +617,7 @@ if (xx == 'a') doSomething1;
 if (xx == 'b') doSomething2;
 if (xx=='c') doSomething3;
 ```
-
+---
 ## **if** and **else**
 if only two conditions are possible and are mutually exclusive, you could use **if** and **else** to control your program.
 ```{r, eval=FALSE}
@@ -421,6 +630,7 @@ for(ii in 1:6){
     }
   }
 ```
+---
 
 ##  **else if** 
 Use **else if** with **if** and **else** when you have multiple conditions
@@ -440,8 +650,9 @@ cat('x != a letter\n')
 }
 ```
 
+---
 
-##Pseudocode
+## Pseudocode
 
 Pseudocode is an informal way to plan out the structure and flow of your program.
 
@@ -449,9 +660,11 @@ Pseudocode is an informal way to plan out the structure and flow of your program
 - **do** think about variables and control structure
 - Pseudocode can be translated across many languages easily
 
-##Pseudocode example
-```{r}
-# write a script that prints a number and its square over a given range on integers and then summing them
+---
+
+## Pseudocode example
+
+Write a script that prints a number and its square over a given range on integers and then sums them.
 
 ```{r}
 # set lower and upper range values
@@ -465,7 +678,9 @@ Pseudocode is an informal way to plan out the structure and flow of your program
 ```
 Try this now!
 
-##one solution
+---
+
+## one solution
 
 ```{r}
 lower = 1; upper = 5; squaresum = 0
@@ -477,22 +692,28 @@ for (ii in lower:upper){
 cat("the sum of it all is ", squaresum)
 
 ```
+---
 
 ## **functions**
 A function is a self-contained bit of code that performs a task. It might sum a set of numbers, run a simulation, or print your name backwards 500 times.
 
 Functions are useful because
 
-- they make code modular
-- they make code reuseable
-- they isolate code from unintended consequences (**scope**)
+- they make code modular  
+- they make code reuseable  
+- they isolate code from unintended consequences (**scope**)  
+
+---
 
 ## how functions work
 Usually functions...
 
-- take one or more arguments
-- perform some operations
+- take one or more arguments  
+- perform some operations  
 - return something
+  
+---
+
 
 ```{r}
 doubler <- function(num){
@@ -504,12 +725,13 @@ doubler <- function(num){
   return(doubled)
 }
 
-for (ii in 1:100){
+for (ii in 1:10){
   doubled <- doubler(ii)
   cat(doubled, "\n")
 }
 
 ```
+---
 
 ## functions don't need to return anything
 
@@ -521,6 +743,8 @@ cat('you never get something for nothing.\n')
 }
 takeNoArguments()
 ```
+
+---
 
 ## creating functions
 To define a function, you use the function keyword like this: 
@@ -535,6 +759,8 @@ This says that you want you create a function named ‘myFunction’ which takes
 }
 ```
 
+---
+
 ## using functions
 Once you have defined your function, it is part of your workspace. Until you remove it, you can use it.
 Enter the following function:
@@ -544,14 +770,14 @@ greeter <- function(name) {
   cat('Hello, ', name, '\n'); 
 }
 ```
-greeter() takes the variable **name**as an argument and performs the greeting.
+
+greeter() takes the variable **name** as an argument and performs the greeting.
 
 - what happens if you fail to supply argument name?
 - what happens if you just type the name of the function without any parentheses?
 
-## Repo Update
+---
 
-PLEASE VISIT **http://tinyurl.com/bootcamp-repos** and post your repo 
-(Or create a folder with your lastname_firstname in this dropbox and place your work in it--you will need to email me with a dropbox account )
+## Further function help
 
-Thanks!
+Of course there are a large number of web resoures to help you learn various aspects of R programming. I like the Software Carpentry site [here](http://swcarpentry.github.io/r-novice-inflammation/02-func-R/index.html). Please send me other sites you find useful and I can share them with the class.

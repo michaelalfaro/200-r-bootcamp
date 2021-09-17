@@ -1,3 +1,7 @@
+#Additional in class excercises for R bootcamp:
+#EEB 201, September 17, 2021
+#Kirk Lohmueller
+
 
 ################# BEFORE BEGINNING: ######################
 
@@ -8,7 +12,7 @@
 
 # Set working directory:
 #change this to whatever you want
-setwd("~/Dropbox/Kirk_stuff/KEL_bootcamp/2014")
+setwd("~/Dropbox/Kirk_stuff/KEL_bootcamp/2020")
 
 # Load a data set
 snpsDataFrame=read.table('hapmap_CEU_r23a_chr2_ld.txt',header=TRUE)
@@ -83,7 +87,7 @@ plot(freq,het,xlab="Frequency",ylab="Heterozygosity")  # Scatter plot
 
 # Let's add a line to show what relationship we'd expect under Hardy-Weinberg expectations
 p=seq(0,0.5,by=0.05)   # Set-up a vector with a sequence of allele frequencies
-points(p,2*p*(1-p),type="l",col=2) # Plot the HW expectation as a line in red
+points(p,2*p*(1-p),type="l",col=2, lwd=4) # Plot the HW expectation as a line in red
 
 
 ## APPYLING A CHI-SQUARE TEST TO EACH SNP TO FORMALLY LOOK FOR DEPARTURES FROM HARDY-WEINBERG EXPECTATIONS ###
@@ -111,10 +115,9 @@ compute_chisquare_2=function(x){
 	obscnts=c(cnt0,cnt1,cnt2)
 	#print(obscnts)
 	n=sum(obscnts)
-	expcnts=c((1-freq)^2,2*freq*(1-freq),freq^2) #note, here we don't multiply by n
-	chisq<-chisq.test(obscnts,p=expcnts, correct = FALSE)$statistic
-	#here we use the built-in function for the chi-sq distribution
-	#chisq=sum((obscnts-expcnts)^2/expcnts)
+	#here we use the built-in function for the chi-sq distribution:
+	exp_probs=c((1-freq)^2,2*freq*(1-freq),freq^2) #note, here we don't multiply by n
+	chisq<-chisq.test(obscnts,p=exp_probs, correct = FALSE)$statistic
 	return(chisq)
 }
 
@@ -125,8 +128,16 @@ compute_chisquare_2=function(x){
 chisqs=apply(snps,1,compute_chisquare)
 chisqs2=apply(snps,1,compute_chisquare_2)
 
+#check to see that the chisquare statistcs are the same:
+#first do this by computing Pearson's correlation coefficient:
+cor.test(chisqs,chisqs2)
+
+#we can also do a quick scatterplot:
+plot(chisqs,chisqs2)
+
 # Compute p-values for each chi-square value using the pchisq function
 pvals=pchisq(chisqs,1,lower.tail=FALSE)
+
 
 
 # Count the number of pvals smaller than the significance threshold
@@ -137,6 +148,12 @@ mean(pvals<signifthres)
 #which SNPs?
 sig_snps<-subset(pvals,pvals<0.05) #pull out the snps with P-vals<0.05
 sig_snp_ids<-names(sig_snps)
+
+
+#now pull out the genotypes for all teh significant SNPs:
+sig_geno<-snps[sig_snp_ids,]
+
+#sig_geno is a matrix that has all the genotypes for the 181 SNPs with a P-value<0.05
 
 ###################### PLAYING "FIND-THE-SNP" ##########################
 ################################################PROBABLY WON'T GET THIS FAR!

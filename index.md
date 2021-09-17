@@ -91,16 +91,17 @@ The purpose of the bootcamp is to get you up and running with R, and to teach yo
 
 - 9:00-10:30AM Introduction to modeling *Lloyd-Smith*
 
-<!--     - [handout]({{ site.baseurl }}/assets/2020_EEB_201_Lloyd-Smith_Introduction_to_modeling_In_R_slides.pdf) 
-    - [homework]({{ site.baseurl }}/assets/2020_EEB_201_Lloyd-Smith_HWexercises.pdf) -->
+    - [handout]({{ site.baseurl }}/assets/EEB 201_Lloyd-Smith_Introduction to modeling in R_slides.pdf) 
+    - [homework]({{ site.baseurl }}/assets/EEB 201_Lloyd-Smith_HWexercises.pdf)
 
 
 - 10:30-12:00 Advanced plotting *Lohmueller*
 
- <!--    - [slides]({{ site.baseurl }}/assets/Lohmueller_plotting.Sept30.2020.pdf)
-    - [r code]({{ site.baseurl }}/assets/AnalyzeSNPdata.2020.student.R)
-    - [homework]({{ site.baseurl }}/assets/Lohmueller_R_homework_exercise.2020.pdf)
-    - [data]({{ site.baseurl }}/assets/hapmap_CEU_r23a_chr2_ld-3.txt) -->
+    - [slides]({{ site.baseurl }}/assets/Lohmueller_plot.combined.2021.pdf)
+    - [r code]({{ site.baseurl }}/assets/AnalyzeSNPdata.2021.student.R)
+    - [homework]({{ site.baseurl }}/assets/Lohmueller_R_homework_exercise.2021.pdf)
+    - [data]({{ site.baseurl }}/assets/hapmap_CEU_r23a_chr2_ld-4.txt)
+    - [pheno.txt]({{ site.baseurl }}/assets/pheno.sim.2014-3.txt)
 
 - 1:00-4:00PM Problem set session
 
